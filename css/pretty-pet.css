@@ -1,0 +1,1592 @@
+/* ==========================================================================
+   PRETTY PET — LUXURY PET GROOMING BOUTIQUE STYLESHEET
+   Matches exact layout, organic capsules, terracotta accents & typography
+   ========================================================================== */
+
+:root {
+  --color-canvas-bg: #faefe7;
+  --color-page-bg: #fffdfb;
+  --color-white: #ffffff;
+  --color-orange: #d96a27;
+  --color-orange-hover: #c45a1c;
+  --color-orange-light: #fef0e7;
+  --color-slate-900: #191c21;
+  --color-slate-800: #2d3139;
+  --color-slate-600: #646a75;
+  --color-slate-400: #9da3af;
+  --color-card-border: #f1e5dd;
+  --color-dark-footer: #121316;
+
+  /* Organic Pill Capsule Colors */
+  --pill-purple: #7952b3;
+  --pill-pink: #d94680;
+  --pill-blue: #3b82f6;
+
+  --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  --shadow-card: 0 4px 20px rgba(217, 106, 39, 0.06);
+  --shadow-hover: 0 12px 32px rgba(217, 106, 39, 0.12);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-canvas-bg);
+  color: var(--color-slate-900);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Outer layout frame to match design presentation */
+.outer-page-wrapper {
+  max-width: 1360px;
+  margin: 0 auto;
+  background-color: var(--color-page-bg);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ==========================================================================
+   NAVIGATION BAR
+   ========================================================================== */
+.pp-header {
+  padding: 24px 0;
+  background-color: var(--color-page-bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.pp-header.scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  padding: 16px 0;
+}
+
+.pp-nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pp-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.pp-logo-icon {
+  width: 38px;
+  height: 38px;
+  background: var(--color-orange);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.pp-logo-text {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-slate-900);
+  letter-spacing: -0.5px;
+}
+
+.pp-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.pp-nav-link {
+  color: var(--color-slate-800);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.pp-nav-link:hover,
+.pp-nav-link.active {
+  color: var(--color-orange);
+  font-weight: 700;
+}
+
+.pp-nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-orange);
+  border-radius: 2px;
+}
+
+.btn-pp-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--color-orange);
+  color: white;
+  padding: 12px 28px;
+  border-radius: var(--radius-full);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(217, 106, 39, 0.28);
+}
+
+.btn-pp-pill:hover {
+  background-color: var(--color-orange-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(217, 106, 39, 0.35);
+}
+
+.btn-pp-pill-white {
+  background-color: white;
+  color: var(--color-orange);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.btn-pp-pill-white:hover {
+  background-color: #fdf5f0;
+  color: var(--color-orange-hover);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   HERO SECTION (COMPASSIONATE CARE FOR EVERY PET)
+   ========================================================================== */
+.pp-hero {
+  padding: 50px 0 70px 0;
+  text-align: center;
+  position: relative;
+}
+
+.pp-hero-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--color-slate-900);
+  letter-spacing: -1px;
+  max-width: 800px;
+  margin: 0 auto 16px auto;
+  text-transform: uppercase;
+}
+
+.pp-hero-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-slate-600);
+  max-width: 680px;
+  margin: 0 auto 28px auto;
+  line-height: 1.6;
+}
+
+/* 3 ORGANIC PILL ARCH CAPSULES */
+.pp-hero-trio-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.sparkle-decor {
+  position: absolute;
+  color: #f3b185;
+  font-size: 1.6rem;
+  animation: sparkleTwinkle 2.5s ease-in-out infinite alternate;
+  user-select: none;
+  filter: drop-shadow(0 0 8px rgba(243, 177, 133, 0.6));
+}
+
+.sparkle-1 { top: -25px; left: 16%; animation-delay: 0.2s; }
+.sparkle-2 { top: 5px; right: 16%; animation-delay: 0.7s; }
+.sparkle-3 { bottom: 30px; left: 10%; font-size: 1.2rem; animation-delay: 1.2s; }
+.sparkle-4 { bottom: 40px; right: 10%; font-size: 1.2rem; animation-delay: 1.5s; }
+
+@keyframes sparkleTwinkle {
+  0% { transform: translateY(0px) scale(0.9) rotate(0deg); opacity: 0.7; }
+  100% { transform: translateY(-10px) scale(1.2) rotate(25deg); opacity: 1; }
+}
+
+@keyframes floatBob {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.hero-capsule {
+  width: 220px;
+  height: 310px;
+  border-radius: 120px 120px 110px 110px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  animation: floatBob 5s ease-in-out infinite;
+}
+
+.hero-capsule.capsule-purple {
+  background: linear-gradient(180deg, #6b46c1 0%, #805ad5 100%);
+  animation-delay: 0s;
+}
+
+.hero-capsule.capsule-pink {
+  background: linear-gradient(180deg, #d53f8c 0%, #ed64a6 100%);
+  height: 335px; /* middle capsule slightly taller */
+  animation-delay: -1.8s;
+}
+
+.hero-capsule.capsule-blue {
+  background: linear-gradient(180deg, #2b6cb0 0%, #4299e1 100%);
+  animation-delay: -3.5s;
+}
+
+.hero-capsule:hover {
+  transform: translateY(-14px) scale(1.05) !important;
+  box-shadow: 0 20px 45px rgba(217, 106, 39, 0.22);
+}
+
+.hero-capsule img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-capsule:hover img {
+  transform: scale(1.08);
+}
+
+/* Playful Speech Bubble on Hover */
+.capsule-speech-bubble {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: white;
+  color: var(--color-slate-900);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 10;
+}
+
+.capsule-speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px 5px 0 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.hero-capsule:hover .capsule-speech-bubble {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.hero-capsule img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SERVICES SECTION (EVERYTHING YOUR PET NEEDS, ALL IN ONE PLACE)
+   ========================================================================== */
+.pp-section {
+  padding: 80px 0;
+}
+
+.pp-section-header-split {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+  gap: 30px;
+}
+
+.pp-heading-left {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--color-slate-900);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  max-width: 500px;
+}
+
+.pp-subtext-right {
+  font-size: 0.95rem;
+  color: var(--color-slate-600);
+  max-width: 420px;
+  line-height: 1.5;
+  text-align: right;
+}
+
+/* ASYMMETRICAL CARDS GRID */
+.services-asym-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.1fr;
+  grid-template-rows: auto auto;
+  gap: 24px;
+}
+
+/* General Service Card with 3D Specular Highlight & Dog Peek */
+.pp-service-card {
+  background: #fdfbf9;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: 30px 28px 0 28px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 320px;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* Dynamic specular gloss light following cursor */
+.pp-service-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle 220px at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.4), transparent 80%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+}
+
+.pp-service-card:hover::before {
+  opacity: 1;
+}
+
+.pp-service-card:hover {
+  transform: translateY(-8px) scale(1.015);
+  box-shadow: 0 16px 36px rgba(217, 106, 39, 0.16);
+  border-color: #f7bd99;
+}
+
+.pp-service-card.card-orange {
+  background-color: var(--color-orange);
+  border-color: var(--color-orange);
+  color: white;
+  box-shadow: 0 12px 30px rgba(217, 106, 39, 0.28);
+}
+
+.pp-service-card.card-orange:hover {
+  box-shadow: 0 20px 45px rgba(217, 106, 39, 0.4);
+}
+
+.pp-service-card.card-tall {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3; /* Spans 2 rows */
+  min-height: 520px;
+}
+
+.pp-service-card.card-wide {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  min-height: 220px;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+.card-top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 6;
+}
+
+.card-service-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: inherit;
+}
+
+.card-arrow-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--color-orange);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 4px 12px rgba(217, 106, 39, 0.2);
+}
+
+.card-orange .card-arrow-circle {
+  background-color: white;
+  color: var(--color-orange);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pp-service-card:hover .card-arrow-circle {
+  transform: scale(1.15) rotate(45deg);
+}
+
+.card-features-list {
+  list-style: none;
+  font-size: 0.88rem;
+  color: var(--color-slate-600);
+  margin-bottom: 14px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 6;
+}
+
+.card-orange .card-features-list {
+  color: #fff2ea;
+}
+
+.card-price-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-slate-800);
+  position: relative;
+  z-index: 6;
+}
+
+.card-orange .card-price-label {
+  color: white;
+}
+
+.card-dog-image-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.card-dog-image-wrap img {
+  max-width: 80%;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.3s ease;
+  transform-origin: bottom center;
+}
+
+/* Playful Dog Cutout Peek-Up Animation on Card Hover */
+.pp-service-card:hover .card-dog-image-wrap img {
+  transform: translateY(-16px) scale(1.1);
+  filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.12));
+}
+
+.card-tall .card-dog-image-wrap img {
+  height: 280px;
+  max-width: 95%;
+}
+
+.card-tall:hover .card-dog-image-wrap img {
+  transform: translateY(-18px) scale(1.08);
+}
+
+.card-wide .card-dog-image-wrap {
+  width: 45%;
+  margin-top: 0;
+}
+
+.card-wide .card-dog-image-wrap img {
+  height: 180px;
+}
+
+.card-wide:hover .card-dog-image-wrap img {
+  transform: translateY(-14px) scale(1.12);
+}
+
+/* ==========================================================================
+   ABOUT FEATURE (DEDICATED TO YOUR PET'S HEALTH & HAPPINESS)
+   ========================================================================== */
+.pp-about-split {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  align-items: center;
+  gap: 70px;
+  padding: 40px 0;
+}
+
+.pp-about-visual-capsules {
+  position: relative;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-pill-tall {
+  width: 200px;
+  height: 360px;
+  border-radius: 120px;
+  overflow: hidden;
+  background: #7952b3;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 20px;
+}
+
+.about-pill-tall img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-pill-round {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #dc2626;
+  border: 4px solid var(--color-page-bg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 40px;
+  right: 60px;
+}
+
+.about-pill-round img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-content-text .pp-heading {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--color-slate-900);
+}
+
+.about-content-text p {
+  font-size: 1.02rem;
+  color: var(--color-slate-600);
+  line-height: 1.65;
+  margin-bottom: 28px;
+}
+
+/* ==========================================================================
+   PRICING SECTION (AFFORDABLE CARE FOR EVERY PET)
+   ========================================================================== */
+.pp-pricing-section {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.pp-center-heading {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--color-slate-900);
+  margin-bottom: 48px;
+}
+
+.pp-pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.08fr 1fr;
+  align-items: center;
+  gap: 24px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.pp-pricing-card {
+  background: #fdfbf9;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: 36px 28px;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.3s ease;
+}
+
+.pp-pricing-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Elevated Featured Orange Center Card */
+.pp-pricing-card.featured-card {
+  background-color: var(--color-orange);
+  border-color: var(--color-orange);
+  color: white;
+  padding: 50px 32px;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 40px rgba(217, 106, 39, 0.28);
+  position: relative;
+  z-index: 2;
+  transform: scale(1.03);
+}
+
+.pp-pricing-card.featured-card:hover {
+  transform: scale(1.05) translateY(-4px);
+}
+
+.pricing-tier-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--color-slate-800);
+}
+
+.featured-card .pricing-tier-name {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.pricing-amount {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--color-orange);
+  margin-bottom: 24px;
+}
+
+.pricing-amount span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-slate-600);
+}
+
+.featured-card .pricing-amount {
+  color: white;
+  font-size: 3rem;
+}
+
+.featured-card .pricing-amount span {
+  color: #ffe6d7;
+}
+
+.pricing-features-list {
+  list-style: none;
+  font-size: 0.92rem;
+  color: var(--color-slate-600);
+  line-height: 2.1;
+  margin-bottom: 30px;
+}
+
+.featured-card .pricing-features-list {
+  color: #fff2ea;
+  font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   REVIEWS GRID (OUR REVIEWS)
+   ========================================================================== */
+.pp-reviews-section {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.reviews-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.reviews-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.pp-review-card {
+  background: white;
+  border: 1.5px solid #f6ded0;
+  border-radius: var(--radius-md);
+  padding: 24px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.pp-review-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-orange);
+}
+
+.review-quote-text {
+  font-size: 0.88rem;
+  color: var(--color-slate-600);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.review-author-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-avatar-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fce8db;
+}
+
+.review-author-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-slate-900);
+}
+
+/* ==========================================================================
+   NEWSLETTER BANNER WITH DOG CUTOUTS
+   ========================================================================== */
+.pp-newsletter-wrap {
+  padding: 30px 0 80px 0;
+}
+
+.pp-newsletter-banner {
+  background: #faede4;
+  border: 1px solid #f4ded0;
+  border-radius: 28px;
+  padding: 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.newsletter-dog-left,
+.newsletter-dog-right {
+  width: 170px;
+  height: 170px;
+  object-fit: contain;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.newsletter-center-content {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.newsletter-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--color-slate-900);
+  margin-bottom: 10px;
+}
+
+.newsletter-desc {
+  font-size: 0.92rem;
+  color: var(--color-slate-600);
+  margin-bottom: 22px;
+  line-height: 1.5;
+}
+
+.newsletter-form-inline {
+  display: flex;
+  gap: 10px;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.newsletter-input {
+  flex: 1;
+  background: white;
+  border: 1px solid #e9d5c8;
+  border-radius: var(--radius-full);
+  padding: 12px 20px;
+  font-size: 0.92rem;
+  font-family: inherit;
+  outline: none;
+}
+
+.newsletter-input:focus {
+  border-color: var(--color-orange);
+}
+
+/* ==========================================================================
+   DARK FOOTER
+   ========================================================================== */
+.pp-dark-footer {
+  background-color: var(--color-dark-footer);
+  color: #a0a6b2;
+  padding: 60px 0 30px 0;
+}
+
+.footer-main-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.footer-col-title {
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links-list a {
+  color: #949ba8;
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links-list a:hover {
+  color: var(--color-orange);
+}
+
+.footer-bottom-divider {
+  border-top: 1px solid #23262d;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.88rem;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-icons a {
+  color: #949ba8;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+}
+
+.footer-social-icons a:hover {
+  color: var(--color-orange);
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .services-asym-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pp-service-card.card-tall {
+    grid-column: 1 / 3;
+    grid-row: auto;
+    min-height: 380px;
+  }
+  .pp-service-card.card-wide {
+    grid-column: 1 / 3;
+  }
+  .pp-pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+  }
+  .pp-pricing-card.featured-card {
+    transform: none;
+  }
+  .reviews-grid-3,
+  .reviews-grid-2 {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+  .footer-main-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .pp-nav-menu {
+    display: none;
+  }
+  .pp-hero-title {
+    font-size: 2.2rem;
+  }
+  .pp-hero-trio-wrap {
+    flex-wrap: wrap;
+  }
+  .hero-capsule {
+    width: 140px;
+    height: 200px;
+  }
+  .pp-section-header-split {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .pp-subtext-right {
+    text-align: left;
+  }
+  .services-asym-grid {
+    grid-template-columns: 1fr;
+  }
+  .pp-service-card.card-wide {
+    flex-direction: column;
+  }
+  .pp-about-split {
+    grid-template-columns: 1fr;
+  }
+  .pp-about-visual-capsules {
+    height: 320px;
+  }
+  .pp-newsletter-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .newsletter-dog-left,
+  .newsletter-dog-right {
+    display: none;
+  }
+  .newsletter-form-inline {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer-main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   TOP UTILITY BAR (Studio details & direct contact)
+   ========================================================================== */
+.pp-top-utility {
+  background-color: #211c19;
+  color: #e5ded8;
+  font-size: 0.82rem;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pp-utility-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.pp-utility-left, .pp-utility-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pp-utility-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pp-utility-phone {
+  color: #f7a06d;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.pp-utility-phone:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   MOBILE DRAWER NAVIGATION
+   ========================================================================== */
+.pp-mobile-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--color-slate-900);
+  cursor: pointer;
+  padding: 4px;
+}
+
+@media (max-width: 768px) {
+  .pp-mobile-btn {
+    display: block;
+  }
+}
+
+.pp-mobile-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.pp-mobile-drawer.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.pp-drawer-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.pp-drawer-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 290px;
+  height: 100%;
+  background: white;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.pp-mobile-drawer.open .pp-drawer-panel {
+  transform: translateX(0);
+}
+
+.pp-drawer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.pp-drawer-link {
+  color: var(--color-slate-800);
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 8px 0;
+  border-bottom: 1px solid #f3ece6;
+}
+
+.pp-drawer-link.active,
+.pp-drawer-link:hover {
+  color: var(--color-orange);
+}
+
+/* ==========================================================================
+   PAGE HERO BANNER (FOR SUBPAGES)
+   ========================================================================== */
+.pp-page-banner {
+  background: linear-gradient(180deg, #fcede3 0%, var(--color-page-bg) 100%);
+  padding: 50px 0 40px 0;
+  text-align: center;
+  border-bottom: 1px solid var(--color-card-border);
+}
+
+.pp-banner-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: white;
+  color: var(--color-orange);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  margin-bottom: 14px;
+  box-shadow: 0 2px 10px rgba(217, 106, 39, 0.1);
+}
+
+.pp-banner-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--color-slate-900);
+  margin-bottom: 12px;
+}
+
+.pp-banner-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-slate-600);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   INTERACTIVE TOOLS: PRICE ESTIMATOR & BEFORE/AFTER SLIDER
+   ========================================================================== */
+.pp-interactive-box {
+  background: white;
+  border: 1.5px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  box-shadow: var(--shadow-card);
+  margin: 40px 0;
+}
+
+.pp-estimator-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 36px;
+  align-items: flex-start;
+}
+
+@media (max-width: 900px) {
+  .pp-estimator-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.estimator-pet-toggles {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.pet-toggle-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-card-border);
+  background: white;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-slate-800);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pet-toggle-btn.active {
+  background: var(--color-orange-light);
+  border-color: var(--color-orange);
+  color: var(--color-orange);
+}
+
+.weight-pills-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.weight-pill {
+  padding: 8px 14px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-card-border);
+  background: #fdfbf9;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.weight-pill.active {
+  background: var(--color-orange);
+  color: white;
+  border-color: var(--color-orange);
+}
+
+.estimate-receipt-card {
+  background: #faf4ef;
+  border-radius: var(--radius-md);
+  padding: 24px;
+  border: 1px dashed #dcb8a3;
+  text-align: center;
+}
+
+.receipt-price-big {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--color-orange);
+  margin: 10px 0;
+}
+
+/* ==========================================================================
+   GALLERY LIGHTBOX MODAL
+   ========================================================================== */
+.pp-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pp-lightbox.active {
+  display: flex;
+}
+
+.pp-lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.pp-lightbox-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  color: white;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   FLOATING BUBBLE & SPARKLES CANVAS
+   ========================================================================== */
+#bubble-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.75;
+}
+
+/* ==========================================================================
+   ANIMATED STATS STRIP
+   ========================================================================== */
+.pp-stats-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background: #ffffff;
+  border: 1.5px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  margin: 40px auto 60px auto;
+  max-width: 1040px;
+  box-shadow: 0 10px 30px rgba(217, 106, 39, 0.08);
+}
+
+.stat-item {
+  text-align: center;
+  position: relative;
+}
+
+.stat-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background: var(--color-card-border);
+}
+
+.stat-num {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--color-orange);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-slate-600);
+}
+
+@media (max-width: 768px) {
+  .pp-stats-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .stat-item:not(:last-child)::after {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   BEFORE & AFTER FUR TRANSFORMATION SLIDER
+   ========================================================================== */
+.pp-transformation-section {
+  padding: 60px 0;
+  background: linear-gradient(180deg, var(--color-page-bg) 0%, #fbf5ef 100%);
+  border-top: 1px solid var(--color-card-border);
+  border-bottom: 1px solid var(--color-card-border);
+}
+
+.ba-slider-card {
+  max-width: 920px;
+  margin: 0 auto;
+  background: white;
+  border: 1.5px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.06);
+}
+
+.ba-viewport {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  user-select: none;
+  touch-action: pan-y;
+  cursor: ew-resize;
+}
+
+@media (max-width: 768px) {
+  .ba-viewport {
+    height: 320px;
+  }
+}
+
+.ba-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.ba-before-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+  border-right: 3px solid white;
+  box-shadow: 4px 0 16px rgba(0, 0, 0, 0.35);
+}
+
+.ba-before-wrap .ba-image {
+  width: 920px; /* fixed to container width so image doesn't squash */
+  max-width: none;
+}
+
+.ba-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-orange);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4), 0 0 0 4px white;
+  z-index: 10;
+  pointer-events: none;
+  transition: transform 0.15s ease;
+}
+
+.ba-viewport:active .ba-handle {
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
+.ba-badge {
+  position: absolute;
+  top: 20px;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  z-index: 5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.ba-badge-before {
+  left: 20px;
+  background: rgba(15, 23, 42, 0.85);
+  color: white;
+  backdrop-filter: blur(4px);
+}
+
+.ba-badge-after {
+  right: 20px;
+  background: var(--color-orange);
+  color: white;
+}
+
+/* ==========================================================================
+   PRICING PLAN DURATION TOGGLE
+   ========================================================================== */
+.pricing-toggle-wrap {
+  display: inline-flex;
+  background: #f1e5dd;
+  padding: 6px;
+  border-radius: var(--radius-full);
+  margin-bottom: 40px;
+  gap: 4px;
+}
+
+.pricing-toggle-btn {
+  padding: 10px 24px;
+  border-radius: var(--radius-full);
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--color-slate-700);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.pricing-toggle-btn.active {
+  background: white;
+  color: var(--color-orange);
+  box-shadow: 0 3px 12px rgba(217, 106, 39, 0.15);
+}
+
+/* ==========================================================================
+   FAST BOOKING WIZARD MODAL
+   ========================================================================== */
+.pp-booking-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  background: rgba(18, 19, 22, 0.7);
+  backdrop-filter: blur(8px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: modalFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.pp-booking-modal.open {
+  display: flex;
+}
+
+.booking-modal-box {
+  background: white;
+  width: 100%;
+  max-width: 580px;
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--color-card-border);
+}
+
+.booking-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--color-slate-400);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.booking-modal-close:hover {
+  color: var(--color-slate-900);
+}
+
+/* Sound Toggle Pill in Utility Bar */
+.sound-toggle-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fed7aa;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.sound-toggle-chip:hover {
+  background: rgba(255, 255, 255, 0.22);
+  color: white;
+}
+
+.sound-toggle-chip.muted {
+  color: #9ca3af;
+  border-color: rgba(255, 255, 255, 0.08);
+}

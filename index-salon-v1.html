@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Betwixt the Paws Grooming LLC | Premier Pet Spa & Grooming | Dickinson, ND</title>
+  <meta name="description" content="Dickinson's premier gentle pet grooming salon. Certified Master Groomer Robin Fettig (JKL Training Academy, 25+ years experience). High-end, cage-free spa care for dogs & cats.">
+  
+  <!-- Premium Fonts: Plus Jakarta Sans (Modern & Clean) + Outfit (Fresh Display) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+
+  <!-- TOP UTILITY / ANNOUNCEMENT BAR (Industry standard for top salons) -->
+  <div class="top-utility-bar">
+    <div class="container utility-flex">
+      <div class="utility-left">
+        <span class="utility-item"><i data-lucide="map-pin"></i> 1171 East Villard St, Dickinson, ND 58601</span>
+        <span class="utility-sep">•</span>
+        <span class="utility-item"><i data-lucide="clock"></i> Mon – Sat: By Appointment</span>
+        <span class="utility-sep">•</span>
+        <span class="utility-item waitlist-alert"><span class="live-dot"></span> Currently Accepting VIP Waitlist Applications</span>
+      </div>
+      <div class="utility-right">
+        <a href="tel:7016901572" class="utility-phone"><i data-lucide="phone"></i> <strong>(701) 690-1572</strong></a>
+        <a href="mailto:groomer@betwixtthepaws.com" class="utility-email"><i data-lucide="mail"></i> groomer@betwixtthepaws.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN NAVIGATION BAR (Sleek, Clean, Full-Width Sticky Navbar) -->
+  <header class="main-navbar" id="mainNavbar">
+    <div class="container nav-flex">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo-area">
+        <img src="assets/images/logo.png" alt="Betwixt the Paws Grooming LLC" class="site-logo-img">
+        <div class="site-title-group">
+          <span class="site-brand-name">Betwixt the Paws</span>
+          <span class="site-tagline">Master Pet Grooming LLC • Dickinson, ND</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="desktop-menu" id="desktopMenu">
+        <a href="index.html" class="menu-link active">Home</a>
+        <a href="services.html" class="menu-link">Services & Pricing</a>
+        <a href="about.html" class="menu-link">About Robin</a>
+        <a href="gallery.html" class="menu-link">Furry Gallery</a>
+        <a href="forms.html" class="menu-link">Grooming Forms</a>
+        <a href="contact.html" class="menu-link">Hours & Location</a>
+      </nav>
+
+      <!-- Right Nav CTA Buttons -->
+      <div class="nav-cta-area">
+        <a href="tel:7016901572" class="btn-nav-call" title="Call the Studio">
+          <i data-lucide="phone-call"></i>
+          <span>(701) 690-1572</span>
+        </a>
+        <a href="#waitlist" class="btn-primary-action">
+          <i data-lucide="calendar"></i>
+          <span>Join VIP Waitlist</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="drawer-panel">
+      <div class="drawer-top-bar">
+        <div class="drawer-brand">
+          <img src="assets/images/logo.png" alt="Betwixt the Paws" class="drawer-logo">
+          <span>Betwixt the Paws</span>
+        </div>
+        <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close Menu">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="drawer-links-wrap">
+        <a href="index.html" class="mobile-link active"><i data-lucide="home"></i> Home</a>
+        <a href="services.html" class="mobile-link"><i data-lucide="scissors"></i> Services & Pricing</a>
+        <a href="about.html" class="mobile-link"><i data-lucide="award"></i> About Robin Fettig</a>
+        <a href="gallery.html" class="mobile-link"><i data-lucide="image"></i> Furry Gallery</a>
+        <a href="forms.html" class="mobile-link"><i data-lucide="file-text"></i> Grooming Forms</a>
+        <a href="contact.html" class="mobile-link"><i data-lucide="map-pin"></i> Location & Hours</a>
+        <a href="index.html#waitlist" class="mobile-link highlight"><i data-lucide="calendar"></i> Join VIP Waitlist</a>
+      </div>
+      <div class="drawer-footer-info">
+        <p><strong>Studio:</strong> 1171 East Villard St, Dickinson, ND</p>
+        <a href="tel:7016901572" class="drawer-phone-link"><i data-lucide="phone"></i> 701-690-1572</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION (Industry Standard High-Converting Hero) -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        
+        <!-- Left Content -->
+        <div class="hero-content">
+          <div class="trust-badge-pill">
+            <span class="pill-star">★ ★ ★ ★ ★</span>
+            <span>Dickinson’s Premier Gentle Pet Spa Since 1999</span>
+          </div>
+
+          <h1 class="hero-main-title">
+            Gentle, One-on-One <br>
+            <span class="highlight-text">Pet Grooming</span> Your <br>
+            Fur Baby Will Love.
+          </h1>
+
+          <p class="hero-lead-text">
+            Experience Dickinson's most trusted, stress-free grooming sanctuary for dogs and cats. 
+            Cared for by <strong>Robin Fettig</strong>, certified master groomer (JKL Training Academy) with 
+            over <strong>25 years of show-ring expertise</strong> and tender, cage-free attention.
+          </p>
+
+          <div class="hero-btn-row">
+            <a href="#services" class="btn-hero-primary">
+              <span>Explore Services & Pricing</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#calculator" class="btn-hero-secondary">
+              <i data-lucide="calculator"></i>
+              <span>Estimate My Pet's Visit</span>
+            </a>
+          </div>
+
+          <!-- Proof & Trust Matrix -->
+          <div class="hero-proof-box">
+            <div class="proof-stat">
+              <span class="proof-number">25+</span>
+              <span class="proof-desc">Years Professional Mastery</span>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-stat">
+              <span class="proof-number">8,500+</span>
+              <span class="proof-desc">Happy Dickinson Pets Groomed</span>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-stat">
+              <span class="proof-number">100%</span>
+              <span class="proof-desc">Gentle Cage-Free Hand Care</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual -->
+        <div class="hero-media-wrap">
+          <div class="hero-card-stage">
+            <div class="hero-image-container">
+              <img src="assets/images/spa-bubble-dog.jpg" alt="Dog enjoying gentle warm bath at Betwixt The Paws" class="hero-img">
+              
+              <!-- Floating Pill 1 -->
+              <div class="floating-badge badge-top">
+                <div class="badge-icon green"><i data-lucide="shield-check"></i></div>
+                <div>
+                  <strong>Certified Master Groomer</strong>
+                  <span>JKL Training Academy (1999)</span>
+                </div>
+              </div>
+
+              <!-- Floating Pill 2 -->
+              <div class="floating-badge badge-bottom">
+                <div class="badge-icon orange"><i data-lucide="heart"></i></div>
+                <div>
+                  <strong>Robin Fettig</strong>
+                  <span>AKC Siberian Husky Specialist</span>
+                </div>
+              </div>
+
+              <!-- Card Bottom Info Overlay -->
+              <div class="hero-bottom-info">
+                <div>
+                  <h4>Warm Hydro-Massage Bath & Styling</h4>
+                  <p>Soothing botanical shampoos, blueberry facial & fluff dry</p>
+                </div>
+                <div class="rating-box">
+                  <i data-lucide="star"></i>
+                  <span>5.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TRUST STRIP (Badges that modern pet parents love) -->
+    <section class="trust-bar-section">
+      <div class="container trust-grid">
+        <div class="trust-card">
+          <div class="trust-card-icon"><i data-lucide="award"></i></div>
+          <div class="trust-card-text">
+            <strong>25+ Years Experience</strong>
+            <span>Dedicated grooming master since 1999</span>
+          </div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card-icon"><i data-lucide="heart"></i></div>
+          <div class="trust-card-text">
+            <strong>Cage-Free Hand Care</strong>
+            <span>Zero stressful crate drying or rushing</span>
+          </div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card-icon"><i data-lucide="sparkles"></i></div>
+          <div class="trust-card-text">
+            <strong>Show-Ring Techniques</strong>
+            <span>Mentored under 3 professional show groomers</span>
+          </div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card-icon"><i data-lucide="shield-check"></i></div>
+          <div class="trust-card-text">
+            <strong>Canine & Feline Certified</strong>
+            <span>Expertise with anxious pets & double coats</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES & PRICING SECTION -->
+    <section class="section-padded" id="services">
+      <div class="container">
+        
+        <div class="section-heading-wrap text-center">
+          <span class="sub-badge"><i data-lucide="scissors"></i> Transparent Spa Menu</span>
+          <h2 class="main-section-title">Personalized Spa Packages & Services</h2>
+          <p class="section-lead-p">
+            Every pet receives customized care tailored to their breed, coat texture, and temperament. 
+            All bath packages include gentle ear cleaning, sanitary check, and low-noise fluff drying.
+          </p>
+
+          <!-- Category Switcher Tabs -->
+          <div class="category-tabs-row" id="serviceTabs">
+            <button class="cat-tab-btn active" data-filter="all">All Treatments (13)</button>
+            <button class="cat-tab-btn" data-filter="dog">🐕 Canine Packages</button>
+            <button class="cat-tab-btn" data-filter="cat">🐈 Feline Packages</button>
+            <button class="cat-tab-btn" data-filter="alacarte">✨ À La Carte Care</button>
+          </div>
+        </div>
+
+        <!-- Service Cards Grid -->
+        <div class="services-grid" id="servicesGrid">
+          
+          <!-- Card 1: Dog Bath/Brush Basic -->
+          <div class="service-card" data-category="dog">
+            <div class="service-card-header">
+              <span class="service-tier-tag">Canine Basic</span>
+              <span class="service-time"><i data-lucide="clock"></i> 1 hr</span>
+            </div>
+            <h3 class="service-name">Dog Bath/Brush Package – Basic</h3>
+            <div class="service-price-row">
+              <span class="price-start">From</span>
+              <span class="price-val">Varies</span>
+              <span class="price-note">by breed & size</span>
+            </div>
+            <p class="service-summary">
+              A revitalizing hydro-massage bath using natural coat-nourishing shampoo, low-noise warm air fluff dry, ear cleansing, and complete brush-out.
+            </p>
+            <ul class="service-features">
+              <li><i data-lucide="check"></i> Deep hydro-surge organic bath</li>
+              <li><i data-lucide="check"></i> Gentle hand fluff dry (No cages)</li>
+              <li><i data-lucide="check"></i> Sanitary check & coat detangle</li>
+              <li><i data-lucide="check"></i> Ear hygiene & refreshing lavender mist</li>
+            </ul>
+            <div class="service-card-footer">
+              <button class="btn-card-estimate" data-pkg="Dog Bath/Brush Basic" data-price="45">
+                <span>Estimate Cost</span> <i data-lucide="calculator"></i>
+              </button>
+              <a href="#waitlist" class="btn-card-waitlist" title="Join Waitlist for this package">
+                <i data-lucide="calendar"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Dog Bath/Brush Deluxe (POPULAR) -->
+          <div class="service-card featured-popular" data-category="dog">
+            <div class="popular-ribbon">★ Most Popular Choice</div>
+            <div class="service-card-header">
+              <span class="service-tier-tag gold">Deluxe Spa Experience</span>
+              <span class="service-time"><i data-lucide="clock"></i> 1 hr 30 min</span>
+            </div>
+            <h3 class="service-name">Dog Bath/Brush Package – Deluxe</h3>
+            <div class="service-price-row">
+              <span class="price-start">From</span>
+              <span class="price-val">Varies</span>
+              <span class="price-note">by breed & size</span>
+            </div>
+            <p class="service-summary">
+              The ultimate restorative spa day for your pup. Deep botanical skin hydration, antioxidant blueberry facial wash, and protective paw pad balm.
+            </p>
+            <ul class="service-features">
+              <li><i data-lucide="check"></i> Everything in Basic Package</li>
+              <li><i data-lucide="check"></i> Antioxidant blueberry facial scrub</li>
+              <li><i data-lucide="check"></i> Soothing organic paw pad balm</li>
+              <li><i data-lucide="check"></i> De-shedding hydro-prep soak</li>
+            </ul>
+            <div class="service-card-footer">
+              <button class="btn-card-estimate primary" data-pkg="Dog Bath/Brush Deluxe" data-price="60">
+                <span>Estimate Cost</span> <i data-lucide="calculator"></i>
+              </button>
+              <a href="#waitlist" class="btn-card-waitlist" title="Join Waitlist for this package">
+                <i data-lucide="calendar"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Dog Haircut Package -->
+          <div class="service-card" data-category="dog">
+            <div class="service-card-header">
+              <span class="service-tier-tag">Full Styling Clip</span>
+              <span class="service-time"><i data-lucide="clock"></i> 1 hr 30 min</span>
+            </div>
+            <h3 class="service-name">Dog Haircut Grooming Package</h3>
+            <div class="service-price-row">
+              <span class="price-start">From</span>
+              <span class="price-val">Varies</span>
+              <span class="price-note">by breed & coat</span>
+            </div>
+            <p class="service-summary">
+              Complete breed standard styling or bespoke family pet clip. Precision hand-scissored face, paws, and tail paired with a luxury warm bath.
+            </p>
+            <ul class="service-features">
+              <li><i data-lucide="check"></i> Full body customized haircut</li>
+              <li><i data-lucide="check"></i> Hand-scissor face & hygiene rounding</li>
+              <li><i data-lucide="check"></i> Warm luxury hydro-massage bath</li>
+              <li><i data-lucide="check"></i> Complete nail manicure & ear hygiene</li>
+            </ul>
+            <div class="service-card-footer">
+              <button class="btn-card-estimate" data-pkg="Dog Haircut Package" data-price="75">
+                <span>Estimate Cost</span> <i data-lucide="calculator"></i>
+              </button>
+              <a href="#waitlist" class="btn-card-waitlist" title="Join Waitlist for this package">
+                <i data-lucide="calendar"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: De-Shedding Grooming Package -->
+          <div class="service-card" data-category="dog">
+            <div class="service-card-header">
+              <span class="service-tier-tag blue">Husky Specialty</span>
+              <span class="service-time"><i data-lucide="clock"></i> 2 hrs</span>
+            </div>
+            <h3 class="service-name">De-shedding Grooming Package</h3>
+            <div class="service-price-row">
+              <span class="price-start">From</span>
+              <span class="price-val">Varies</span>
+              <span class="price-note">by breed & size</span>
+            </div>
+            <p class="service-summary">
+              Formulated by Robin with her AKC Siberian Husky breeding background. Gently releases packed dead undercoat, reducing household shedding up to 90%.
+            </p>
+            <ul class="service-features">
+              <li><i data-lucide="check"></i> High-velocity undercoat release</li>
+              <li><i data-lucide="check"></i> Deep protein follicle coat treatment</li>
+              <li><i data-lucide="check"></i> Multi-pass carding and rake finish</li>
+              <li><i data-lucide="check"></i> Complete ear, paw & sanitary detailing</li>
+            </ul>
+            <div class="service-card-footer">
+              <button class="btn-card-estimate" data-pkg="De-shedding Package" data-price="85">
+                <span>Estimate Cost</span> <i data-lucide="calculator"></i>
+              </button>
+              <a href="#waitlist" class="btn-card-waitlist" title="Join Waitlist for this package">
+                <i data-lucide="calendar"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5: Cat Haircut with Bath -->
+          <div class="service-card" data-category="cat">
+            <div class="service-card-header">
+              <span class="service-tier-tag pink">Feline Spa</span>
+              <span class="service-time"><i data-lucide="clock"></i> 2 hrs</span>
+            </div>
+            <h3 class="service-name">Cat Haircut Package with Bath</h3>
+            <div class="service-price-row">
+              <span class="price-start">From</span>
+              <span class="price-val">Varies</span>
+              <span class="price-note">by coat condition</span>
+            </div>
+            <p class="service-summary">
+              Low-stress, gentle feline styling (Lion Cut, Teddy Bear, or Comb Cut) followed by a calm degreasing wash and quiet warm dry.
+            </p>
+            <ul class="service-features">
+              <li><i data-lucide="check"></i> Cage-free, gentle feline handling</li>
+              <li><i data-lucide="check"></i> Full lion cut or custom coat trim</li>
+              <li><i data-lucide="check"></i> Degreasing hypoallergenic bath</li>
+              <li><i data-lucide="check"></i> Complete nail manicure & delicate ear wipe</li>
+            </ul>
+            <div class="service-card-footer">
+              <button class="btn-card-estimate" data-pkg="Cat Haircut with Bath" data-price="80">
+                <span>Estimate Cost</span> <i data-lucide="calculator"></i>
+              </button>
+              <a href="#waitlist" class="btn-card-waitlist" title="Join Waitlist for this package">
+                <i data-lucide="calendar"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 6: Cat Haircut without Bath -->
+          <div class="service-card" data-category="cat">
+            <div class="service-card-header">
+              <span class="service-tier-tag pink">Water-Sensitive</span>
+              <span class="service-time"><i data-lucide="clock"></i> 1 hr</span>
+            </div>
+            <h3 class="service-name">Cat Haircut Package (No Bath)</h3>
+            <div class="service-price-row">
+              <span class="price-start">From</span>
+              <span class="price-val">Varies</span>
+              <span class="price-note">by coat condition</span>
+            </div>
+            <p class="service-summary">
+              Ideal for nervous felines or severe matting relief without the water exposure. Fast, soothing, and precision-clipped with compassion.
+            </p>
+            <ul class="service-features">
+              <li><i data-lucide="check"></i> Safe mat removal & knot relief</li>
+              <li><i data-lucide="check"></i> Lion clip or hygiene shave</li>
+              <li><i data-lucide="check"></i> Complete feline nail trim</li>
+              <li><i data-lucide="check"></i> Waterless foam cleanse & brush finish</li>
+            </ul>
+            <div class="service-card-footer">
+              <button class="btn-card-estimate" data-pkg="Cat Haircut (No Bath)" data-price="65">
+                <span>Estimate Cost</span> <i data-lucide="calculator"></i>
+              </button>
+              <a href="#waitlist" class="btn-card-waitlist" title="Join Waitlist for this package">
+                <i data-lucide="calendar"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 7: Cat Bath & Brush Package -->
+          <div class="service-card" data-category="cat">
+            <div class="service-card-header">
+              <span class="service-tier-tag pink">Feline Bath</span>
+              <span class="service-time"><i data-lucide="clock"></i> 1 hr 30 min</span>
+            </div>
+            <h3 class="service-name">Cat Bath & Brush Package</h3>
+            <div class="service-price-row">
+              <span class="price-start">From</span>
+              <span class="price-val">Varies</span>
+              <span class="price-note">by coat condition</span>
+            </div>
+            <p class="service-summary">
+              Complete rejuvenation for non-haircut cats. Degreasing dander-reducing soak, thorough deshed brush-out, and nail trim.
+            </p>
+            <ul class="service-features">
+              <li><i data-lucide="check"></i> Dander & allergen control soak</li>
+              <li><i data-lucide="check"></i> Thorough undercoat deshed brushing</li>
+              <li><i data-lucide="check"></i> Delicate eye & ear gentle wipe</li>
+              <li><i data-lucide="check"></i> Full nail trim included</li>
+            </ul>
+            <div class="service-card-footer">
+              <button class="btn-card-estimate" data-pkg="Cat Bath & Brush" data-price="60">
+                <span>Estimate Cost</span> <i data-lucide="calculator"></i>
+              </button>
+              <a href="#waitlist" class="btn-card-waitlist" title="Join Waitlist for this package">
+                <i data-lucide="calendar"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 8: Nail Trim & Grinding -->
+          <div class="service-card" data-category="alacarte">
+            <div class="service-card-header">
+              <span class="service-tier-tag teal">Express Paw Care</span>
+              <span class="service-time"><i data-lucide="clock"></i> 15 min</span>
+            </div>
+            <h3 class="service-name">Nail Trim & Diamond Grinding</h3>
+            <div class="service-price-row">
+              <span class="price-currency">$</span>
+              <span class="price-val">10</span>
+              <span class="price-note">– $15 flat</span>
+            </div>
+            <p class="service-summary">
+              Quick, comfortable nail clipping ($10) or diamond rotary grinding ($15) to achieve velvety smooth edges that protect hardwood and skin.
+            </p>
+            <ul class="service-features">
+              <li><i data-lucide="check"></i> Diamond rotary smooth polish</li>
+              <li><i data-lucide="check"></i> Quick-safe gentle precision</li>
+              <li><i data-lucide="check"></i> Dogs & cats welcome</li>
+              <li><i data-lucide="check"></i> Organic paw balm finish</li>
+            </ul>
+            <div class="service-card-footer">
+              <button class="btn-card-estimate" data-pkg="Nail Trim & Grinding" data-price="15">
+                <span>Estimate Cost</span> <i data-lucide="calculator"></i>
+              </button>
+              <a href="#waitlist" class="btn-card-waitlist" title="Join Waitlist for this package">
+                <i data-lucide="calendar"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 9: Flea & Tick Bath/Dip -->
+          <div class="service-card" data-category="alacarte">
+            <div class="service-card-header">
+              <span class="service-tier-tag teal">Defense Soak</span>
+              <span class="service-time"><i data-lucide="clock"></i> 1 hr</span>
+            </div>
+            <h3 class="service-name">Flea and Tick Bath or Dip</h3>
+            <div class="service-price-row">
+              <span class="price-currency">$</span>
+              <span class="price-val">15</span>
+              <span class="price-note">& up</span>
+            </div>
+            <p class="service-summary">
+              Fast-acting therapeutic wash to eradicate active fleas and ticks while restoring inflamed, itchy skin with botanical aloe vera.
+            </p>
+            <ul class="service-features">
+              <li><i data-lucide="check"></i> Instant parasite eradication soak</li>
+              <li><i data-lucide="check"></i> Skin irritation relief & cooling</li>
+              <li><i data-lucide="check"></i> Coat conditioning barrier</li>
+              <li><i data-lucide="check"></i> Non-toxic eco-safe ingredients</li>
+            </ul>
+            <div class="service-card-footer">
+              <button class="btn-card-estimate" data-pkg="Flea and Tick Bath" data-price="15">
+                <span>Estimate Cost</span> <i data-lucide="calculator"></i>
+              </button>
+              <a href="#waitlist" class="btn-card-waitlist" title="Join Waitlist for this package">
+                <i data-lucide="calendar"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 10: Ear Cleaning -->
+          <div class="service-card" data-category="alacarte">
+            <div class="service-card-header">
+              <span class="service-tier-tag teal">Hygiene</span>
+              <span class="service-time"><i data-lucide="clock"></i> 15 min</span>
+            </div>
+            <h3 class="service-name">Ear Cleaning & Purifying</h3>
+            <div class="service-price-row">
+              <span class="price-currency">$</span>
+              <span class="price-val">10</span>
+              <span class="price-note">& up</span>
+            </div>
+            <p class="service-summary">
+              Gentle ear canal flush to safely remove excess wax, debris, and moisture. Helps prevent infections in floppy-eared and active pets.
+            </p>
+            <ul class="service-features">
+              <li><i data-lucide="check"></i> Gentle antibacterial ear rinse</li>
+              <li><i data-lucide="check"></i> Safe wax removal & inspection</li>
+              <li><i data-lucide="check"></i> Odor elimination</li>
+              <li><i data-lucide="check"></i> Plucking available on request</li>
+            </ul>
+            <div class="service-card-footer">
+              <button class="btn-card-estimate" data-pkg="Ear Cleaning Al A Carte" data-price="10">
+                <span>Estimate Cost</span> <i data-lucide="calculator"></i>
+              </button>
+              <a href="#waitlist" class="btn-card-waitlist" title="Join Waitlist for this package">
+                <i data-lucide="calendar"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 11: Sanitary Trim -->
+          <div class="service-card" data-category="alacarte">
+            <div class="service-card-header">
+              <span class="service-tier-tag teal">Hygiene</span>
+              <span class="service-time"><i data-lucide="clock"></i> 15 min</span>
+            </div>
+            <h3 class="service-name">Sanitary Trim Express</h3>
+            <div class="service-price-row">
+              <span class="price-currency">$</span>
+              <span class="price-val">10</span>
+              <span class="price-note">flat</span>
+            </div>
+            <p class="service-summary">
+              Focused precision hygienic trim around private zones and tail base to keep your pet clean, comfortable, and fresh at home.
+            </p>
+            <ul class="service-features">
+              <li><i data-lucide="check"></i> Precision hygienic zone trim</li>
+              <li><i data-lucide="check"></i> Prevents matting & dirt cling</li>
+              <li><i data-lucide="check"></i> Fast 15-minute quick visit</li>
+              <li><i data-lucide="check"></i> Gentle sensitive clippers</li>
+            </ul>
+            <div class="service-card-footer">
+              <button class="btn-card-estimate" data-pkg="Sanitary Trim" data-price="10">
+                <span>Estimate Cost</span> <i data-lucide="calculator"></i>
+              </button>
+              <a href="#waitlist" class="btn-card-waitlist" title="Join Waitlist for this package">
+                <i data-lucide="calendar"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 12: Extra Bath -->
+          <div class="service-card" data-category="alacarte">
+            <div class="service-card-header">
+              <span class="service-tier-tag teal">Add-on Soak</span>
+              <span class="service-time"><i data-lucide="clock"></i> 30 min</span>
+            </div>
+            <h3 class="service-name">Extra Hydro-Bath Upgrade</h3>
+            <div class="service-price-row">
+              <span class="price-currency">$</span>
+              <span class="price-val">10</span>
+              <span class="price-note">+ by size</span>
+            </div>
+            <p class="service-summary">
+              Double-cleansing hydro-wash for extremely soiled, muddy outdoor explorers or pets needing a specialized therapeutic treatment soak.
+            </p>
+            <ul class="service-features">
+              <li><i data-lucide="check"></i> Deep 2nd-stage lather & massage</li>
+              <li><i data-lucide="check"></i> Removes mud, grease & trail odor</li>
+              <li><i data-lucide="check"></i> Extra conditioning coat rinse</li>
+              <li><i data-lucide="check"></i> Leaves coat twice as soft</li>
+            </ul>
+            <div class="service-card-footer">
+              <button class="btn-card-estimate" data-pkg="Extra Bath" data-price="15">
+                <span>Estimate Cost</span> <i data-lucide="calculator"></i>
+              </button>
+              <a href="#waitlist" class="btn-card-waitlist" title="Join Waitlist for this package">
+                <i data-lucide="calendar"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE SPA PRICE ESTIMATOR -->
+    <section class="section-padded bg-light" id="calculator">
+      <div class="container">
+        
+        <div class="section-heading-wrap text-center">
+          <span class="sub-badge"><i data-lucide="calculator"></i> Instant Quote Calculator</span>
+          <h2 class="main-section-title">Calculate Your Pet’s Spa Visit</h2>
+          <p class="section-lead-p">
+            Choose your pet type, weight class, and treatments to see an instant estimate of cost and grooming duration.
+          </p>
+        </div>
+
+        <div class="calculator-box">
+          <div class="calc-grid">
+            
+            <!-- Left Inputs -->
+            <div class="calc-form-side">
+              
+              <!-- 1. Pet Type -->
+              <div class="calc-step-group">
+                <label class="calc-step-label">1. Select Pet Type</label>
+                <div class="pet-type-toggle">
+                  <button type="button" class="btn-toggle-pet active" data-pet="dog">
+                    <span class="pet-icon">🐶</span>
+                    <strong>Dog (Canine)</strong>
+                  </button>
+                  <button type="button" class="btn-toggle-pet" data-pet="cat">
+                    <span class="pet-icon">🐱</span>
+                    <strong>Cat (Feline)</strong>
+                  </button>
+                </div>
+              </div>
+
+              <!-- 2. Pet Weight / Size -->
+              <div class="calc-step-group">
+                <label class="calc-step-label">2. Pet Weight / Size Class</label>
+                <div class="size-buttons-row">
+                  <button type="button" class="btn-size-choice" data-multiplier="1.0">
+                    <strong>Small</strong>
+                    <span>&lt; 20 lbs</span>
+                  </button>
+                  <button type="button" class="btn-size-choice active" data-multiplier="1.2">
+                    <strong>Medium</strong>
+                    <span>20 – 50 lbs</span>
+                  </button>
+                  <button type="button" class="btn-size-choice" data-multiplier="1.45">
+                    <strong>Large</strong>
+                    <span>50 – 80 lbs</span>
+                  </button>
+                  <button type="button" class="btn-size-choice" data-multiplier="1.7">
+                    <strong>Giant / Husky</strong>
+                    <span>80+ lbs</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- 3. Primary Package -->
+              <div class="calc-step-group">
+                <label class="calc-step-label">3. Select Core Spa Package</label>
+                <select class="calc-select-input" id="corePackageSelect">
+                  <option value="bath_basic" data-base="45" data-time="60">Dog Bath & Brush Package - Basic (~$45)</option>
+                  <option value="bath_deluxe" data-base="60" data-time="90" selected>Dog Bath & Brush Package - Deluxe (~$60)</option>
+                  <option value="haircut" data-base="75" data-time="90">Dog Haircut & Full Styling (~$75)</option>
+                  <option value="deshedding" data-base="85" data-time="120">De-shedding Ultra Husky Package (~$85)</option>
+                </select>
+              </div>
+
+              <!-- 4. Add-ons -->
+              <div class="calc-step-group">
+                <label class="calc-step-label">4. Select Optional Add-ons</label>
+                <div class="addons-grid">
+                  <label class="addon-check-box">
+                    <input type="checkbox" class="addon-input" data-price="15" data-time="15" checked>
+                    <span class="check-indicator"></span>
+                    <span class="addon-text">Diamond Rotary Nail Grinding</span>
+                    <span class="addon-cost">+$15</span>
+                  </label>
+                  <label class="addon-check-box">
+                    <input type="checkbox" class="addon-input" data-price="10" data-time="15">
+                    <span class="check-indicator"></span>
+                    <span class="addon-text">Ear Cleaning & Antibacterial Rinse</span>
+                    <span class="addon-cost">+$10</span>
+                  </label>
+                  <label class="addon-check-box">
+                    <input type="checkbox" class="addon-input" data-price="10" data-time="15">
+                    <span class="check-indicator"></span>
+                    <span class="addon-text">Sanitary Zone Express Trim</span>
+                    <span class="addon-cost">+$10</span>
+                  </label>
+                  <label class="addon-check-box">
+                    <input type="checkbox" class="addon-input" data-price="15" data-time="30">
+                    <span class="check-indicator"></span>
+                    <span class="addon-text">Flea & Tick Defense Bath</span>
+                    <span class="addon-cost">+$15</span>
+                  </label>
+                  <label class="addon-check-box">
+                    <input type="checkbox" class="addon-input" data-price="15" data-time="20">
+                    <span class="check-indicator"></span>
+                    <span class="addon-text">Extra Hydro-Bath Scrub</span>
+                    <span class="addon-cost">+$15</span>
+                  </label>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Results Ticket -->
+            <div class="calc-ticket-side">
+              <div class="quote-receipt-card">
+                <div class="receipt-header">
+                  <span class="receipt-brand">Betwixt the Paws</span>
+                  <span class="receipt-chip">ESTIMATE</span>
+                </div>
+
+                <div class="receipt-total-box">
+                  <span class="receipt-currency">$</span>
+                  <span class="receipt-total-number" id="calcPriceDisplay">87</span>
+                  <span class="receipt-approx">est.*</span>
+                </div>
+                <p class="receipt-note">*Final quote confirmed at check-in based on pet coat condition.</p>
+
+                <!-- Duration Gauge -->
+                <div class="receipt-duration-box">
+                  <div class="duration-head">
+                    <span>Estimated Care Duration:</span>
+                    <strong id="calcDurationDisplay">1 hr 45 min</strong>
+                  </div>
+                  <div class="duration-bar-track">
+                    <div class="duration-bar-fill" id="calcGaugeFill" style="width: 70%;"></div>
+                  </div>
+                </div>
+
+                <!-- Itemized Breakdown -->
+                <div class="receipt-breakdown-box">
+                  <span class="breakdown-tag">Treatment Telemetry:</span>
+                  <div class="breakdown-items-list" id="calcBreakdownList">
+                    <div class="breakdown-row"><span>Deluxe Dog Spa Base</span><strong>$60.00</strong></div>
+                    <div class="breakdown-row"><span>Weight Factor (Medium)</span><strong>1.2x</strong></div>
+                    <div class="breakdown-row"><span>Diamond Nail Grinding</span><strong>+$15.00</strong></div>
+                  </div>
+                </div>
+
+                <!-- Transfer to Waitlist Button -->
+                <button type="button" class="btn-transfer-quote" id="btnTransferToWaitlist">
+                  <i data-lucide="clipboard-check"></i>
+                  <span>Transfer Quote to Waitlist</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BEFORE & AFTER TRANSFORMATION -->
+    <section class="section-padded" id="transformation">
+      <div class="container">
+        
+        <div class="section-heading-wrap text-center">
+          <span class="sub-badge"><i data-lucide="sparkle"></i> Proven Transformations</span>
+          <h2 class="main-section-title">The Show-Ring Grooming Difference</h2>
+          <p class="section-lead-p">
+            Drag the slider divider left and right to see the dramatic difference professional show grooming and deep de-shedding makes!
+          </p>
+        </div>
+
+        <div class="ba-slider-container">
+          <div class="ba-slider-box" id="beforeAfterCard">
+            <!-- AFTER (Bottom layer) -->
+            <div class="ba-layer ba-after">
+              <img src="assets/images/dog-grooming-after.jpg" alt="After Show Grooming" class="ba-image">
+              <div class="ba-tag tag-after">
+                <span class="dot green"></span>
+                <strong>AFTER: Fluffy, Scissored & Treated</strong>
+              </div>
+            </div>
+
+            <!-- BEFORE (Top layer clipped) -->
+            <div class="ba-layer ba-before" id="beforeLayer" style="width: 50%;">
+              <img src="assets/images/dog-grooming-before.jpg" alt="Before Grooming" class="ba-image">
+              <div class="ba-tag tag-before">
+                <span class="dot orange"></span>
+                <strong>BEFORE: Overgrown & Matted Coat</strong>
+              </div>
+            </div>
+
+            <!-- Splitter Line -->
+            <div class="ba-handle" id="baSplitter" style="left: 50%;">
+              <div class="ba-handle-knob">
+                <i data-lucide="chevrons-left-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Specs Banner -->
+          <div class="ba-metrics-row">
+            <div class="metric-item">
+              <span class="metric-val">95%</span>
+              <span class="metric-sub">Tangled Knots Removed</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric-item">
+              <span class="metric-val">100%</span>
+              <span class="metric-sub">Gentle Hand-Scissored</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric-item">
+              <span class="metric-val">0</span>
+              <span class="metric-sub">Stressful Cage Drying</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric-item">
+              <span class="metric-val">#1</span>
+              <span class="metric-sub">Dickinson, ND Choice</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT MASTER GROOMER ROBIN FETTIG -->
+    <section class="section-padded bg-light" id="about">
+      <div class="container about-layout">
+        
+        <!-- Left: Verified Profile Card -->
+        <div class="about-card-left">
+          <div class="profile-card">
+            <div class="profile-img-wrap">
+              <img src="assets/images/pet-hattie.jpg" alt="Robin Fettig with AKC Siberian Husky" class="profile-img">
+              <div class="profile-chip"><i data-lucide="award"></i> Certified Master Groomer</div>
+            </div>
+            <div class="profile-details">
+              <h3 class="profile-name">Robin Fettig</h3>
+              <p class="profile-title">Founder, Master Groomer & Manager</p>
+              <div class="profile-creds-list">
+                <div class="cred-row">
+                  <i data-lucide="check-circle-2"></i>
+                  <span>JKL Training Academy Certified (1999)</span>
+                </div>
+                <div class="cred-row">
+                  <i data-lucide="check-circle-2"></i>
+                  <span>Mentored under 3 Show Groomers in Fargo-Moorhead</span>
+                </div>
+                <div class="cred-row">
+                  <i data-lucide="check-circle-2"></i>
+                  <span>Selective AKC Siberian Husky Breeder</span>
+                </div>
+                <div class="cred-row">
+                  <i data-lucide="check-circle-2"></i>
+                  <span>Low-stress certified feline & canine handling</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Story & Philosophy -->
+        <div class="about-text-right">
+          <span class="sub-badge"><i data-lucide="heart"></i> Meet Your Groomer</span>
+          <h2 class="main-section-title">25+ Years Devoted to Animal Care</h2>
+          
+          <p class="about-lead">
+            "Dedicated to my passion and adoration for animal care, I became a professional Pet Groomer in 1999. 
+            I am a certified professional dog and cat groomer through the JKL Training Academy."
+          </p>
+
+          <p class="about-p">
+            Robin first provided loving, artistic care to dogs and cats in the <strong>Fargo-Moorhead, ND metro</strong> 
+            before establishing her dedicated retreat in the <strong>Dickinson, ND area</strong>.
+          </p>
+          <p class="about-p">
+            While in Fargo, Robin apprenticed directly under <strong>three professional show groomers</strong>, 
+            mastering championship show coat conditioning alongside practical family lifestyle cuts. For the last 
+            several years, she has also concentrated on the grooming, conditioning, and selective breeding of her 
+            <strong>AKC Siberian Huskies</strong>.
+          </p>
+
+          <blockquote class="about-quote">
+            <span class="quote-mark">“</span>
+            <p>The gentle, skilled care that my own dogs have flourished under, I now provide to your fur babies. 
+            Remember, no job is too big or too small for me to handle.</p>
+            <cite>— Robin Fettig, Groomer & Manager</cite>
+          </blockquote>
+
+          <div class="about-btn-row">
+            <a href="#waitlist" class="btn-primary-action">
+              <span>Join Priority Waitlist</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="tel:7016901572" class="btn-outline-call">
+              <i data-lucide="phone"></i>
+              <span>Call: 701-690-1572</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- REAL PET GALLERY -->
+    <section class="section-padded" id="gallery">
+      <div class="container">
+        
+        <div class="section-heading-wrap text-center">
+          <span class="sub-badge"><i data-lucide="camera"></i> Client Hall of Fame</span>
+          <h2 class="main-section-title">Our Beloved Dickinson Clients</h2>
+          <p class="section-lead-p">
+            Real pets pampered, bathed, and hand-scissored right here at Betwixt the Paws. Click any photo to zoom in!
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Pet 1: Dazy Smedly -->
+          <div class="gallery-card" data-name="Dazy Smedly" data-breed="Family Companion" data-service="Deluxe Bath & Fluff" data-image="assets/images/pet-dazy.jpg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/pet-dazy.jpg" alt="Dazy Smedly" class="gallery-img">
+              <div class="gallery-hover-overlay"><i data-lucide="maximize-2"></i></div>
+            </div>
+            <div class="gallery-card-meta">
+              <h4>Dazy Smedly</h4>
+              <span>Deluxe Hydro-Bath & Fluff</span>
+            </div>
+          </div>
+
+          <!-- Pet 2: Hattie Fettig -->
+          <div class="gallery-card" data-name="Hattie Fettig" data-breed="AKC Siberian Husky" data-service="Show Coat Undercoat Release" data-image="assets/images/pet-hattie.jpg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/pet-hattie.jpg" alt="Hattie Fettig" class="gallery-img">
+              <div class="gallery-hover-overlay"><i data-lucide="maximize-2"></i></div>
+            </div>
+            <div class="gallery-card-meta">
+              <h4>Hattie Fettig</h4>
+              <span>AKC Siberian Husky Show Coat</span>
+            </div>
+          </div>
+
+          <!-- Pet 3: Cooper Ulmer -->
+          <div class="gallery-card" data-name="Cooper Ulmer" data-breed="Sporting Companion" data-service="Hand-Scissored Haircut & Bath" data-image="assets/images/pet-cooper.jpg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/pet-cooper.jpg" alt="Cooper Ulmer" class="gallery-img">
+              <div class="gallery-hover-overlay"><i data-lucide="maximize-2"></i></div>
+            </div>
+            <div class="gallery-card-meta">
+              <h4>Cooper Ulmer</h4>
+              <span>Hand-Scissored Breed Haircut</span>
+            </div>
+          </div>
+
+          <!-- Pet 4: Ollie Muggli -->
+          <div class="gallery-card" data-name="Ollie Muggli" data-breed="Terrier Companion" data-service="Teddy Bear Face & Style" data-image="assets/images/pet-ollie.jpg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/pet-ollie.jpg" alt="Ollie Muggli" class="gallery-img">
+              <div class="gallery-hover-overlay"><i data-lucide="maximize-2"></i></div>
+            </div>
+            <div class="gallery-card-meta">
+              <h4>Ollie Muggli</h4>
+              <span>Teddy Bear Style & Paws</span>
+            </div>
+          </div>
+
+          <!-- Pet 5: Marco Villeme -->
+          <div class="gallery-card" data-name="Marco Villeme" data-breed="Feline Royalty" data-service="Gentle Feline Lion Cut" data-image="assets/images/pet-marco.jpg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/pet-marco.jpg" alt="Marco Villeme" class="gallery-img">
+              <div class="gallery-hover-overlay"><i data-lucide="maximize-2"></i></div>
+            </div>
+            <div class="gallery-card-meta">
+              <h4>Marco Villeme</h4>
+              <span>Gentle Feline Lion Cut</span>
+            </div>
+          </div>
+
+          <!-- Pet 6: Siberian Champion -->
+          <div class="gallery-card" data-name="Siberian Champion" data-breed="AKC Siberian Husky" data-service="Undercoat Blowout Special" data-image="assets/images/pet-husky.jpg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/pet-husky.jpg" alt="Siberian Husky" class="gallery-img">
+              <div class="gallery-hover-overlay"><i data-lucide="maximize-2"></i></div>
+            </div>
+            <div class="gallery-card-meta">
+              <h4>Siberian Champion</h4>
+              <span>Undercoat Blowout Special</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="section-padded bg-light">
+      <div class="container">
+        
+        <div class="section-heading-wrap text-center">
+          <span class="sub-badge"><i data-lucide="star"></i> Verified Reviews</span>
+          <h2 class="main-section-title">Loved by Dickinson’s Pet Parents</h2>
+          <p class="section-lead-p">
+            Here is why our clients patiently wait for an opening with Robin.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Robin is absolute magic with our high-energy Husky! Other groomers had a difficult time with his thick double coat, but Robin's Husky breeding background meant he came home soft, completely deshedded, and happy!"
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">SM</div>
+              <div>
+                <strong>Sarah M.</strong>
+                <span>Dickinson, ND • Husky Parent</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Finding someone who grooms cats with genuine calm patience is so rare. Robin treated our long-haired cat Marco with such care and zero stress. The cut was flawless and no sedation was needed!"
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">DK</div>
+              <div>
+                <strong>David & Brenda K.</strong>
+                <span>Dickinson, ND • Feline Parents</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "You can tell Robin has over 25 years of experience. The precision on my poodle's feet and face looks like a show dog. Betwixt the Paws is worth every minute on the waitlist!"
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">KT</div>
+              <div>
+                <strong>Karen T.</strong>
+                <span>Stark County, ND • Poodle Parent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRIORITY VIP WAITLIST FORM -->
+    <section class="section-padded" id="waitlist">
+      <div class="container">
+        
+        <div class="waitlist-box">
+          <div class="waitlist-grid">
+            
+            <!-- Left Info -->
+            <div class="waitlist-info-side">
+              <div class="waitlist-status-chip">
+                <span class="live-dot green"></span>
+                <span>Waitlist Enrollment Active</span>
+              </div>
+              <h2 class="waitlist-title">Join the Priority VIP Waitlist</h2>
+              <p class="waitlist-desc">
+                Currently, we are at peak booking capacity to ensure every dog and cat receives unrushed, one-on-one gentle care. 
+                Fill out the quick form below to be added to our priority list for the next available opening!
+              </p>
+
+              <div class="waitlist-perk-row">
+                <div class="perk-bullet"><i data-lucide="check"></i></div>
+                <div>
+                  <strong>First Call on Cancellations</strong>
+                  <span>Instant notification when appointment slots open up</span>
+                </div>
+              </div>
+
+              <div class="waitlist-perk-row">
+                <div class="perk-bullet"><i data-lucide="check"></i></div>
+                <div>
+                  <strong>Personalized Coat Review</strong>
+                  <span>Robin reviews your pet's breed and grooming history in advance</span>
+                </div>
+              </div>
+
+              <div class="waitlist-perk-row">
+                <div class="perk-bullet"><i data-lucide="check"></i></div>
+                <div>
+                  <strong>Show Grooming Priority</strong>
+                  <span>AKC show grooming slots reserved upon request</span>
+                </div>
+              </div>
+
+              <div class="waitlist-call-box">
+                <i data-lucide="phone-call"></i>
+                <div>
+                  <span>Prefer to speak with Robin directly?</span>
+                  <a href="tel:7016901572" class="call-text-link">701-690-1572 (Leave a voice message)</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Form -->
+            <div class="waitlist-form-side">
+              <form id="vipWaitlistForm" class="clean-styled-form">
+                <div class="form-cols-2">
+                  <div class="form-field">
+                    <label for="ownerName">Your Name *</label>
+                    <input type="text" id="ownerName" placeholder="e.g. Robin or Alex" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="ownerPhone">Phone Number *</label>
+                    <input type="tel" id="ownerPhone" placeholder="(701) 555-0199" required>
+                  </div>
+                </div>
+
+                <div class="form-cols-2">
+                  <div class="form-field">
+                    <label for="ownerEmail">Email Address *</label>
+                    <input type="email" id="ownerEmail" placeholder="youremail@gmail.com" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="petName">Pet’s Name *</label>
+                    <input type="text" id="petName" placeholder="e.g. Cooper & Dazy" required>
+                  </div>
+                </div>
+
+                <div class="form-cols-2">
+                  <div class="form-field">
+                    <label for="petBreed">Pet Breed / Species *</label>
+                    <input type="text" id="petBreed" placeholder="e.g. Siberian Husky, Goldendoodle, Persian" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="petWeight">Approx. Weight (lbs)</label>
+                    <input type="text" id="petWeight" placeholder="e.g. 45 lbs">
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="serviceNeeded">Requested Spa Package</label>
+                  <select id="serviceNeeded">
+                    <option value="Dog Bath/Brush Grooming Package-Basic">Dog Bath/Brush Package – Basic</option>
+                    <option value="Dog Bath/Brush Grooming Package-Deluxe" selected>Dog Bath/Brush Package – Deluxe</option>
+                    <option value="Dog Haircut Grooming Package">Dog Haircut Grooming Package</option>
+                    <option value="De-shedding Grooming Package">De-shedding Grooming Package (Double-Coat)</option>
+                    <option value="Cat Haircut Package with Bath">Cat Haircut Package with Bath</option>
+                    <option value="Cat Haircut Package without Bath">Cat Haircut Package without Bath</option>
+                    <option value="Cat Bath & Brush Package">Cat Bath & Brush Package</option>
+                    <option value="Nail Trim or Grinding">Nail Trim or Diamond Grinding</option>
+                    <option value="Flea and Tick Bath">Flea & Tick Defense Bath</option>
+                  </select>
+                </div>
+
+                <div class="form-field">
+                  <label for="petNotes">Coat Condition & Special Notes</label>
+                  <textarea id="petNotes" rows="3" placeholder="Tell Robin about coat condition, nervousness, allergies, or previous grooming history..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit-form">
+                  <i data-lucide="send"></i>
+                  <span>Submit to Priority Waitlist</span>
+                </button>
+              </form>
+
+              <!-- Success Overlay -->
+              <div class="form-success-card" id="formSuccessOverlay">
+                <div class="success-inner">
+                  <div class="success-paw-badge">🐾</div>
+                  <h3>You're on the Waitlist!</h3>
+                  <p>
+                    Thank you! Your pet has been successfully added to Robin's priority waitlist. 
+                    We will call or text you as soon as an opening becomes available!
+                  </p>
+                  <div class="ticket-badge" id="successTicketCode">TICKET: #BTP-WAIT-9842</div>
+                  <button type="button" class="btn-close-success" id="resetFormBtn">Close & Done</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOCATION, CONTACT & HOURS -->
+    <section class="section-padded bg-light" id="contact">
+      <div class="container">
+        
+        <div class="section-heading-wrap text-center">
+          <span class="sub-badge"><i data-lucide="map-pin"></i> Dickinson Studio</span>
+          <h2 class="main-section-title">Hours & Studio Location</h2>
+          <p class="section-lead-p">
+            Located right on East Villard Street in Dickinson, ND. Please leave a voice message as we may be hands-on with a client!
+          </p>
+        </div>
+
+        <div class="contact-cards-grid">
+          
+          <!-- Address Card -->
+          <div class="contact-card">
+            <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+            <h3 class="contact-title">Dickinson Studio</h3>
+            <p class="contact-detail">1171 East Villard Street<br>Dickinson, ND 58601</p>
+            <a href="https://maps.google.com/?q=1171+East+Villard+Street+Dickinson+ND+58601" target="_blank" class="contact-action-link">
+              <span>Open in Google Maps</span> <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="contact-card">
+            <div class="contact-icon"><i data-lucide="phone"></i></div>
+            <h3 class="contact-title">Phone & Voice Line</h3>
+            <p class="contact-detail">701-690-1572<br><span class="muted-info">(Please leave message while in session)</span></p>
+            <div class="contact-action-row">
+              <a href="tel:7016901572" class="contact-action-link"><span>Call Studio</span> <i data-lucide="phone-call"></i></a>
+              <button type="button" class="btn-copy-chip" data-copy="701-690-1572"><i data-lucide="copy"></i> Copy</button>
+            </div>
+          </div>
+
+          <!-- Email Card -->
+          <div class="contact-card">
+            <div class="contact-icon"><i data-lucide="mail"></i></div>
+            <h3 class="contact-title">Digital Mail</h3>
+            <p class="contact-detail">groomer@betwixtthepaws.com<br><span class="muted-info">(Vet records & inquiries)</span></p>
+            <div class="contact-action-row">
+              <a href="mailto:groomer@betwixtthepaws.com" class="contact-action-link"><span>Email Robin</span> <i data-lucide="send"></i></a>
+              <button type="button" class="btn-copy-chip" data-copy="groomer@betwixtthepaws.com"><i data-lucide="copy"></i> Copy</button>
+            </div>
+          </div>
+
+          <!-- Hours Card -->
+          <div class="contact-card">
+            <div class="contact-icon"><i data-lucide="clock"></i></div>
+            <h3 class="contact-title">Studio Hours</h3>
+            <div class="hours-schedule">
+              <div class="hours-row"><span>Monday – Friday:</span><strong>By Appointment</strong></div>
+              <div class="hours-row"><span>Saturday:</span><strong>Select Openings</strong></div>
+              <div class="hours-row"><span class="closed">Sunday:</span><span class="closed">Reserved for AKC Care</span></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Embedded Map -->
+        <div class="map-wrapper">
+          <div class="map-bar">
+            <span><i data-lucide="map"></i> Betwixt the Paws Grooming LLC • 1171 East Villard St, Dickinson, ND</span>
+          </div>
+          <iframe 
+            title="Betwixt The Paws Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2729.986629737151!2d-102.7758988!3d46.8824147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53282fc2cfebec77%3A0xe96c4bfeff464522!2s1171%20E%20Villard%20St%2C%20Dickinson%2C%20ND%2058601%2C%20USA!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
+            width="100%" 
+            height="320" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX ZOOM MODAL -->
+  <div class="gallery-modal" id="galleryModal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn"><i data-lucide="x"></i></button>
+      <div class="modal-body-grid">
+        <div class="modal-img-wrap">
+          <img src="" alt="Pet modal zoom" id="modalImage" class="modal-zoom-img">
+        </div>
+        <div class="modal-text-wrap">
+          <span class="modal-tag">CLIENT SPOTLIGHT</span>
+          <h3 class="modal-pet-name" id="modalTitle">Pet Name</h3>
+          <p class="modal-pet-breed" id="modalBreed">Breed Description</p>
+          <div class="modal-service-box">
+            <span class="ms-lbl">Treatment Performed:</span>
+            <strong id="modalService">Deluxe Hydro & Haircut</strong>
+          </div>
+          <a href="#waitlist" class="btn-primary-action" id="modalWaitlistBtn">
+            <span>Book Same Package</span> <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN PROFESSIONAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        
+        <div class="footer-col brand-col">
+          <div class="footer-brand-header">
+            <img src="assets/images/logo.png" alt="Betwixt The Paws" class="footer-logo">
+            <span class="footer-brand-title">Betwixt the Paws</span>
+          </div>
+          <p class="footer-about-text">
+            Dickinson North Dakota's dedicated pet grooming retreat. Certified master dog and cat care, providing stylish spa treatments, baths, haircuts, and nail trims.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://www.facebook.com" target="_blank" class="footer-soc-link" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="tel:7016901572" class="footer-soc-link" aria-label="Phone"><i data-lucide="phone"></i></a>
+            <a href="mailto:groomer@betwixtthepaws.com" class="footer-soc-link" aria-label="Email"><i data-lucide="mail"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services & Pricing</a></li>
+            <li><a href="#calculator">Price Calculator</a></li>
+            <li><a href="#transformation">Before & After</a></li>
+            <li><a href="#about">About Master Robin</a></li>
+            <li><a href="#gallery">Client Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Spa Packages</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Basic & Deluxe Dog Baths</a></li>
+            <li><a href="#services">Breed Haircuts & Hand Scissoring</a></li>
+            <li><a href="#services">Husky De-Shedding Treatments</a></li>
+            <li><a href="#services">Cat Haircuts & Feline Baths</a></li>
+            <li><a href="#services">Diamond Rotary Nail Grinding</a></li>
+            <li><a href="#services">Soothing Flea & Tick Dips</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact Studio</h4>
+          <p class="footer-contact-item"><i data-lucide="map-pin"></i> 1171 East Villard St, Dickinson, ND</p>
+          <p class="footer-contact-item"><i data-lucide="phone"></i> 701-690-1572</p>
+          <p class="footer-contact-item"><i data-lucide="mail"></i> groomer@betwixtthepaws.com</p>
+          <div class="jkl-footer-badge">
+            <i data-lucide="award"></i> Certified JKL Training Academy
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>© <span id="currentYear">2026</span> Betwixt the Paws Grooming LLC. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">SMS Privacy</a>
+          <a href="#">Grooming Terms & Waivers</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

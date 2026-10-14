@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hours & Location | Betwixt the Paws Grooming LLC | Dickinson, ND</title>
+  <meta name="description" content="Find operating hours, studio location, and contact information for Betwixt the Paws Grooming LLC in Dickinson, ND. Located at 1171 East Villard St. Call (701) 690-1572.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/pretty-pet.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+
+  <!-- TOP UTILITY BAR (Authentic Dickinson Studio Details) -->
+  <div class="pp-top-utility">
+    <div class="container pp-utility-flex">
+      <div class="pp-utility-left">
+        <span class="pp-utility-item"><i data-lucide="map-pin" style="width: 14px; height: 14px;"></i> 1171 East Villard St, Dickinson, ND 58601</span>
+        <span>•</span>
+        <span class="pp-utility-item"><i data-lucide="clock" style="width: 14px; height: 14px;"></i> Mon & Sun: Closed | Tue – Sat: By Appointment</span>
+        <span>•</span>
+        <span class="pp-utility-item" style="color: #fdba74;"><i data-lucide="award" style="width: 14px; height: 14px;"></i> Certified JKL Academy Since 1999</span>
+      </div>
+      <div class="pp-utility-right">
+        <!-- Interactive Audio Chime Toggle Button -->
+        <span id="soundToggleBtn" class="sound-toggle-chip" title="Toggle Gentle Spa Audio Chimes">🔔 Sound: ON</span>
+        <a href="tel:7016901572" class="pp-utility-phone"><i data-lucide="phone" style="width: 14px; height: 14px; display: inline;"></i> (701) 690-1572</a>
+        <a href="mailto:groomer@betwixtthepaws.com" style="color: inherit; text-decoration: none;">groomer@betwixtthepaws.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="outer-page-wrapper">
+    
+    <!-- HEADER / NAVIGATION BAR (Exact screenshot layout & terracotta styling) -->
+    <header class="pp-header" id="ppHeader">
+      <div class="container pp-nav-flex">
+        <!-- Logo -->
+        <a href="index.html" class="pp-logo">
+          <div class="pp-logo-icon">🐾</div>
+          <div style="display: flex; flex-direction: column;">
+            <span class="pp-logo-text">BETWIXT THE PAWS</span>
+            <span style="font-size: 0.72rem; font-weight: 700; color: var(--color-orange); letter-spacing: 1px; text-transform: uppercase;">Master Pet Grooming LLC</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="pp-nav-menu">
+          <a href="index.html" class="pp-nav-link">Home</a>
+          <a href="services.html" class="pp-nav-link">Services</a>
+          <a href="about.html" class="pp-nav-link">About Robin</a>
+          <a href="index.html#transformation" class="pp-nav-link">Before/After</a>
+          <a href="index.html#reviews" class="pp-nav-link">Testimonial</a>
+          <a href="gallery.html" class="pp-nav-link">Gallery</a>
+          <a href="contact.html" class="pp-nav-link active">Hours</a>
+        </nav>
+
+        <!-- Right Action Button & Mobile Toggle -->
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <a href="#contactInquiryForm" class="btn-pp-pill">
+            Book an Appointment
+          </a>
+          <button class="pp-mobile-btn" id="ppMobileToggle" aria-label="Open Menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MOBILE DRAWER -->
+    <div class="pp-mobile-drawer" id="ppMobileDrawer">
+      <div class="pp-drawer-overlay" id="ppDrawerOverlay"></div>
+      <div class="pp-drawer-panel">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+            <div class="pp-logo">
+              <div class="pp-logo-icon">🐾</div>
+              <span class="pp-logo-text" style="font-size: 1.15rem;">Betwixt The Paws</span>
+            </div>
+            <button id="ppDrawerClose" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">✕</button>
+          </div>
+          <div class="pp-drawer-links">
+            <a href="index.html" class="pp-drawer-link">Home</a>
+            <a href="services.html" class="pp-drawer-link">Services & Pricing (13 Packages)</a>
+            <a href="about.html" class="pp-drawer-link">About Robin Fettig</a>
+            <a href="index.html#transformation" class="pp-drawer-link">Before & After Slider</a>
+            <a href="gallery.html" class="pp-drawer-link">Furry Gallery</a>
+            <a href="forms.html" class="pp-drawer-link">Grooming Forms & Waivers</a>
+            <a href="contact.html" class="pp-drawer-link active">Studio Hours & Location</a>
+            <a href="privacy.html" class="pp-drawer-link">Privacy & SMS Terms</a>
+          </div>
+        </div>
+        <div>
+          <a href="#contactInquiryForm" class="btn-pp-pill" style="width: 100%; text-align: center; margin-bottom: 12px;">
+            Book an Appointment
+          </a>
+          <p style="font-size: 0.82rem; color: var(--color-slate-600); text-align: center;">1171 East Villard St, Dickinson, ND</p>
+        </div>
+      </div>
+    </div>
+
+  <main>
+    <!-- PAGE HERO BANNER -->
+    <div class="page-hero-banner">
+      <div class="container">
+        <div class="page-hero-badge"><i data-lucide="map-pin"></i> <span>DICKINSON SALON & CONTACT</span></div>
+        <h1 class="page-hero-title">Studio Hours & Location</h1>
+        <p class="page-hero-subtitle">
+          Conveniently located on East Villard Street in Dickinson, North Dakota. Schedule an appointment or send us a message below.
+        </p>
+      </div>
+    </div>
+
+    <!-- MAIN CONTACT SECTION -->
+    <section class="section-py" style="background-color: var(--color-bg);">
+      <div class="container">
+        <div class="grid-2-col" style="gap: 40px; align-items: flex-start;">
+          
+          <!-- LEFT: Studio Info & Schedule -->
+          <div>
+            <!-- Address Card -->
+            <div class="service-card" style="margin-bottom: 24px;">
+              <div style="display: flex; gap: 16px; align-items: flex-start;">
+                <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+                <div>
+                  <h2 style="font-size: 1.35rem; font-weight: 700; color: var(--color-slate-900); margin-bottom: 6px;">Studio Location</h2>
+                  <p style="font-size: 1.05rem; color: var(--color-slate-700); line-height: 1.6; margin-bottom: 12px;">
+                    <strong>Betwixt the Paws Grooming LLC</strong><br>
+                    1171 East Villard St<br>
+                    Dickinson, North Dakota 58601
+                  </p>
+                  <a href="https://maps.google.com/?q=1171+East+Villard+St,+Dickinson,+ND+58601" target="_blank" rel="noopener noreferrer" class="btn-subtle" style="display: inline-flex; align-items: center; gap: 8px;">
+                    <i data-lucide="external-link"></i> Open in Google Maps
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Operating Hours Card -->
+            <div class="service-card" style="margin-bottom: 24px;">
+              <div style="display: flex; gap: 16px; align-items: flex-start;">
+                <div class="contact-icon"><i data-lucide="clock"></i></div>
+                <div style="width: 100%;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                    <h2 style="font-size: 1.35rem; font-weight: 700; color: var(--color-slate-900);">Salon Schedule</h2>
+                    <span style="font-size: 0.78rem; font-weight: 700; color: var(--color-brand); background: var(--color-brand-light); padding: 4px 10px; border-radius: 999px;">Effective Sept 1, 2023</span>
+                  </div>
+                  <p style="font-size: 0.95rem; color: var(--color-slate-600); margin-bottom: 16px;">
+                    Appointments are individualized to ensure a calm, low-stress environment without cage drying.
+                  </p>
+
+                  <div style="background: var(--color-surface); border-radius: 12px; border: 1px solid var(--color-border); overflow: hidden;">
+                    <div style="display: flex; justify-content: space-between; padding: 12px 18px; border-bottom: 1px solid var(--color-border); font-size: 0.95rem;">
+                      <span style="font-weight: 600; color: var(--color-slate-800);">Monday</span>
+                      <span style="font-weight: 700; color: #dc2626; background: #fee2e2; padding: 2px 8px; border-radius: 6px;">CLOSED</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 12px 18px; border-bottom: 1px solid var(--color-border); font-size: 0.95rem; background: #fdfdfd;">
+                      <span style="font-weight: 600; color: var(--color-slate-800);">Tuesday</span>
+                      <span style="font-weight: 700; color: var(--color-brand-dark);">By Appointment</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 12px 18px; border-bottom: 1px solid var(--color-border); font-size: 0.95rem;">
+                      <span style="font-weight: 600; color: var(--color-slate-800);">Wednesday</span>
+                      <span style="font-weight: 700; color: var(--color-brand-dark);">By Appointment</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 12px 18px; border-bottom: 1px solid var(--color-border); font-size: 0.95rem; background: #fdfdfd;">
+                      <span style="font-weight: 600; color: var(--color-slate-800);">Thursday</span>
+                      <span style="font-weight: 700; color: var(--color-brand-dark);">By Appointment</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 12px 18px; border-bottom: 1px solid var(--color-border); font-size: 0.95rem;">
+                      <span style="font-weight: 600; color: var(--color-slate-800);">Friday</span>
+                      <span style="font-weight: 700; color: var(--color-brand-dark);">By Appointment</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 12px 18px; border-bottom: 1px solid var(--color-border); font-size: 0.95rem; background: #fdfdfd;">
+                      <span style="font-weight: 600; color: var(--color-slate-800);">Saturday</span>
+                      <span style="font-weight: 700; color: var(--color-brand-dark);">By Appointment</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 12px 18px; font-size: 0.95rem;">
+                      <span style="font-weight: 600; color: var(--color-slate-800);">Sunday</span>
+                      <span style="font-weight: 700; color: #dc2626; background: #fee2e2; padding: 2px 8px; border-radius: 6px;">CLOSED</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct Contact Card -->
+            <div class="service-card">
+              <div style="display: flex; gap: 16px; align-items: flex-start;">
+                <div class="contact-icon"><i data-lucide="phone"></i></div>
+                <div>
+                  <h2 style="font-size: 1.35rem; font-weight: 700; color: var(--color-slate-900); margin-bottom: 6px;">Call or Text Robin</h2>
+                  <p style="font-size: 0.95rem; color: var(--color-slate-600); margin-bottom: 12px;">
+                    Robin is often working one-on-one with animals and may not answer during haircuts. Please leave a voicemail or text message:
+                  </p>
+                  <p style="font-size: 1.25rem; font-weight: 800; color: var(--color-brand-dark); margin-bottom: 8px;">
+                    <a href="tel:7016901572" style="color: inherit; text-decoration: none;">(701) 690-1572</a>
+                  </p>
+                  <p style="font-size: 0.95rem; color: var(--color-slate-700);">
+                    <strong>Email:</strong> <a href="mailto:groomer@betwixtthepaws.com" style="color: var(--color-brand); text-decoration: none;">groomer@betwixtthepaws.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT: Direct Inquiry Message Form -->
+          <div>
+            <div class="waitlist-card" style="box-shadow: var(--shadow-lg);">
+              <div style="margin-bottom: 20px;">
+                <span class="trust-badge" style="margin-bottom: 8px;"><i data-lucide="message-square"></i> DIRECT SALON INQUIRY</span>
+                <h2 style="font-size: 1.6rem; font-weight: 800; color: var(--color-slate-900); margin-bottom: 8px;">Send a Message</h2>
+                <p style="font-size: 0.95rem; color: var(--color-slate-600); line-height: 1.5;">
+                  Have questions about pricing, special needs, cat handling, or coat condition? Send Robin a message directly.
+                </p>
+              </div>
+
+              <form id="contactInquiryForm" onsubmit="event.preventDefault(); submitContactInquiry(this);">
+                <div class="grid-2-col" style="gap: 16px; margin-bottom: 16px;">
+                  <div class="form-group">
+                    <label class="form-label" for="contactOwnerName">Your Name *</label>
+                    <input type="text" id="contactOwnerName" class="form-input" placeholder="e.g. Robin Peterson" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="contactPhone">Phone Number *</label>
+                    <input type="tel" id="contactPhone" class="form-input" placeholder="701-xxx-xxxx" required>
+                  </div>
+                </div>
+
+                <div class="grid-2-col" style="gap: 16px; margin-bottom: 16px;">
+                  <div class="form-group">
+                    <label class="form-label" for="contactEmail">Email Address</label>
+                    <input type="email" id="contactEmail" class="form-input" placeholder="name@email.com">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="contactPetInfo">Pet Name & Breed *</label>
+                    <input type="text" id="contactPetInfo" class="form-input" placeholder="e.g. Cooper (Golden Retriever)" required>
+                  </div>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 16px;">
+                  <label class="form-label" for="contactService">Service of Interest</label>
+                  <select id="contactService" class="form-select">
+                    <option value="bath">Bath & Brush (Undercoat Deshed / Spa)</option>
+                    <option value="haircut">Full Breed Haircut & Style</option>
+                    <option value="husky">Siberian Husky Specialized De-Shed</option>
+                    <option value="cat">Feline Grooming (Lion Cut / Dry Bath / Brush)</option>
+                    <option value="nails">Diamond Rotary Nail Grinding Only</option>
+                    <option value="general">General Inquiry / Question</option>
+                  </select>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 20px;">
+                  <label class="form-label" for="contactMessage">Your Message / Specific Requirements *</label>
+                  <textarea id="contactMessage" class="form-textarea" rows="4" placeholder="Tell us about your pet's coat condition, temperament, medical history, or your preferred scheduling days..." required></textarea>
+                </div>
+
+                <!-- SMS Consent Compliance Checkbox -->
+                <div style="background: var(--color-surface); padding: 14px 16px; border-radius: 8px; border: 1px solid var(--color-border); margin-bottom: 20px; font-size: 0.85rem; color: var(--color-slate-600); line-height: 1.4;">
+                  <label style="display: flex; gap: 10px; align-items: flex-start; cursor: pointer;">
+                    <input type="checkbox" id="contactSmsConsent" checked style="margin-top: 3px; accent-color: var(--color-brand);">
+                    <span>
+                      I agree to receive text messages from Betwixt the Paws Grooming LLC regarding appointment scheduling, estimates, and pickup notifications. Message & data rates may apply. Reply STOP to cancel at any time. View our <a href="privacy.html#sms" style="color: var(--color-brand); text-decoration: underline;">SMS Privacy Terms</a>.
+                    </span>
+                  </label>
+                </div>
+
+                <button type="submit" class="btn-primary-action" style="width: 100%; justify-content: center; padding: 15px 24px; font-size: 1.05rem;">
+                  <i data-lucide="send"></i>
+                  <span>Send Message to Robin</span>
+                </button>
+              </form>
+
+              <!-- Success Alert Placeholder -->
+              <div id="contactSuccessAlert" style="display: none; margin-top: 20px; padding: 18px; border-radius: 12px; background: #ecfdf5; border: 1px solid #a7f3d0; color: #065f46;">
+                <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 6px;">
+                  <i data-lucide="check-circle" style="width: 24px; height: 24px; color: #059669;"></i>
+                  <strong style="font-size: 1.1rem;">Message Received!</strong>
+                </div>
+                <p style="font-size: 0.95rem; margin: 0; line-height: 1.5;">
+                  Thank you! Robin will review your pet details and respond within 24 business hours. If you need urgent assistance, please call <a href="tel:7016901572" style="font-weight: 700; color: #047857; text-decoration: underline;">(701) 690-1572</a>.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE MAP & DIRECTIONS SECTION -->
+    <section class="section-py" style="background-color: var(--color-surface); border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-tag"><i data-lucide="navigation"></i> FINDING THE SALON</div>
+          <h2 class="section-heading">Directions to 1171 East Villard St</h2>
+          <p class="section-subheading">
+            Convenient curbside drop-off and easy access from all major Dickinson routes.
+          </p>
+        </div>
+
+        <div style="border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border); height: 420px; margin-bottom: 30px;">
+          <iframe 
+            title="Betwixt the Paws Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2737.584168018698!2d-102.77258932338575!3d46.883713071060935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x532fb1cf2fa5c159%3A0x7d6f5f9f60f269a9!2s1171%20E%20Villard%20St%2C%20Dickinson%2C%20ND%2058601!5e0!3m2!1sen!2sus!4v1714500000000!5m2!1sen!2sus"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="grid-3-col" style="gap: 24px;">
+          <div class="trust-card" style="text-align: left; padding: 24px;">
+            <div class="contact-icon" style="margin-bottom: 12px;"><i data-lucide="car"></i></div>
+            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; color: var(--color-slate-900);">Easy Parking</h3>
+            <p style="font-size: 0.92rem; color: var(--color-slate-600); line-height: 1.5;">
+              Dedicated curbside and front parking spaces directly outside the salon entrance for calm and safe pet transfers.
+            </p>
+          </div>
+
+          <div class="trust-card" style="text-align: left; padding: 24px;">
+            <div class="contact-icon" style="margin-bottom: 12px;"><i data-lucide="shield-alert"></i></div>
+            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; color: var(--color-slate-900);">Leash & Carrier Policy</h3>
+            <p style="font-size: 0.92rem; color: var(--color-slate-600); line-height: 1.5;">
+              For the protection of all pets, please ensure all dogs arrive on a secure leash and all cats are safely secured in hard-sided pet carriers.
+            </p>
+          </div>
+
+          <div class="trust-card" style="text-align: left; padding: 24px;">
+            <div class="contact-icon" style="margin-bottom: 12px;"><i data-lucide="file-check"></i></div>
+            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; color: var(--color-slate-900);">Vaccination Records</h3>
+            <p style="font-size: 0.92rem; color: var(--color-slate-600); line-height: 1.5;">
+              Current Rabies certificate is mandatory before your first visit. You can submit records via our <a href="forms.html" style="color: var(--color-brand); font-weight: 600;">Grooming Forms page</a>.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS SECTION -->
+    <section class="section-py" style="background-color: var(--color-bg);">
+      <div class="container" style="max-width: 900px;">
+        <div class="section-header-center">
+          <div class="section-tag"><i data-lucide="help-circle"></i> COMMON QUESTIONS</div>
+          <h2 class="section-heading">Frequently Asked Questions</h2>
+          <p class="section-subheading">
+            Clear answers about scheduling, salon policies, and appointment procedures.
+          </p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div class="service-card" style="padding: 24px;">
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-slate-900); margin-bottom: 8px;">
+              Q: Why is Betwixt the Paws appointment-only?
+            </h3>
+            <p style="font-size: 0.95rem; color: var(--color-slate-600); line-height: 1.6; margin: 0;">
+              Unlike noisy commercial grooming mills where dozens of dogs bark in cages for hours waiting their turn, Robin provides individualized, one-on-one cage-free care. By operating strictly by appointment, each pet receives focused, continuous attention and goes home as soon as they are finished.
+            </p>
+          </div>
+
+          <div class="service-card" style="padding: 24px;">
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-slate-900); margin-bottom: 8px;">
+              Q: What vaccines does my pet need before coming in?
+            </h3>
+            <p style="font-size: 0.95rem; color: var(--color-slate-600); line-height: 1.6; margin: 0;">
+              North Dakota state regulation and salon policy require that all dogs and cats have a valid, up-to-date <strong>Rabies vaccination</strong>. Bordetella (kennel cough) and DHPP are strongly recommended for dogs.
+            </p>
+          </div>
+
+          <div class="service-card" style="padding: 24px;">
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-slate-900); margin-bottom: 8px;">
+              Q: What is your cancellation or rescheduling policy?
+            </h3>
+            <p style="font-size: 0.95rem; color: var(--color-slate-600); line-height: 1.6; margin: 0;">
+              Because Robin reserves a private dedicated time window for your pet, we require a minimum of <strong>24 hours notice</strong> to cancel or reschedule without penalty. This allows waitlisted clients to fill the opening.
+            </p>
+          </div>
+
+          <div class="service-card" style="padding: 24px;">
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-slate-900); margin-bottom: 8px;">
+              Q: Can I wait in the salon during my dog's haircut?
+            </h3>
+            <p style="font-size: 0.95rem; color: var(--color-slate-600); line-height: 1.6; margin: 0;">
+              In our 25+ years of experience, pets are significantly calmer and safer when owners are not in the room, as pets will jump, wiggle, and cry to get to their owner while sharp shears are in use. Robin will call or text you approximately 15-20 minutes before completion for pickup!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- PROFESSIONAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <div class="footer-brand-header">
+            <img src="assets/images/logo.png" alt="Betwixt The Paws" class="footer-logo">
+            <span class="footer-brand-title">Betwixt the Paws</span>
+          </div>
+          <p class="footer-about-text">
+            Dickinson North Dakota's dedicated pet grooming retreat. Certified master dog and cat care, providing stylish spa treatments, baths, haircuts, and nail trims.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="footer-soc-link" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="tel:7016901572" class="footer-soc-link" aria-label="Call"><i data-lucide="phone"></i></a>
+            <a href="mailto:groomer@betwixtthepaws.com" class="footer-soc-link" aria-label="Email"><i data-lucide="mail"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services & Pricing</a></li>
+            <li><a href="about.html">About Robin</a></li>
+            <li><a href="gallery.html">Furry Gallery</a></li>
+            <li><a href="forms.html">Grooming Forms</a></li>
+            <li><a href="contact.html">Hours & Location</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Spa Packages</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Basic & Deluxe Dog Baths</a></li>
+            <li><a href="services.html">Breed Haircuts & Hand Scissoring</a></li>
+            <li><a href="services.html">Husky De-Shedding Treatments</a></li>
+            <li><a href="services.html">Cat Haircuts & Feline Baths</a></li>
+            <li><a href="services.html">Diamond Rotary Nail Grinding</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact Studio</h4>
+          <p class="footer-contact-item"><i data-lucide="map-pin"></i> 1171 East Villard St, Dickinson, ND</p>
+          <p class="footer-contact-item"><i data-lucide="phone"></i> 701-690-1572</p>
+          <p class="footer-contact-item"><i data-lucide="mail"></i> groomer@betwixtthepaws.com</p>
+          <div class="jkl-footer-badge">
+            <i data-lucide="award"></i> Certified JKL Training Academy
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>© 2026 Betwixt the Paws Grooming LLC. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="privacy.html#sms">SMS Privacy</a>
+          <a href="forms.html">Forms & Waivers</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/pretty-pet.js"></script>
+  <script>
+    function submitContactInquiry(form) {
+      const btn = form.querySelector('button[type="submit"]');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<i data-lucide="loader" class="spin"></i> Sending...';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        form.style.display = 'none';
+        document.getElementById('contactSuccessAlert').style.display = 'block';
+        if (window.lucide) window.lucide.createIcons();
+      }, 800);
+    }
+  </script>
+</body>
+</html>

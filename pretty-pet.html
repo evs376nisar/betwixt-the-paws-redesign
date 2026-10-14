@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Betwixt the Paws | Compassionate Care For Every Pet | Dickinson, ND</title>
+  <meta name="description" content="Certified Master Pet Groomer Robin Fettig provides personalized, cage-free dog and cat grooming, breed haircuts, and spa treatments in Dickinson, ND. JKL certified since 1999.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="css/pretty-pet.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+
+  <!-- FLOATING SPA BUBBLE & SPARKLE CANVAS -->
+  <canvas id="bubble-canvas"></canvas>
+
+  <!-- TOP UTILITY BAR (Authentic Dickinson Studio Details) -->
+  <div class="pp-top-utility">
+    <div class="container pp-utility-flex">
+      <div class="pp-utility-left">
+        <span class="pp-utility-item"><i data-lucide="map-pin" style="width: 14px; height: 14px;"></i> 1171 East Villard St, Dickinson, ND 58601</span>
+        <span>•</span>
+        <span class="pp-utility-item"><i data-lucide="clock" style="width: 14px; height: 14px;"></i> Mon & Sun: Closed | Tue – Sat: By Appointment</span>
+        <span>•</span>
+        <span class="pp-utility-item" style="color: #fdba74;"><i data-lucide="award" style="width: 14px; height: 14px;"></i> Certified JKL Academy Since 1999</span>
+      </div>
+      <div class="pp-utility-right">
+        <!-- Interactive Audio Chime Toggle Button -->
+        <span id="soundToggleBtn" class="sound-toggle-chip" title="Toggle Gentle Spa Audio Chimes">🔔 Sound: ON</span>
+        <a href="tel:7016901572" class="pp-utility-phone"><i data-lucide="phone" style="width: 14px; height: 14px; display: inline;"></i> (701) 690-1572</a>
+        <a href="mailto:groomer@betwixtthepaws.com" style="color: inherit; text-decoration: none;">groomer@betwixtthepaws.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="outer-page-wrapper">
+    
+    <!-- HEADER / NAVIGATION BAR (Exact screenshot layout & terracotta styling) -->
+    <header class="pp-header" id="ppHeader">
+      <div class="container pp-nav-flex">
+        <!-- Logo -->
+        <a href="index.html" class="pp-logo">
+          <div class="pp-logo-icon">🐾</div>
+          <div style="display: flex; flex-direction: column;">
+            <span class="pp-logo-text">BETWIXT THE PAWS</span>
+            <span style="font-size: 0.72rem; font-weight: 700; color: var(--color-orange); letter-spacing: 1px; text-transform: uppercase;">Master Pet Grooming LLC</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="pp-nav-menu">
+          <a href="index.html" class="pp-nav-link active">Home</a>
+          <a href="services.html" class="pp-nav-link">Services</a>
+          <a href="about.html" class="pp-nav-link">About Robin</a>
+          <a href="#transformation" class="pp-nav-link">Before/After</a>
+          <a href="#reviews" class="pp-nav-link">Testimonial</a>
+          <a href="gallery.html" class="pp-nav-link">Gallery</a>
+          <a href="contact.html" class="pp-nav-link">Hours</a>
+        </nav>
+
+        <!-- Right Action Button & Mobile Toggle -->
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <button type="button" onclick="openBookingModal()" class="btn-pp-pill">
+            Book an Appointment
+          </button>
+          <button class="pp-mobile-btn" id="ppMobileToggle" aria-label="Open Menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MOBILE DRAWER -->
+    <div class="pp-mobile-drawer" id="ppMobileDrawer">
+      <div class="pp-drawer-overlay" id="ppDrawerOverlay"></div>
+      <div class="pp-drawer-panel">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+            <div class="pp-logo">
+              <div class="pp-logo-icon">🐾</div>
+              <span class="pp-logo-text" style="font-size: 1.15rem;">Betwixt The Paws</span>
+            </div>
+            <button id="ppDrawerClose" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">✕</button>
+          </div>
+          <div class="pp-drawer-links">
+            <a href="index.html" class="pp-drawer-link active">Home</a>
+            <a href="services.html" class="pp-drawer-link">Services & Pricing (13 Packages)</a>
+            <a href="about.html" class="pp-drawer-link">About Robin Fettig</a>
+            <a href="#transformation" class="pp-drawer-link">Before & After Slider</a>
+            <a href="gallery.html" class="pp-drawer-link">Furry Gallery</a>
+            <a href="forms.html" class="pp-drawer-link">Grooming Forms & Waivers</a>
+            <a href="contact.html" class="pp-drawer-link">Studio Hours & Location</a>
+            <a href="privacy.html" class="pp-drawer-link">Privacy & SMS Terms</a>
+          </div>
+        </div>
+        <div>
+          <button type="button" onclick="openBookingModal()" class="btn-pp-pill" style="width: 100%; text-align: center; margin-bottom: 12px;">
+            Book an Appointment
+          </button>
+          <p style="font-size: 0.82rem; color: var(--color-slate-600); text-align: center;">1171 East Villard St, Dickinson, ND</p>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- ====================================================================
+           HERO SECTION (COMPASSIONATE CARE FOR EVERY PET)
+           ==================================================================== -->
+      <section class="pp-hero" id="hero">
+        <div class="container">
+          <h1 class="pp-hero-title">
+            Compassionate<br>Care For Every Pet
+          </h1>
+          <p class="pp-hero-subtitle">
+            From Professional Grooming And Undercoat De-Shedding To Personalized Gentle Care, Certified Master Groomer Robin Fettig Helps Your Furry Companions Stay Healthy, Happy, And Looking Their Very Best in Dickinson, ND.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+            <button type="button" onclick="openBookingModal()" class="btn-pp-pill">
+              Book an Appointment
+            </button>
+            <a href="services.html" class="btn-pp-pill" style="background: #ffffff; color: var(--color-slate-900); border: 1.5px solid var(--color-card-border); box-shadow: none;">
+              Explore 13 Packages
+            </a>
+          </div>
+
+          <!-- 3 ORGANIC PILL ARCH CAPSULES (WITH SPEECH BUBBLES & HOVER SOUNDS) -->
+          <div class="pp-hero-trio-wrap">
+            <span class="sparkle-decor sparkle-1">✦</span>
+            <span class="sparkle-decor sparkle-2">✦</span>
+            <span class="sparkle-decor sparkle-3">✦</span>
+            <span class="sparkle-decor sparkle-4">✦</span>
+
+            <!-- Left: Purple Capsule -->
+            <div class="hero-capsule capsule-purple" title="Gentle Bubble Bath">
+              <div class="capsule-speech-bubble">🐾 Gentle Warm Bath!</div>
+              <img src="assets/images/hero-dog-purple.jpg" alt="Cute white puppy with purple bow tie">
+            </div>
+
+            <!-- Center: Pink Capsule (Slightly taller & elevated) -->
+            <div class="hero-capsule capsule-pink" title="Fluffy Breed Haircut">
+              <div class="capsule-speech-bubble">✨ Soft & Fresh!</div>
+              <img src="assets/images/hero-dog-pink.jpg" alt="Fluffy maltese puppy in soft blush arch">
+            </div>
+
+            <!-- Right: Sky Blue Capsule -->
+            <div class="hero-capsule capsule-blue" title="Loving Gentle Handling">
+              <div class="capsule-speech-bubble">❤️ Happy High-Paw!</div>
+              <img src="assets/images/hero-dog-blue.jpg" alt="Joyful golden retriever waving paw">
+            </div>
+          </div>
+
+          <!-- ANIMATED LIVE STATS STRIP -->
+          <div class="pp-stats-strip">
+            <div class="stat-item">
+              <div class="stat-num" data-target="25" data-suffix="+">0</div>
+              <div class="stat-label">Years of Experience (1999)</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-target="14850" data-suffix="+">0</div>
+              <div class="stat-label">Happy Paws Pampered</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-target="100" data-suffix="%">0</div>
+              <div class="stat-label">Cage-Free Calm Care</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-target="5" data-suffix=".0 ★">0</div>
+              <div class="stat-label">5-Star Client Satisfaction</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SERVICES ASYMMETRICAL GRID (EVERYTHING YOUR PET NEEDS, ALL IN ONE PLACE)
+           ==================================================================== -->
+      <section class="pp-section" id="services">
+        <div class="container">
+          
+          <div class="pp-section-header-split">
+            <h2 class="pp-heading-left">
+              Everything Your Pet Needs, All In One Place
+            </h2>
+            <p class="pp-subtext-right">
+              We Provide Comprehensive Pet Care Services, Designed To Support Your Pet's Health, Hygiene, And Happiness All Under One Roof at 1171 East Villard St.
+            </p>
+          </div>
+
+          <!-- 4 Asymmetrical Cards Grid (Matching screenshot layout) -->
+          <div class="services-asym-grid">
+            
+            <!-- Card 1: Wash & Blow Dry -->
+            <div class="pp-service-card">
+              <div>
+                <div class="card-top-header">
+                  <h3 class="card-service-title">Wash & Blow Dry</h3>
+                  <a href="services.html#baths" class="card-arrow-circle" aria-label="View Wash & Blow Dry">➔</a>
+                </div>
+                <ul class="card-features-list">
+                  <li>1. Deep Cleansing Hydro-Bath</li>
+                  <li>2. Coat Conditioning & Hand Blowout</li>
+                </ul>
+                <div class="card-price-label">Starting From $25</div>
+              </div>
+              <div class="card-dog-image-wrap">
+                <img src="assets/images/dog-cutout-1.png" alt="Happy brown dog looking up">
+              </div>
+            </div>
+
+            <!-- Card 2: Full Grooming Package (FEATURED SOLID TERRACOTTA CARD) -->
+            <div class="pp-service-card card-orange">
+              <div>
+                <div class="card-top-header">
+                  <h3 class="card-service-title">Full Grooming Package</h3>
+                  <a href="services.html#haircuts" class="card-arrow-circle" aria-label="View Full Grooming Package">➔</a>
+                </div>
+                <ul class="card-features-list">
+                  <li>1. Bath & Hand Scissor Haircut</li>
+                  <li>2. Rotary Diamond Nail Grinding</li>
+                </ul>
+                <div class="card-price-label">Starting From $45</div>
+              </div>
+              <div class="card-dog-image-wrap">
+                <img src="assets/images/dog-cutout-2.png" alt="Golden retriever smiling warmly">
+              </div>
+            </div>
+
+            <!-- Card 3: Haircut & Styling (TALL RIGHT CARD WITH SEATED GOLDEN RETRIEVER) -->
+            <div class="pp-service-card card-tall">
+              <div>
+                <div class="card-top-header">
+                  <h3 class="card-service-title">Haircut & Styling</h3>
+                  <a href="services.html#haircuts" class="card-arrow-circle" aria-label="View Haircut & Styling">➔</a>
+                </div>
+                <ul class="card-features-list">
+                  <li>1. Breed-Specific Precision Styling</li>
+                  <li>2. Professional Hand Trimming & Face Sculpting</li>
+                </ul>
+                <div class="card-price-label">Starting From $35</div>
+              </div>
+              <div class="card-dog-image-wrap">
+                <img src="assets/images/pet-cooper.jpg" alt="Cooper - Dickinson client dog">
+              </div>
+            </div>
+
+            <!-- Card 4: Nail & Paw Care (WIDE BOTTOM CARD WITH SCARF DOG) -->
+            <div class="pp-service-card card-wide">
+              <div>
+                <div class="card-top-header">
+                  <h3 class="card-service-title">Nail & Paw Care (Plus Feline Care)</h3>
+                  <a href="services.html#addons" class="card-arrow-circle" aria-label="View Nail and Paw Care">➔</a>
+                </div>
+                <ul class="card-features-list">
+                  <li>1. Diamond Rotary Nail Trimming & Smoothing</li>
+                  <li>2. Paw Pad Shaving, Gland Express & Cat Care</li>
+                </ul>
+                <div class="card-price-label">Starting From $15</div>
+              </div>
+              <div class="card-dog-image-wrap">
+                <img src="assets/images/pet-hattie.jpg" alt="Hattie - Trained pet with scarf">
+              </div>
+            </div>
+
+          </div>
+
+          <div style="text-align: center; margin-top: 36px;">
+            <a href="services.html" class="btn-pp-pill" style="background: var(--color-orange-light); color: var(--color-orange); border: 1px solid #fbd9c4;">
+              View Complete Menu of All 13 Salon Packages ➔
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           ABOUT FEATURE (DEDICATED TO YOUR PET'S HEALTH & HAPPINESS)
+           ==================================================================== -->
+      <section class="pp-section" id="about">
+        <div class="container">
+          <div class="pp-about-split">
+            
+            <!-- Left: Overlapping Organic Capsules -->
+            <div class="pp-about-visual-capsules">
+              <div class="about-pill-tall">
+                <img src="assets/images/girl-dog-yellow.jpg" alt="Robin Fettig caring for a dog">
+              </div>
+              <div class="about-pill-round">
+                <img src="assets/images/girl-pug-red.jpg" alt="Happy pet parent with cute pug">
+              </div>
+            </div>
+
+            <!-- Right: Text & Robin Fettig Bio -->
+            <div class="about-content-text">
+              <h2 class="pp-heading">
+                Dedicated To Your Pet's Health & Happiness
+              </h2>
+              <p>
+                Founded by certified master groomer <strong>Robin Fettig</strong>, who graduated from the prestigious <strong>JKL Training Academy in 1999</strong> and trained under premier show-dog mentors in Fargo-Moorhead. As an AKC Siberian Husky breeder with over 25 years of hands-on expertise, Robin provides personalized one-on-one pet care in a safe, clean, and calm environment.
+              </p>
+              <p style="font-size: 0.95rem; color: var(--color-slate-600); margin-bottom: 24px;">
+                Whether it's a routine coat blowout or a complex breed scissor cut, we ensure every visit is 100% cage-free, low-stress, and deeply enjoyable for your beloved four-legged companion.
+              </p>
+              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <a href="about.html" class="btn-pp-pill">
+                  Meet Robin Fettig
+                </a>
+                <a href="forms.html" class="btn-pp-pill" style="background: transparent; color: var(--color-slate-800); border: 1.5px solid var(--color-card-border); box-shadow: none;">
+                  Rabies & Grooming Forms
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           BEFORE & AFTER FUR TRANSFORMATION SLIDER (INTERACTIVE DRAGGING)
+           ==================================================================== -->
+      <section class="pp-transformation-section" id="transformation">
+        <div class="container">
+          <div style="text-align: center; max-width: 650px; margin: 0 auto 36px auto;">
+            <div style="display: inline-flex; align-items: center; gap: 6px; background: white; color: var(--color-orange); font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; padding: 6px 16px; border-radius: var(--radius-full); margin-bottom: 12px; box-shadow: 0 2px 10px rgba(217, 106, 39, 0.1);">
+              ✨ REAL SALON RESULTS
+            </div>
+            <h2 class="pp-center-heading" style="margin-bottom: 12px; font-size: 2.3rem;">
+              See The Fur Transformation
+            </h2>
+            <p style="color: var(--color-slate-600); font-size: 0.98rem;">
+              Drag the interactive slider back and forth to witness how matted, overgrown coats become silky, hand-scissored champion show coats under Robin's expert care.
+            </p>
+          </div>
+
+          <div class="ba-slider-card">
+            <div class="ba-viewport" id="baViewport">
+              <!-- After Image (Background) -->
+              <img src="assets/images/dog-grooming-after.jpg" alt="After Grooming - Fluffy Clean Dog" class="ba-image">
+              <span class="ba-badge ba-badge-after">✨ After Robin's Groom</span>
+
+              <!-- Before Image (Clipped Foreground) -->
+              <div class="ba-before-wrap" id="baBeforeWrap">
+                <img src="assets/images/dog-grooming-before.jpg" alt="Before Grooming - Overgrown Matted Dog" class="ba-image">
+                <span class="ba-badge ba-badge-before">Scruffy Overgrown</span>
+              </div>
+
+              <!-- Draggable Handle -->
+              <div class="ba-handle" id="baHandle">
+                <span>↔</span>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; flex-wrap: wrap; gap: 12px; font-size: 0.9rem; color: var(--color-slate-600);">
+              <div><strong style="color: var(--color-slate-800);">Tip:</strong> Click or drag anywhere across the photo to compare coats.</div>
+              <button type="button" onclick="openBookingModal('Full Grooming Package')" class="btn-pp-pill" style="padding: 8px 20px; font-size: 0.88rem;">
+                Transform Your Dog Like This ➔
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           AFFORDABLE CARE FOR EVERY PET (3-TIER PRICING CARDS WITH TOGGLE)
+           ==================================================================== -->
+      <section class="pp-pricing-section" id="pricing">
+        <div class="container">
+          <h2 class="pp-center-heading" style="margin-bottom: 20px;">
+            Affordable Care For Every Pet
+          </h2>
+
+          <!-- Interactive Pricing Membership Toggle -->
+          <div class="pricing-toggle-wrap">
+            <button type="button" class="pricing-toggle-btn active" onclick="setPricingCycle('single', this)">
+              Single Visit
+            </button>
+            <button type="button" class="pricing-toggle-btn" onclick="setPricingCycle('member', this)">
+              VIP Spa Club (Save 20%)
+            </button>
+          </div>
+
+          <div class="pp-pricing-grid">
+            
+            <!-- Tier 1: Basic Care -->
+            <div class="pp-pricing-card">
+              <h3 class="pricing-tier-name">Basic Care</h3>
+              <div class="pricing-amount" id="priceBasic">$100<span>/visit</span></div>
+              <ul class="pricing-features-list">
+                <li>Bath & Blow Dry</li>
+                <li>Coat Brushing</li>
+                <li>Nail Trimming</li>
+                <li>Ear Cleaning</li>
+                <li>Basic Health Check</li>
+              </ul>
+              <button type="button" onclick="openBookingModal('Basic Care Plan')" class="btn-pp-pill" style="width: 100%;">
+                Select Plan
+              </button>
+            </div>
+
+            <!-- Tier 2: Premium Care (ELEVATED TERRACOTTA ORANGE CENTER CARD) -->
+            <div class="pp-pricing-card featured-card">
+              <h3 class="pricing-tier-name">Premium Care</h3>
+              <div class="pricing-amount" id="pricePremium">$110<span>/visit</span></div>
+              <ul class="pricing-features-list">
+                <li>All Basic Care Services</li>
+                <li>Breed Specific Haircut</li>
+                <li>Teeth & Paw Care</li>
+                <li>Ear Cleaning</li>
+                <li>Coat Conditioning</li>
+                <li>De-Shedding Treatment</li>
+                <li>Health Check</li>
+              </ul>
+              <button type="button" onclick="openBookingModal('Premium Care Plan')" class="btn-pp-pill btn-pp-pill-white" style="width: 100%;">
+                Select Plan
+              </button>
+            </div>
+
+            <!-- Tier 3: Deluxe Care -->
+            <div class="pp-pricing-card">
+              <h3 class="pricing-tier-name">Deluxe Care</h3>
+              <div class="pricing-amount" id="priceDeluxe">$100<span>/visit</span></div>
+              <ul class="pricing-features-list">
+                <li>Luxury Spa Bath</li>
+                <li>Full Grooming & Styling</li>
+                <li>Nail & Paw Care</li>
+                <li>Coat Conditioning</li>
+                <li>De-Shedding Treatment</li>
+              </ul>
+              <button type="button" onclick="openBookingModal('Deluxe Care Plan')" class="btn-pp-pill" style="width: 100%;">
+                Select Plan
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           INTERACTIVE SMART PET SPA ESTIMATOR & BEFORE/AFTER SLIDER
+           ==================================================================== -->
+      <section class="pp-section" style="background: #fdfaf7; border-top: 1px solid var(--color-card-border); border-bottom: 1px solid var(--color-card-border);">
+        <div class="container">
+          <div style="text-align: center; max-width: 650px; margin: 0 auto 36px auto;">
+            <h2 class="pp-center-heading" style="margin-bottom: 12px; font-size: 2.1rem;">
+              Interactive Price Estimator
+            </h2>
+            <p style="color: var(--color-slate-600); font-size: 0.98rem;">
+              Select your pet type, weight tier, and package to get an instant tailored grooming estimate.
+            </p>
+          </div>
+
+          <div class="pp-interactive-box">
+            <div class="pp-estimator-grid">
+              
+              <!-- Left: Controls -->
+              <div>
+                <label style="font-weight: 700; display: block; margin-bottom: 8px;">1. Pet Companion Type</label>
+                <div class="estimator-pet-toggles">
+                  <button type="button" class="pet-toggle-btn active" id="petDogBtn" onclick="setEstimatorPet('dog')">🐶 Dog Companion</button>
+                  <button type="button" class="pet-toggle-btn" id="petCatBtn" onclick="setEstimatorPet('cat')">🐱 Feline / Cat</button>
+                </div>
+
+                <label style="font-weight: 700; display: block; margin-bottom: 8px;">2. Pet Weight Tier</label>
+                <div class="weight-pills-row">
+                  <button type="button" class="weight-pill active" onclick="setWeightTier('small', this)">Small (&lt;20 lbs)</button>
+                  <button type="button" class="weight-pill" onclick="setWeightTier('medium', this)">Medium (20-50 lbs)</button>
+                  <button type="button" class="weight-pill" onclick="setWeightTier('large', this)">Large (50-80 lbs)</button>
+                  <button type="button" class="weight-pill" onclick="setWeightTier('giant', this)">Giant / Husky (80+ lbs)</button>
+                </div>
+
+                <label style="font-weight: 700; display: block; margin-bottom: 8px;">3. Service Package</label>
+                <select id="estimatorPackageSelect" onchange="calculateEstimate()" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-md); border: 1.5px solid var(--color-card-border); font-family: inherit; font-size: 0.95rem; margin-bottom: 20px; outline: none;">
+                  <option value="bath">Deluxe Hydro-Bath & Blowout</option>
+                  <option value="haircut" selected>Full Breed Precision Haircut</option>
+                  <option value="husky">Siberian Husky Undercoat Deshedding</option>
+                  <option value="cat">Feline Lion Cut & Groom</option>
+                </select>
+
+                <label style="font-weight: 700; display: block; margin-bottom: 8px;">4. Spa Enhancements</label>
+                <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem; color: var(--color-slate-700);">
+                  <label style="display: flex; gap: 8px; align-items: center; cursor: pointer;">
+                    <input type="checkbox" id="addNails" onchange="calculateEstimate()" checked style="accent-color: var(--color-orange);">
+                    <span>Rotary Diamond Nail Grinding (+$15)</span>
+                  </label>
+                  <label style="display: flex; gap: 8px; align-items: center; cursor: pointer;">
+                    <input type="checkbox" id="addTeeth" onchange="calculateEstimate()" style="accent-color: var(--color-orange);">
+                    <span>Teeth & Fresh Breath Enzymatic Gel (+$10)</span>
+                  </label>
+                  <label style="display: flex; gap: 8px; align-items: center; cursor: pointer;">
+                    <input type="checkbox" id="addSpa" onchange="calculateEstimate()" style="accent-color: var(--color-orange);">
+                    <span>Oatmeal Hypoallergenic Skin Soak (+$12)</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Right: Real-time estimate card -->
+              <div class="estimate-receipt-card">
+                <span style="font-size: 0.8rem; font-weight: 800; color: var(--color-orange); text-transform: uppercase; letter-spacing: 1px;">Instant Quote Summary</span>
+                <div class="receipt-price-big" id="estimatePriceDisplay">$85</div>
+                <p id="estimateDurationDisplay" style="font-size: 0.9rem; color: var(--color-slate-600); margin-bottom: 16px;">Estimated Session Duration: ~1.5 - 2 Hours</p>
+                <div style="font-size: 0.88rem; color: var(--color-slate-700); text-align: left; background: white; padding: 14px 18px; border-radius: var(--radius-sm); margin-bottom: 20px; line-height: 1.6;">
+                  <div>✓ Individualized Cage-Free Care</div>
+                  <div>✓ High-Velocity Hand Blow Dry</div>
+                  <div>✓ Clean Ears & Sanitary Refresh</div>
+                  <div>✓ Rabies Verification Checked</div>
+                </div>
+                <a href="#appointment" class="btn-pp-pill" style="width: 100%;">
+                  Book With This Estimate
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           OUR REVIEWS (TESTIMONIALS GRID)
+           ==================================================================== -->
+      <section class="pp-reviews-section" id="reviews">
+        <div class="container">
+          <h2 class="pp-center-heading">Our Reviews</h2>
+
+          <!-- Row 1: 3 Review Cards -->
+          <div class="reviews-grid-3">
+            
+            <div class="pp-review-card">
+              <p class="review-quote-text">
+                "The grooming service was amazing! My dog came home looking clean, fresh, and incredibly happy. Highly recommended!"
+              </p>
+              <div class="review-author-wrap">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Devon Lane" class="review-avatar-img">
+                <span class="review-author-name">Devon Lane</span>
+              </div>
+            </div>
+
+            <div class="pp-review-card">
+              <p class="review-quote-text">
+                "Robin was incredibly friendly and patient with my nervous puppy. She made the entire grooming experience comfortable and stress-free. Highly recommended!"
+              </p>
+              <div class="review-author-wrap">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="Cody Fisher" class="review-avatar-img">
+                <span class="review-author-name">Cody Fisher</span>
+              </div>
+            </div>
+
+            <div class="pp-review-card">
+              <p class="review-quote-text">
+                "Professional service from start to finish. My dog received excellent care, and the haircut was exactly what I wanted. We'll definitely be coming back."
+              </p>
+              <div class="review-author-wrap">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Arlene McCoy" class="review-avatar-img">
+                <span class="review-author-name">Arlene McCoy</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Row 2: 2 Centered Review Cards -->
+          <div class="reviews-grid-2">
+            
+            <div class="pp-review-card">
+              <p class="review-quote-text">
+                "Clean facilities, affordable pricing, and outstanding customer service. It's reassuring to know my pet is always in safe and caring hands."
+              </p>
+              <div class="review-author-wrap">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Darrell Steward" class="review-avatar-img">
+                <span class="review-author-name">Darrell Steward</span>
+              </div>
+            </div>
+
+            <div class="pp-review-card">
+              <p class="review-quote-text">
+                "I've tried several grooming salons, but Betwixt the Paws stands out. Robin's attention to detail and genuine love for animals make every visit worth while."
+              </p>
+              <div class="review-author-wrap">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Theresa Webb" class="review-avatar-img">
+                <span class="review-author-name">Theresa Webb</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           NEWSLETTER & BOOKING CTA BANNER (DOG CUTOUTS)
+           ==================================================================== -->
+      <section class="pp-newsletter-wrap" id="appointment">
+        <div class="container">
+          <div class="pp-newsletter-banner">
+            
+            <!-- Left Dog Cutout -->
+            <img src="assets/images/pet-dazy.jpg" alt="Dazy the dog" class="newsletter-dog-left" style="border-radius: 50%;">
+
+            <!-- Center Content -->
+            <div class="newsletter-center-content">
+              <h2 class="newsletter-title">Subscribe For The Latest Pet Care Tips & Offers</h2>
+              <p class="newsletter-desc">
+                Join our Dickinson VIP Waitlist to stay updated with seasonal de-shedding tips, priority booking notifications, and salon updates.
+              </p>
+              <form class="newsletter-form-inline" onsubmit="event.preventDefault(); submitNewsletterWaitlist(this);">
+                <input type="text" class="newsletter-input" id="waitlistInput" placeholder="Enter phone or email" required>
+                <button type="submit" class="btn-pp-pill">Subscribe</button>
+              </form>
+              <div id="waitlistSuccess" style="display: none; margin-top: 14px; color: #15803d; font-weight: 700; font-size: 0.95rem;">
+                🎉 Thank you! You've been added to Robin's VIP Notification list!
+              </div>
+            </div>
+
+            <!-- Right Dog Cutout (corgi) -->
+            <img src="assets/images/corgi-cutout.png" alt="Happy corgi" class="newsletter-dog-right" style="border-radius: 50%;">
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================================================================
+         DARK FOOTER (#121316)
+         ==================================================================== -->
+    <footer class="pp-dark-footer">
+      <div class="container">
+        
+        <div class="footer-main-grid">
+          
+          <!-- Col 1: Brand & Bio -->
+          <div>
+            <div class="pp-logo" style="margin-bottom: 16px;">
+              <div class="pp-logo-icon">🐾</div>
+              <span class="pp-logo-text" style="color: white;">BETWIXT THE PAWS</span>
+            </div>
+            <p style="font-size: 0.9rem; line-height: 1.6; color: #828894; margin-bottom: 16px;">
+              Dickinson North Dakota's dedicated master pet grooming salon. Certified JKL Training Academy graduate Robin Fettig providing gentle, one-on-one care for dogs and cats since 1999.
+            </p>
+            <p style="font-size: 0.88rem; color: #f7a06d;">
+              📍 1171 East Villard St, Dickinson, ND 58601<br>
+              📞 (701) 690-1572
+            </p>
+          </div>
+
+          <!-- Col 2: Navigation Links -->
+          <div>
+            <h4 class="footer-col-title">Navigation Links</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services & Pricing</a></li>
+              <li><a href="about.html">About Robin</a></li>
+              <li><a href="gallery.html">Furry Gallery</a></li>
+              <li><a href="forms.html">Grooming Forms</a></li>
+              <li><a href="contact.html">Hours & Location</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Salon Hours -->
+          <div>
+            <h4 class="footer-col-title">Salon Hours</h4>
+            <ul class="footer-links-list" style="font-size: 0.88rem;">
+              <li><strong style="color: white;">Mon:</strong> Closed</li>
+              <li><strong style="color: white;">Tue – Sat:</strong> By Appointment</li>
+              <li><strong style="color: white;">Sun:</strong> Closed</li>
+              <li style="margin-top: 10px; color: #fdba74;">*Appointments individualized to ensure zero cage stress.</li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Legal & Policies -->
+          <div>
+            <h4 class="footer-col-title">Policies</h4>
+            <ul class="footer-links-list">
+              <li><a href="forms.html">Rabies Requirements</a></li>
+              <li><a href="forms.html">Intake & Liability Waiver</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="privacy.html#sms">SMS Opt-In Disclosure</a></li>
+              <li><a href="contact.html">Driving Directions</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom-divider">
+          <div>© 2026 Betwixt the Paws Grooming LLC. All Rights Reserved.</div>
+          <div class="footer-social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">ⓕ</a>
+            <a href="tel:7016901572" aria-label="Phone">📞</a>
+            <a href="mailto:groomer@betwixtthepaws.com" aria-label="Email">✉</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- FAST BOOKING WIZARD MODAL -->
+    <div class="pp-booking-modal" id="bookingModal">
+      <div class="booking-modal-box">
+        <button type="button" class="booking-modal-close" id="modalClose">✕</button>
+        
+        <div id="bookingWizardForm">
+          <div style="text-align: center; margin-bottom: 24px;">
+            <div class="pp-logo-icon" style="margin: 0 auto 10px auto;">🐾</div>
+            <h3 style="font-size: 1.6rem; font-weight: 800; color: var(--color-slate-900);">Book A Pet Spa Session</h3>
+            <p style="font-size: 0.92rem; color: var(--color-slate-600);">Individualized Cage-Free Care with Master Groomer Robin Fettig</p>
+          </div>
+
+          <form onsubmit="submitBookingModal(event)">
+            <div style="margin-bottom: 16px;">
+              <label style="display: block; font-weight: 700; margin-bottom: 6px; font-size: 0.9rem;">Your Pet's Name & Breed *</label>
+              <input type="text" class="newsletter-input" style="width: 100%; border-radius: var(--radius-md);" placeholder="e.g. Cooper (Golden Retriever)" required>
+            </div>
+
+            <div style="margin-bottom: 16px;">
+              <label style="display: block; font-weight: 700; margin-bottom: 6px; font-size: 0.9rem;">Service Package *</label>
+              <select id="modalPackageSelect" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-md); border: 1.5px solid var(--color-card-border); font-family: inherit; font-size: 0.95rem; outline: none;">
+                <option value="Wash & Blow Dry">Wash & Blow Dry (Coat Conditioning)</option>
+                <option value="Full Grooming Package" selected>Full Grooming Package (Haircut + Nails)</option>
+                <option value="Haircut & Styling">Haircut & Breed Specific Styling</option>
+                <option value="Siberian Husky Deshedding">Siberian Husky Undercoat De-Shed</option>
+                <option value="Feline Spa & Grooming">Feline Cat Grooming / Lion Cut</option>
+                <option value="Nail & Paw Care">Diamond Rotary Nail Care</option>
+              </select>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px;">
+              <div>
+                <label style="display: block; font-weight: 700; margin-bottom: 6px; font-size: 0.9rem;">Your Phone *</label>
+                <input type="tel" class="newsletter-input" style="width: 100%; border-radius: var(--radius-md);" placeholder="701-xxx-xxxx" required>
+              </div>
+              <div>
+                <label style="display: block; font-weight: 700; margin-bottom: 6px; font-size: 0.9rem;">Preferred Day</label>
+                <select style="width: 100%; padding: 12px 14px; border-radius: var(--radius-md); border: 1.5px solid var(--color-card-border); font-family: inherit; font-size: 0.92rem; outline: none;">
+                  <option>Tuesday</option>
+                  <option>Wednesday</option>
+                  <option>Thursday</option>
+                  <option>Friday</option>
+                  <option>Saturday</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="font-size: 0.82rem; color: var(--color-slate-500); margin-bottom: 20px; line-height: 1.4;">
+              * Rabies vaccination certificate is required prior to appointment. Robin will call or text you within 24 hours to confirm drop-off time.
+            </div>
+
+            <button type="submit" id="modalSubmitBtn" class="btn-pp-pill" style="width: 100%; padding: 14px; font-size: 1.05rem;">
+              Confirm Booking Request ➔
+            </button>
+          </form>
+        </div>
+
+        <!-- Success Message -->
+        <div id="bookingSuccessState" style="display: none; text-align: center; padding: 20px 0;">
+          <div style="font-size: 3.5rem; margin-bottom: 12px;">🎉</div>
+          <h3 style="font-size: 1.6rem; font-weight: 800; color: #15803d; margin-bottom: 10px;">Booking Request Received!</h3>
+          <p style="font-size: 0.95rem; color: var(--color-slate-600); line-height: 1.6; margin-bottom: 20px;">
+            Thank you! Robin Fettig has received your pet details and will text or call you at the provided number to confirm your private salon window.
+          </p>
+          <button type="button" onclick="document.getElementById('bookingModal').classList.remove('open')" class="btn-pp-pill">
+            Close & Return to Site
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/pretty-pet.js"></script>
+</body>
+</html>

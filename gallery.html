@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Photo Gallery | Betwixt the Paws Grooming | Dickinson, ND</title>
+  <meta name="description" content="View our client photo gallery at Betwixt the Paws Grooming LLC in Dickinson, ND. See before and after photos of dogs and cats groomed by Master Groomer Robin Fettig.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/pretty-pet.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+
+  <!-- TOP UTILITY BAR (Authentic Dickinson Studio Details) -->
+  <div class="pp-top-utility">
+    <div class="container pp-utility-flex">
+      <div class="pp-utility-left">
+        <span class="pp-utility-item"><i data-lucide="map-pin" style="width: 14px; height: 14px;"></i> 1171 East Villard St, Dickinson, ND 58601</span>
+        <span>•</span>
+        <span class="pp-utility-item"><i data-lucide="clock" style="width: 14px; height: 14px;"></i> Mon & Sun: Closed | Tue – Sat: By Appointment</span>
+        <span>•</span>
+        <span class="pp-utility-item" style="color: #fdba74;"><i data-lucide="award" style="width: 14px; height: 14px;"></i> Certified JKL Academy Since 1999</span>
+      </div>
+      <div class="pp-utility-right">
+        <!-- Interactive Audio Chime Toggle Button -->
+        <span id="soundToggleBtn" class="sound-toggle-chip" title="Toggle Gentle Spa Audio Chimes">🔔 Sound: ON</span>
+        <a href="tel:7016901572" class="pp-utility-phone"><i data-lucide="phone" style="width: 14px; height: 14px; display: inline;"></i> (701) 690-1572</a>
+        <a href="mailto:groomer@betwixtthepaws.com" style="color: inherit; text-decoration: none;">groomer@betwixtthepaws.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="outer-page-wrapper">
+    
+    <!-- HEADER / NAVIGATION BAR (Exact screenshot layout & terracotta styling) -->
+    <header class="pp-header" id="ppHeader">
+      <div class="container pp-nav-flex">
+        <!-- Logo -->
+        <a href="index.html" class="pp-logo">
+          <div class="pp-logo-icon">🐾</div>
+          <div style="display: flex; flex-direction: column;">
+            <span class="pp-logo-text">BETWIXT THE PAWS</span>
+            <span style="font-size: 0.72rem; font-weight: 700; color: var(--color-orange); letter-spacing: 1px; text-transform: uppercase;">Master Pet Grooming LLC</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="pp-nav-menu">
+          <a href="index.html" class="pp-nav-link">Home</a>
+          <a href="services.html" class="pp-nav-link">Services</a>
+          <a href="about.html" class="pp-nav-link">About Robin</a>
+          <a href="index.html#transformation" class="pp-nav-link">Before/After</a>
+          <a href="index.html#reviews" class="pp-nav-link">Testimonial</a>
+          <a href="gallery.html" class="pp-nav-link active">Gallery</a>
+          <a href="contact.html" class="pp-nav-link">Hours</a>
+        </nav>
+
+        <!-- Right Action Button & Mobile Toggle -->
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <a href="contact.html" class="btn-pp-pill">
+            Book an Appointment
+          </a>
+          <button class="pp-mobile-btn" id="ppMobileToggle" aria-label="Open Menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MOBILE DRAWER -->
+    <div class="pp-mobile-drawer" id="ppMobileDrawer">
+      <div class="pp-drawer-overlay" id="ppDrawerOverlay"></div>
+      <div class="pp-drawer-panel">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+            <div class="pp-logo">
+              <div class="pp-logo-icon">🐾</div>
+              <span class="pp-logo-text" style="font-size: 1.15rem;">Betwixt The Paws</span>
+            </div>
+            <button id="ppDrawerClose" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">✕</button>
+          </div>
+          <div class="pp-drawer-links">
+            <a href="index.html" class="pp-drawer-link">Home</a>
+            <a href="services.html" class="pp-drawer-link">Services & Pricing (13 Packages)</a>
+            <a href="about.html" class="pp-drawer-link">About Robin Fettig</a>
+            <a href="index.html#transformation" class="pp-drawer-link">Before & After Slider</a>
+            <a href="gallery.html" class="pp-drawer-link active">Furry Gallery</a>
+            <a href="forms.html" class="pp-drawer-link">Grooming Forms & Waivers</a>
+            <a href="contact.html" class="pp-drawer-link">Studio Hours & Location</a>
+            <a href="privacy.html" class="pp-drawer-link">Privacy & SMS Terms</a>
+          </div>
+        </div>
+        <div>
+          <a href="contact.html" class="btn-pp-pill" style="width: 100%; text-align: center; margin-bottom: 12px;">
+            Book an Appointment
+          </a>
+          <p style="font-size: 0.82rem; color: var(--color-slate-600); text-align: center;">1171 East Villard St, Dickinson, ND</p>
+        </div>
+      </div>
+    </div>
+
+  <main>
+    <!-- PAGE HERO BANNER -->
+    <div class="page-hero-banner">
+      <div class="container">
+        <div class="page-hero-badge"><i data-lucide="camera"></i> <span>DICKINSON CLIENT SPOTLIGHT</span></div>
+        <h1 class="page-hero-title">Furry Hall of Fame Photo Gallery</h1>
+        <p class="page-hero-subtitle">
+          Take a look at the happy dogs and cats pampered and hand-scissored by Robin Fettig. 
+          Click on any photo to zoom in and see treatment details!
+        </p>
+      </div>
+    </div>
+
+    <!-- GALLERY GRID -->
+    <section class="section-padded">
+      <div class="container">
+        
+        <div class="gallery-grid">
+          <!-- Pet 1: Dazy Smedly -->
+          <div class="gallery-card" data-name="Dazy Smedly" data-breed="Family Companion" data-service="Deluxe Bath & Fluff" data-image="assets/images/pet-dazy.jpg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/pet-dazy.jpg" alt="Dazy Smedly" class="gallery-img">
+              <div class="gallery-hover-overlay"><i data-lucide="maximize-2"></i></div>
+            </div>
+            <div class="gallery-card-meta">
+              <h4>Dazy Smedly</h4>
+              <span>Deluxe Hydro-Bath & Fluff</span>
+            </div>
+          </div>
+
+          <!-- Pet 2: Hattie Fettig -->
+          <div class="gallery-card" data-name="Hattie Fettig" data-breed="AKC Siberian Husky" data-service="Show Coat Undercoat Release" data-image="assets/images/pet-hattie.jpg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/pet-hattie.jpg" alt="Hattie Fettig" class="gallery-img">
+              <div class="gallery-hover-overlay"><i data-lucide="maximize-2"></i></div>
+            </div>
+            <div class="gallery-card-meta">
+              <h4>Hattie Fettig</h4>
+              <span>AKC Siberian Husky Show Coat</span>
+            </div>
+          </div>
+
+          <!-- Pet 3: Cooper Ulmer -->
+          <div class="gallery-card" data-name="Cooper Ulmer" data-breed="Sporting Companion" data-service="Hand-Scissored Haircut & Bath" data-image="assets/images/pet-cooper.jpg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/pet-cooper.jpg" alt="Cooper Ulmer" class="gallery-img">
+              <div class="gallery-hover-overlay"><i data-lucide="maximize-2"></i></div>
+            </div>
+            <div class="gallery-card-meta">
+              <h4>Cooper Ulmer</h4>
+              <span>Hand-Scissored Breed Haircut</span>
+            </div>
+          </div>
+
+          <!-- Pet 4: Ollie Muggli -->
+          <div class="gallery-card" data-name="Ollie Muggli" data-breed="Terrier Companion" data-service="Teddy Bear Face & Style" data-image="assets/images/pet-ollie.jpg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/pet-ollie.jpg" alt="Ollie Muggli" class="gallery-img">
+              <div class="gallery-hover-overlay"><i data-lucide="maximize-2"></i></div>
+            </div>
+            <div class="gallery-card-meta">
+              <h4>Ollie Muggli</h4>
+              <span>Teddy Bear Style & Paws</span>
+            </div>
+          </div>
+
+          <!-- Pet 5: Marco Villeme -->
+          <div class="gallery-card" data-name="Marco Villeme" data-breed="Feline Royalty" data-service="Gentle Feline Lion Cut" data-image="assets/images/pet-marco.jpg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/pet-marco.jpg" alt="Marco Villeme" class="gallery-img">
+              <div class="gallery-hover-overlay"><i data-lucide="maximize-2"></i></div>
+            </div>
+            <div class="gallery-card-meta">
+              <h4>Marco Villeme</h4>
+              <span>Gentle Feline Lion Cut</span>
+            </div>
+          </div>
+
+          <!-- Pet 6: Siberian Champion -->
+          <div class="gallery-card" data-name="Siberian Champion" data-breed="AKC Siberian Husky" data-service="Undercoat Blowout Special" data-image="assets/images/pet-husky.jpg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/pet-husky.jpg" alt="Siberian Husky" class="gallery-img">
+              <div class="gallery-hover-overlay"><i data-lucide="maximize-2"></i></div>
+            </div>
+            <div class="gallery-card-meta">
+              <h4>Siberian Champion</h4>
+              <span>Undercoat Blowout Special</span>
+            </div>
+          </div>
+
+          <!-- Pet 7: Bubble Bath Pup -->
+          <div class="gallery-card" data-name="Bubbles & Bliss" data-breed="Family Pet" data-service="Warm Hydro-Bath & Blueberry Facial" data-image="assets/images/spa-bubble-dog.jpg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/spa-bubble-dog.jpg" alt="Dog in Bubble Bath" class="gallery-img">
+              <div class="gallery-hover-overlay"><i data-lucide="maximize-2"></i></div>
+            </div>
+            <div class="gallery-card-meta">
+              <h4>Warm Hydro-Bath Soak</h4>
+              <span>Blueberry Facial & Conditioning</span>
+            </div>
+          </div>
+
+          <!-- Pet 8: Relaxed Cat -->
+          <div class="gallery-card" data-name="Serene Feline" data-breed="Persian Companion" data-service="Low-Stress Feline Bath & Brush" data-image="assets/images/cat-spa.jpg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/cat-spa.jpg" alt="Relaxed Cat" class="gallery-img">
+              <div class="gallery-hover-overlay"><i data-lucide="maximize-2"></i></div>
+            </div>
+            <div class="gallery-card-meta">
+              <h4>Feline Low-Stress Groom</h4>
+              <span>Sanitary Trim & Nail Manicure</span>
+            </div>
+          </div>
+
+          <!-- Pet 9: Finished Fluffy Cut -->
+          <div class="gallery-card" data-name="Show-Ready Groom" data-breed="Doodle / Poodle Mix" data-service="Full Scissor Cut & Styling" data-image="assets/images/dog-grooming-after.jpg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/dog-grooming-after.jpg" alt="Finished Grooming Cut" class="gallery-img">
+              <div class="gallery-hover-overlay"><i data-lucide="maximize-2"></i></div>
+            </div>
+            <div class="gallery-card-meta">
+              <h4>Full Body Styling Clip</h4>
+              <span>Hand-Scissored Paws & Face</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media Submission CTA -->
+        <div class="about-quote" style="margin-top: 50px; text-align: center;">
+          <h3 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--color-dark); margin-bottom: 8px;">Are You a Current Betwixt the Paws Client?</h3>
+          <p style="font-style: normal; margin-bottom: 16px;">We would love to feature your fur baby! Send your post-grooming photos to <a href="mailto:groomer@betwixtthepaws.com" style="color: var(--color-primary); font-weight: 700;">groomer@betwixtthepaws.com</a> or tag us on Facebook.</p>
+          <a href="https://www.facebook.com" target="_blank" class="btn-primary-action" style="display: inline-flex;">
+            <i data-lucide="facebook"></i>
+            <span>Visit Our Facebook Page</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="gallery-modal" id="galleryModal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn"><i data-lucide="x"></i></button>
+      <div class="modal-body-grid">
+        <div class="modal-img-wrap">
+          <img src="" alt="Pet modal zoom" id="modalImage" class="modal-zoom-img">
+        </div>
+        <div class="modal-text-wrap">
+          <span class="modal-tag">CLIENT SPOTLIGHT</span>
+          <h3 class="modal-pet-name" id="modalTitle">Pet Name</h3>
+          <p class="modal-pet-breed" id="modalBreed">Breed Description</p>
+          <div class="modal-service-box">
+            <span class="ms-lbl">Treatment Performed:</span>
+            <strong id="modalService">Deluxe Hydro & Haircut</strong>
+          </div>
+          <a href="index.html#waitlist" class="btn-primary-action" id="modalWaitlistBtn">
+            <span>Book Same Package</span> <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <div class="footer-brand-header">
+            <img src="assets/images/logo.png" alt="Betwixt The Paws" class="footer-logo">
+            <span class="footer-brand-title">Betwixt the Paws</span>
+          </div>
+          <p class="footer-about-text">
+            Dickinson North Dakota's dedicated pet grooming retreat. Certified master dog and cat care, providing stylish spa treatments, baths, haircuts, and nail trims.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://www.facebook.com" target="_blank" class="footer-soc-link"><i data-lucide="facebook"></i></a>
+            <a href="tel:7016901572" class="footer-soc-link"><i data-lucide="phone"></i></a>
+            <a href="mailto:groomer@betwixtthepaws.com" class="footer-soc-link"><i data-lucide="mail"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services & Pricing</a></li>
+            <li><a href="about.html">About Robin</a></li>
+            <li><a href="gallery.html">Furry Gallery</a></li>
+            <li><a href="forms.html">Grooming Forms</a></li>
+            <li><a href="contact.html">Hours & Location</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Spa Packages</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Basic & Deluxe Dog Baths</a></li>
+            <li><a href="services.html">Breed Haircuts & Hand Scissoring</a></li>
+            <li><a href="services.html">Husky De-Shedding Treatments</a></li>
+            <li><a href="services.html">Cat Haircuts & Feline Baths</a></li>
+            <li><a href="services.html">Diamond Rotary Nail Grinding</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact Studio</h4>
+          <p class="footer-contact-item"><i data-lucide="map-pin"></i> 1171 East Villard St, Dickinson, ND</p>
+          <p class="footer-contact-item"><i data-lucide="phone"></i> 701-690-1572</p>
+          <p class="footer-contact-item"><i data-lucide="mail"></i> groomer@betwixtthepaws.com</p>
+          <div class="jkl-footer-badge">
+            <i data-lucide="award"></i> Certified JKL Training Academy
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>© 2026 Betwixt the Paws Grooming LLC. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="privacy.html#sms">SMS Privacy</a>
+          <a href="forms.html">Forms & Waivers</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/pretty-pet.js"></script>
+</body>
+</html>

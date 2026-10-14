@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grooming Forms & 1st Appointment | Betwixt the Paws | Dickinson, ND</title>
+  <meta name="description" content="Download or submit online forms needed for your pet's first grooming appointment at Betwixt the Paws Grooming LLC in Dickinson, ND. Intake form, waiver of liability, and rabies requirements.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/pretty-pet.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+
+  <!-- TOP UTILITY BAR (Authentic Dickinson Studio Details) -->
+  <div class="pp-top-utility">
+    <div class="container pp-utility-flex">
+      <div class="pp-utility-left">
+        <span class="pp-utility-item"><i data-lucide="map-pin" style="width: 14px; height: 14px;"></i> 1171 East Villard St, Dickinson, ND 58601</span>
+        <span>•</span>
+        <span class="pp-utility-item"><i data-lucide="clock" style="width: 14px; height: 14px;"></i> Mon & Sun: Closed | Tue – Sat: By Appointment</span>
+        <span>•</span>
+        <span class="pp-utility-item" style="color: #fdba74;"><i data-lucide="award" style="width: 14px; height: 14px;"></i> Certified JKL Academy Since 1999</span>
+      </div>
+      <div class="pp-utility-right">
+        <!-- Interactive Audio Chime Toggle Button -->
+        <span id="soundToggleBtn" class="sound-toggle-chip" title="Toggle Gentle Spa Audio Chimes">🔔 Sound: ON</span>
+        <a href="tel:7016901572" class="pp-utility-phone"><i data-lucide="phone" style="width: 14px; height: 14px; display: inline;"></i> (701) 690-1572</a>
+        <a href="mailto:groomer@betwixtthepaws.com" style="color: inherit; text-decoration: none;">groomer@betwixtthepaws.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="outer-page-wrapper">
+    
+    <!-- HEADER / NAVIGATION BAR (Exact screenshot layout & terracotta styling) -->
+    <header class="pp-header" id="ppHeader">
+      <div class="container pp-nav-flex">
+        <!-- Logo -->
+        <a href="index.html" class="pp-logo">
+          <div class="pp-logo-icon">🐾</div>
+          <div style="display: flex; flex-direction: column;">
+            <span class="pp-logo-text">BETWIXT THE PAWS</span>
+            <span style="font-size: 0.72rem; font-weight: 700; color: var(--color-orange); letter-spacing: 1px; text-transform: uppercase;">Master Pet Grooming LLC</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="pp-nav-menu">
+          <a href="index.html" class="pp-nav-link">Home</a>
+          <a href="services.html" class="pp-nav-link">Services</a>
+          <a href="about.html" class="pp-nav-link">About Robin</a>
+          <a href="index.html#transformation" class="pp-nav-link">Before/After</a>
+          <a href="index.html#reviews" class="pp-nav-link">Testimonial</a>
+          <a href="gallery.html" class="pp-nav-link">Gallery</a>
+          <a href="contact.html" class="pp-nav-link">Hours</a>
+        </nav>
+
+        <!-- Right Action Button & Mobile Toggle -->
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <a href="contact.html" class="btn-pp-pill">
+            Book an Appointment
+          </a>
+          <button class="pp-mobile-btn" id="ppMobileToggle" aria-label="Open Menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MOBILE DRAWER -->
+    <div class="pp-mobile-drawer" id="ppMobileDrawer">
+      <div class="pp-drawer-overlay" id="ppDrawerOverlay"></div>
+      <div class="pp-drawer-panel">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+            <div class="pp-logo">
+              <div class="pp-logo-icon">🐾</div>
+              <span class="pp-logo-text" style="font-size: 1.15rem;">Betwixt The Paws</span>
+            </div>
+            <button id="ppDrawerClose" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">✕</button>
+          </div>
+          <div class="pp-drawer-links">
+            <a href="index.html" class="pp-drawer-link">Home</a>
+            <a href="services.html" class="pp-drawer-link">Services & Pricing (13 Packages)</a>
+            <a href="about.html" class="pp-drawer-link">About Robin Fettig</a>
+            <a href="index.html#transformation" class="pp-drawer-link">Before & After Slider</a>
+            <a href="gallery.html" class="pp-drawer-link">Furry Gallery</a>
+            <a href="forms.html" class="pp-drawer-link active">Grooming Forms & Waivers</a>
+            <a href="contact.html" class="pp-drawer-link">Studio Hours & Location</a>
+            <a href="privacy.html" class="pp-drawer-link">Privacy & SMS Terms</a>
+          </div>
+        </div>
+        <div>
+          <a href="contact.html" class="btn-pp-pill" style="width: 100%; text-align: center; margin-bottom: 12px;">
+            Book an Appointment
+          </a>
+          <p style="font-size: 0.82rem; color: var(--color-slate-600); text-align: center;">1171 East Villard St, Dickinson, ND</p>
+        </div>
+      </div>
+    </div>
+
+  <main>
+    <!-- PAGE HERO BANNER -->
+    <div class="page-hero-banner">
+      <div class="container">
+        <div class="page-hero-badge"><i data-lucide="file-check"></i> <span>CLIENT ONBOARDING</span></div>
+        <h1 class="page-hero-title">First Appointment Grooming Forms</h1>
+        <p class="page-hero-subtitle">
+          To simplify your pet's first visit, please review the requirements below. 
+          You can download the forms to print and bring in, or complete your details online in advance.
+        </p>
+      </div>
+    </div>
+
+    <!-- MAIN FORMS CONTENT -->
+    <section class="section-padded">
+      <div class="container">
+        
+        <!-- Mandatory Rabies Warning Banner -->
+        <div class="vaccination-alert-box">
+          <i data-lucide="shield-alert"></i>
+          <div>
+            <strong>Proof of Current Rabies Vaccination Strictly Required</strong>
+            <p>
+              Don't forget to bring proof of current rabies vaccination for your pet! 
+              By North Dakota health regulations and our salon safety protocol, all canine and feline guests must have verified, current rabies immunization prior to appointment intake.
+            </p>
+          </div>
+        </div>
+
+        <!-- Instructions Card -->
+        <div class="forms-hero-intro">
+          <h2 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--color-dark); margin-bottom: 12px;">How to Prepare for Your 1st Appointment:</h2>
+          <ol style="padding-left: 24px; display: flex; flex-direction: column; gap: 10px; font-size: 1rem; color: var(--color-body);">
+            <li><strong>Download or Fill Online:</strong> Download the Word documents below to print, fill out by hand, and bring to your appointment.</li>
+            <li><strong>Veterinary Immunization Records:</strong> Bring your official rabies certificate or have your veterinary clinic email records directly to <a href="mailto:groomer@betwixtthepaws.com" style="color: var(--color-primary); font-weight: 700;">groomer@betwixtthepaws.com</a> prior to arrival.</li>
+            <li><strong>Leash & Carrier Safety:</strong> For the safety of all animals, dogs must be on a secure leash and cats must arrive in a comfortable, secure carrier.</li>
+            <li><strong>Special Instructions:</strong> Notify Robin of any behavioral nervousness, joint stiffness, skin allergies, or medical sensitivities during intake.</li>
+          </ol>
+        </div>
+
+        <!-- 3 Official Document Cards (From Original Site) -->
+        <div class="forms-download-grid">
+          
+          <!-- Document 1: Intake Form -->
+          <div class="form-download-card">
+            <div>
+              <div class="form-card-icon"><i data-lucide="file-text"></i></div>
+              <h3 class="form-card-title">Pet Intake Form</h3>
+              <p class="form-card-desc">
+                Contains essential emergency contact information, pet medical history, veterinarian clinic details, feeding habits, and coat preferences.
+              </p>
+            </div>
+            <div>
+              <a href="https://www.betwixtthepaws.com/_files/ugd/dcf2ba_16074c02370b4250807a4e4578dafedf.docx?dn=intake%20form1.docx" target="_blank" class="btn-download-doc" style="width: 100%;">
+                <i data-lucide="download"></i> <span>Download Intake Form (.docx)</span>
+              </a>
+              <a href="#onlineFormModal" class="btn-online-form" style="width: 100%;">
+                <i data-lucide="edit-3"></i> <span>Fill Online Instead</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Document 2: Waiver of Liability -->
+          <div class="form-download-card">
+            <div>
+              <div class="form-card-icon" style="background: #fef3c7; color: #b45309;"><i data-lucide="file-check"></i></div>
+              <h3 class="form-card-title">Waiver of Liability</h3>
+              <p class="form-card-desc">
+                Standard professional grooming consent covering severe matting release, veterinary emergency protocols, and behavioral disclosures.
+              </p>
+            </div>
+            <div>
+              <a href="https://www.betwixtthepaws.com/_files/ugd/dcf2ba_e68005c06c0e4db8add208855a7ef994.docx?dn=waiver%20of%20liability2.docx" target="_blank" class="btn-download-doc" style="width: 100%; background: #b45309;">
+                <i data-lucide="download"></i> <span>Download Waiver (.docx)</span>
+              </a>
+              <a href="privacy.html" class="btn-online-form" style="width: 100%;">
+                <i data-lucide="shield"></i> <span>Review Terms Online</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Document 3: SMS/Email Opt-In Notice -->
+          <div class="form-download-card">
+            <div>
+              <div class="form-card-icon" style="background: #f0fdfa; color: #0d9488;"><i data-lucide="message-square"></i></div>
+              <h3 class="form-card-title">SMS & Email Opt-In</h3>
+              <p class="form-card-desc">
+                Authorizes Betwixt the Paws to send you appointment reminders, groom completion pickup notices, and cancellation openings via text message.
+              </p>
+            </div>
+            <div>
+              <a href="privacy.html" class="btn-download-doc" style="width: 100%; background: #0d9488;">
+                <i data-lucide="external-link"></i> <span>Read SMS Privacy Terms</span>
+              </a>
+              <a href="index.html#waitlist" class="btn-online-form" style="width: 100%;">
+                <i data-lucide="check"></i> <span>Opt-In via Waitlist</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- PROFESSIONAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <div class="footer-brand-header">
+            <img src="assets/images/logo.png" alt="Betwixt The Paws" class="footer-logo">
+            <span class="footer-brand-title">Betwixt the Paws</span>
+          </div>
+          <p class="footer-about-text">
+            Dickinson North Dakota's dedicated pet grooming retreat. Certified master dog and cat care, providing stylish spa treatments, baths, haircuts, and nail trims.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://www.facebook.com" target="_blank" class="footer-soc-link"><i data-lucide="facebook"></i></a>
+            <a href="tel:7016901572" class="footer-soc-link"><i data-lucide="phone"></i></a>
+            <a href="mailto:groomer@betwixtthepaws.com" class="footer-soc-link"><i data-lucide="mail"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services & Pricing</a></li>
+            <li><a href="about.html">About Robin</a></li>
+            <li><a href="gallery.html">Furry Gallery</a></li>
+            <li><a href="forms.html">Grooming Forms</a></li>
+            <li><a href="contact.html">Hours & Location</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Spa Packages</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Basic & Deluxe Dog Baths</a></li>
+            <li><a href="services.html">Breed Haircuts & Hand Scissoring</a></li>
+            <li><a href="services.html">Husky De-Shedding Treatments</a></li>
+            <li><a href="services.html">Cat Haircuts & Feline Baths</a></li>
+            <li><a href="services.html">Diamond Rotary Nail Grinding</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact Studio</h4>
+          <p class="footer-contact-item"><i data-lucide="map-pin"></i> 1171 East Villard St, Dickinson, ND</p>
+          <p class="footer-contact-item"><i data-lucide="phone"></i> 701-690-1572</p>
+          <p class="footer-contact-item"><i data-lucide="mail"></i> groomer@betwixtthepaws.com</p>
+          <div class="jkl-footer-badge">
+            <i data-lucide="award"></i> Certified JKL Training Academy
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>© 2026 Betwixt the Paws Grooming LLC. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="privacy.html#sms">SMS Privacy</a>
+          <a href="forms.html">Forms & Waivers</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/pretty-pet.js"></script>
+</body>
+</html>

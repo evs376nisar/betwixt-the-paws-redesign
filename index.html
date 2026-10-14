@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="web_standard" name="shell-type">
+  <title>Betwixt the Paws Grooming LLC | Luxury Pet Spa &amp; Grooming</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/logo-exact.png">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#fbf8f5",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f5eee6",
+            "surface-container": "#ece2d4",
+            "surface-container-high": "#dfd2c0",
+            "surface-container-highest": "#d2c1ab",
+            "primary": "#b85d19",
+            "primary-container": "#9a4a10",
+            "primary-fixed": "#fef3c7",
+            "secondary": "#78350f",
+            "secondary-container": "#fde68a",
+            "secondary-fixed": "#fffbeb",
+            "tertiary": "#2d5a43",
+            "tertiary-container": "#a7f3d0",
+            "tertiary-fixed": "#ecfdf5",
+            "warm-rose": "#b95d6c",
+            "warm-rose-light": "#fdf2f4",
+            "botanical-sage": "#3a7054",
+            "botanical-sage-light": "#edf6f1",
+            "warm-amber": "#d97706",
+            "on-surface": "#292524",
+            "on-surface-variant": "#57534e",
+            "on-primary": "#ffffff",
+            "on-secondary-container": "#451a03"
+          },
+          borderRadius: {
+            "3xl": "1.75rem",
+            "4xl": "2.25rem",
+            "full": "9999px"
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    @keyframes float-bubble {
+      0% { transform: translateY(0px) rotate(0deg) scale(1); }
+      50% { transform: translateY(-22px) rotate(8deg) scale(1.05); }
+      100% { transform: translateY(0px) rotate(0deg) scale(1); }
+    }
+    @keyframes wiggle-paw {
+      0%, 100% { transform: rotate(0deg); }
+      20% { transform: rotate(-14deg); }
+      40% { transform: rotate(12deg); }
+      60% { transform: rotate(-8deg); }
+      80% { transform: rotate(8deg); }
+    }
+    @keyframes bounce-soft {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.15); opacity: 0.4; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+    .animate-float-slow {
+      animation: float-bubble 6s ease-in-out infinite;
+    }
+    .animate-float-delay {
+      animation: float-bubble 7.5s ease-in-out 1.8s infinite;
+    }
+    .animate-wiggle {
+      animation: wiggle-paw 3s ease-in-out infinite;
+    }
+    .animate-bounce-soft {
+      animation: bounce-soft 2.6s ease-in-out infinite;
+    }
+    .badge-pop {
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .badge-pop:hover {
+      transform: translateY(-6px) scale(1.04) rotate(1deg);
+    }
+    /* Warm Organic Watermark (No Neon) */
+    .paw-pattern-bg {
+      background-image: radial-gradient(rgba(184, 93, 25, 0.04) 15%, transparent 16%), radial-gradient(rgba(185, 93, 108, 0.03) 15%, transparent 16%);
+      background-size: 60px 60px;
+      background-position: 0 0, 30px 30px;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-sans antialiased selection:bg-primary-fixed selection:text-primary relative overflow-x-hidden paw-pattern-bg">
+
+<!-- ==================== WARM ORGANIC AMBIENT GLOWS (NO NEON, NO BLUE) ==================== -->
+<div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+  <div class="absolute top-20 left-6 w-32 h-32 rounded-full bg-warm-rose-light/70 blur-xl animate-float-slow"></div>
+  <div class="absolute top-96 right-10 w-48 h-48 rounded-full bg-secondary-fixed/80 blur-2xl animate-float-delay"></div>
+  <div class="absolute top-1/2 left-1/4 w-40 h-40 rounded-full bg-botanical-sage-light/80 blur-xl animate-float-slow"></div>
+  <div class="absolute bottom-40 right-1/4 w-52 h-52 rounded-full bg-tertiary-fixed/70 blur-2xl animate-float-delay"></div>
+</div>
+
+<!-- ==================== HEADER & TOP ANNOUNCEMENT ==================== -->
+<header class="fixed top-0 left-0 w-full z-50">
+  <!-- Warm Boutique Waitlist Top Banner -->
+  <aside class="w-full bg-surface-container-low border-b border-surface-container text-on-surface px-4 py-2 text-center relative overflow-hidden">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm font-medium">
+      <span class="bg-amber-100 text-primary px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider">Notice</span>
+      <span class="text-on-surface-variant font-medium">Currently, we are not taking new clients. Join our waitlist below!</span>
+      <a class="inline-flex items-center gap-1 bg-white text-primary border border-primary-fixed px-3 py-1 rounded-full text-xs font-semibold shadow-sm hover:bg-surface-container transition-colors" href="#waitlist-section">
+        <span>Join Priority Waitlist</span>
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Bar -->
+  <div class="bg-white/95 backdrop-blur-2xl border-b border-surface-container shadow-sm transition-all">
+    <div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between">
+      
+      <!-- EXACT OFFICIAL LOGO -->
+      <a class="flex items-center gap-3 group py-1" href="index.html" title="Betwixt The Paws Master Pet Grooming LLC">
+        <img src="assets/images/logo-exact.png" alt="Betwixt The Paws Grooming LLC" class="h-11 sm:h-12 w-auto object-contain hover:scale-105 transition-transform">
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-1.5 bg-surface-container-low px-3 py-1.5 rounded-full border border-surface-container shadow-inner">
+        <a class="px-4 py-1.5 rounded-full font-semibold text-xs sm:text-sm bg-primary-fixed text-primary shadow-sm flex items-center gap-1.5" href="index.html">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          <span>Home</span>
+        </a>
+        <a class="px-4 py-1.5 rounded-full font-semibold text-xs sm:text-sm text-on-surface-variant hover:text-primary hover:bg-white transition-all flex items-center gap-1.5" href="#services-section">
+          <svg class="w-4 h-4 text-on-surface-variant" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8M12 8v8"></path></svg>
+          <span>Services &amp; Pricing</span>
+        </a>
+        <a class="px-4 py-1.5 rounded-full font-semibold text-xs sm:text-sm text-on-surface-variant hover:text-primary hover:bg-white transition-all flex items-center gap-1.5" href="#waitlist-section">
+          <svg class="w-4 h-4 text-on-surface-variant" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+          <span>Waitlist</span>
+        </a>
+        <a class="px-4 py-1.5 rounded-full font-semibold text-xs sm:text-sm text-on-surface-variant hover:text-primary hover:bg-white transition-all flex items-center gap-1.5" href="#gallery-section">
+          <svg class="w-4 h-4 text-on-surface-variant" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><rect height="18" rx="2" ry="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+          <span>Gallery</span>
+        </a>
+        <a class="px-4 py-1.5 rounded-full font-semibold text-xs sm:text-sm text-on-surface-variant hover:text-primary hover:bg-white transition-all flex items-center gap-1.5" href="#contact-section">
+          <svg class="w-4 h-4 text-on-surface-variant" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>Contact</span>
+        </a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-low text-on-surface font-semibold text-xs hover:bg-surface-container transition-all border border-surface-container" href="tel:7016901572">
+          <svg class="w-3.5 h-3.5 text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>701-690-1572</span>
+        </a>
+        <a class="relative inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary hover:bg-primary-container text-white font-bold text-xs sm:text-sm shadow-md transition-all hover:scale-105" href="#waitlist-section">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path></svg>
+          <span>Join Waitlist</span>
+        </a>
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" aria-label="Toggle Mobile Menu" class="lg:hidden p-2 rounded-xl bg-surface-container text-primary hover:bg-surface-container-high transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Responsive Mobile Nav Dropdown -->
+    <div id="mobileMenuDropdown" class="hidden lg:hidden border-t border-surface-container-high bg-white px-6 py-4 space-y-2 shadow-lg">
+      <div class="pb-3 border-b border-surface-container">
+        <img src="assets/images/logo-exact.png" alt="Betwixt The Paws" class="h-10 w-auto object-contain">
+      </div>
+      <a class="block py-2 px-3 rounded-xl font-bold text-sm text-primary bg-primary-fixed" href="index.html">Home</a>
+      <a class="block py-2 px-3 rounded-xl font-bold text-sm text-on-surface-variant hover:bg-surface-container" href="#services-section" onclick="document.getElementById('mobileMenuDropdown').classList.add('hidden')">Services &amp; Pricing</a>
+      <a class="block py-2 px-3 rounded-xl font-bold text-sm text-on-surface-variant hover:bg-surface-container" href="#waitlist-section" onclick="document.getElementById('mobileMenuDropdown').classList.add('hidden')">Priority Waitlist</a>
+      <a class="block py-2 px-3 rounded-xl font-bold text-sm text-on-surface-variant hover:bg-surface-container" href="#gallery-section" onclick="document.getElementById('mobileMenuDropdown').classList.add('hidden')">Photo Gallery</a>
+      <a class="block py-2 px-3 rounded-xl font-bold text-sm text-on-surface-variant hover:bg-surface-container" href="#contact-section" onclick="document.getElementById('mobileMenuDropdown').classList.add('hidden')">Contact &amp; Hours</a>
+      <div class="pt-2 border-t border-surface-container flex items-center justify-between">
+        <a href="tel:7016901572" class="text-xs font-bold text-primary">📞 (701) 690-1572</a>
+        <span class="text-xs text-on-surface-variant">Dickinson, ND</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="w-full pt-32 lg:pt-36 min-h-screen">
+
+  <!-- ==================== WARM BOUTIQUE HERO ==================== -->
+  <section class="relative w-full pt-4 pb-16 lg:pb-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative">
+      
+      <!-- Top Pill Badge -->
+      <div class="flex justify-center mb-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-low border border-primary-fixed text-primary shadow-sm">
+          <svg class="w-3.5 h-3.5 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"></path></svg>
+          <span class="font-bold text-xs uppercase tracking-wider">Dickinson's Premier Pet Spa &amp; Boutique</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <!-- Left Hero Content (7 Cols) -->
+        <div class="lg:col-span-7 flex flex-col space-y-6 text-center lg:text-left">
+          <div class="space-y-3">
+            <div class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-primary bg-primary-fixed/80 px-3.5 py-1 rounded-full w-max mx-auto lg:mx-0">
+              <svg class="w-3.5 h-3.5 text-primary fill-current" viewBox="0 0 24 24"><path d="M12 2l2.4 7.2L21.6 12l-7.2 2.4L12 21.6l-2.4-7.2L2.4 12l7.2-2.4L12 2z"></path></svg>
+              <span>Joyful Loving Pet Care</span>
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-on-surface tracking-tight leading-[1.15]">
+              The Quality Care <br class="hidden sm:inline">
+              <span class="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary via-warm-amber to-secondary">
+                Your Pet Deserves
+                <!-- Doodle underline accent -->
+                <svg class="absolute -bottom-2 left-0 w-full text-secondary-container" fill="none" height="12" viewBox="0 0 200 12" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9C50 3 150 3 197 9" stroke="currentColor" stroke-linecap="round" stroke-width="5"></path>
+                </svg>
+              </span>
+            </h1>
+          </div>
+          <p class="text-base sm:text-lg text-on-surface-variant font-medium max-w-xl mx-auto lg:mx-0 leading-relaxed bg-surface-container-lowest/80 backdrop-blur-md p-4 rounded-3xl border border-surface-container-high/60 shadow-sm">
+            <span class="font-extrabold text-primary">"Need a responsible and caring person to pamper your pets? You’re in the right place!</span> I’ve always been an animal owner and love all animals, big and small. Put my experience to the test and let me pamper your precious pet with a stylish spa treatment."
+          </p>
+          
+          <!-- Hero Action Buttons -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+            <a class="px-8 py-4 rounded-full bg-gradient-to-r from-primary via-primary-container to-secondary text-white font-extrabold text-base shadow-xl shadow-primary/20 hover:scale-105 hover:shadow-2xl transition-all flex items-center gap-3" href="#waitlist-section">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 8.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm-4.7 1a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4zm9.4 0a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4zm-9.3 4.2c-.3.8-.9 1.5-1.7 1.8-1 .4-2.1 0-2.5-.9-.5-1-.1-2.2.9-2.7.9-.4 2-.1 2.5.8.3.3.6.7.8 1zm13.6 0c.2-.3.5-.7.8-1 .5-.9 1.6-1.2 2.5-.8 1 .5 1.4 1.7.9 2.7-.4.9-1.5 1.3-2.5.9-.8-.3-1.4-1-1.7-1.8zm-9-1.7c.8-.7 2-1 3-1s2.2.3 3 1c1.5 1.3 2 3.1 1.4 4.8-.7 1.9-2.5 3.2-4.4 3.2s-3.7-1.3-4.4-3.2c-.6-1.7-.1-3.5 1.4-4.8z"></path></svg>
+              <span>Join Our Waitlist</span>
+              <span class="material-symbols-outlined text-lg">arrow_downward</span>
+            </a>
+            <a class="px-7 py-4 rounded-full bg-surface-container-lowest text-primary font-extrabold text-base border-2 border-surface-container-high shadow-md hover:bg-surface-container-low hover:scale-105 transition-all flex items-center gap-2" href="#services-section">
+              <svg class="w-5 h-5 text-primary fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1z"></path><path d="M6 12V5a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v2"></path><circle cx="17" cy="8" r="1.5"></circle><circle cx="14" cy="6" r="1"></circle></svg>
+              <span>Explore Spa Menu</span>
+            </a>
+          </div>
+
+          <!-- Feature Micro-Badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4">
+            <div class="bg-surface-container-lowest p-3 rounded-2xl border border-primary-fixed shadow-sm flex items-center gap-2.5 badge-pop">
+              <div class="w-9 h-9 rounded-xl bg-primary-fixed text-primary flex items-center justify-center">
+                <svg class="w-5 h-5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1z"></path><path d="M6 12V6a2 2 0 0 1 2-2h1"></path><circle cx="17" cy="7" r="1.5"></circle></svg>
+              </div>
+              <div class="text-left leading-tight">
+                <div class="text-xs font-black text-on-surface">Bubble Baths</div>
+                <div class="text-[11px] text-on-surface-variant">Gentle botanicals</div>
+              </div>
+            </div>
+            <div class="bg-surface-container-lowest p-3 rounded-2xl border border-secondary-fixed shadow-sm flex items-center gap-2.5 badge-pop">
+              <div class="w-9 h-9 rounded-xl bg-secondary-fixed text-secondary flex items-center justify-center">
+                <svg class="w-5 h-5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line></svg>
+              </div>
+              <div class="text-left leading-tight">
+                <div class="text-xs font-black text-on-surface">Cute Haircuts</div>
+                <div class="text-[11px] text-on-surface-variant">Dogs &amp; cats</div>
+              </div>
+            </div>
+            <div class="bg-surface-container-lowest p-3 rounded-2xl border border-tertiary-fixed shadow-sm flex items-center gap-2.5 badge-pop">
+              <div class="w-9 h-9 rounded-xl bg-tertiary-fixed text-tertiary flex items-center justify-center">
+                <svg class="w-5 h-5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </div>
+              <div class="text-left leading-tight">
+                <div class="text-xs font-black text-on-surface">1-on-1 Love</div>
+                <div class="text-[11px] text-on-surface-variant">Stress-free care</div>
+              </div>
+            </div>
+            <div class="bg-surface-container-lowest p-3 rounded-2xl border border-warm-rose-light shadow-sm flex items-center gap-2.5 badge-pop">
+              <div class="w-9 h-9 rounded-xl bg-warm-rose-light text-warm-rose flex items-center justify-center">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l2.4 7.2L21.6 12l-7.2 2.4L12 21.6l-2.4-7.2L2.4 12l7.2-2.4L12 2z"></path></svg>
+              </div>
+              <div class="text-left leading-tight">
+                <div class="text-xs font-black text-on-surface">Fresh Claws</div>
+                <div class="text-[11px] text-on-surface-variant">Smooth trims</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Canvas (5 Cols) -->
+        <div class="lg:col-span-5 relative flex justify-center items-center">
+          <!-- Warm subtle backdrop glow -->
+          <div class="absolute w-72 h-72 sm:w-88 sm:h-88 rounded-full bg-gradient-to-tr from-primary-fixed/60 to-secondary-fixed/70 blur-2xl -z-10 animate-float-slow"></div>
+
+          <!-- Main Hero Card with Dog Image -->
+          <div class="relative w-full max-w-md bg-white p-4 rounded-4xl shadow-2xl border-4 border-surface-container rotate-1 hover:rotate-0 transition-transform duration-500">
+            <!-- Floating Sticker: Top Left "Baths • Haircuts • Cuddles" -->
+            <div class="absolute -top-5 -left-4 z-20 bg-warm-amber text-white px-4 py-2 rounded-2xl font-black text-xs shadow-lg transform -rotate-6 animate-bounce-soft flex items-center gap-1.5 border-2 border-white">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><circle cx="7" cy="8.5" r="2"></circle><circle cx="17" cy="8.5" r="2"></circle><circle cx="12" cy="6" r="2"></circle><path d="M12 11c-2.8 0-5 2.2-5 5 0 1.5 1.5 2.5 5 2.5s5-1 5-2.5c0-2.8-2.2-5-5-5z"></path></svg>
+              <span>Baths • Haircuts • Cuddles</span>
+            </div>
+            <!-- Floating Sticker: Top Right 5-Star Rating -->
+            <div class="absolute -top-4 -right-4 z-20 bg-white px-3.5 py-1.5 rounded-full shadow-lg border-2 border-secondary-fixed flex items-center gap-1.5 animate-float-delay">
+              <span class="text-amber-500 text-sm">⭐⭐⭐⭐⭐</span>
+              <span class="text-xs font-black text-primary">5.0 Star</span>
+            </div>
+            <!-- Main Hero Image Frame -->
+            <div class="relative w-full aspect-[4/3] rounded-3xl overflow-hidden bg-surface-container group">
+              <img alt="Happy playful dog smiling after spa treatment at Betwixt the Paws" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFO5_845z7BEKgRkZS7aJDH3y1hLc9xxmQmCG3TSrr-xHaAmq5PU9lQm32ngXsHM4ZvNBrZfSWE42ncqDE6YjLNtPd3G9Ta9lX-LNFFJzNWDAu6IF-sZAY722DFfO44KgTSEdICcRIx3mkcX4-rYxFjA7_heTDm36rckNPIfvp0wHrnQaTWIHEV_cDsInxZysWmLKuJ_ubbxLfPQuQw7SMhN1lJIf7NMiQrYTdA0ea8t2gouo21oVp"
+                   onerror="this.onerror=null; this.src='assets/images/hero-dog-purple.jpg';">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs font-extrabold">
+                <span class="bg-black/50 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-warm-rose fill-current" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+                  <span>Loving Hands</span>
+                </span>
+                <span class="bg-primary/90 backdrop-blur-md px-3 py-1 rounded-full">
+                  Dickinson, ND
+                </span>
+              </div>
+            </div>
+            <!-- Bottom interactive teaser pill -->
+            <div class="mt-3.5 p-3 rounded-2xl bg-surface-container-low flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-emerald-600 animate-ping"></span>
+                <span class="text-xs font-black text-on-surface">Gentle Cage-Free Sanctuary</span>
+              </div>
+              <span class="text-xs font-extrabold text-primary bg-white px-2.5 py-1 rounded-full shadow-sm">100% Cozy</span>
+            </div>
+            <!-- Floating Sticker: Bottom Left "500+ Happy Wags" -->
+            <div class="absolute -bottom-5 -left-4 z-20 bg-gradient-to-r from-primary to-secondary text-white p-3 rounded-2xl shadow-xl flex items-center gap-2.5 animate-float-slow border-2 border-white">
+              <div class="w-9 h-9 rounded-xl bg-white/20 flex items-center justify-center font-black text-lg">
+                <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24"><circle cx="7" cy="8.5" r="2"></circle><circle cx="17" cy="8.5" r="2"></circle><circle cx="12" cy="6" r="2"></circle><path d="M12 11c-2.8 0-5 2.2-5 5 0 1.5 1.5 2.5 5 2.5s5-1 5-2.5c0-2.8-2.2-5-5-5z"></path></svg>
+              </div>
+              <div class="text-left">
+                <div class="text-xs font-black leading-none">500+ Happy Tails</div>
+                <div class="text-[10px] opacity-90">Pampered in Dickinson</div>
+              </div>
+            </div>
+            <!-- Floating Sticker: Bottom Right Tail Wagging Emoji -->
+            <div class="absolute -bottom-4 -right-4 z-20 bg-tertiary-fixed text-tertiary px-3.5 py-2 rounded-2xl shadow-lg border-2 border-white font-extrabold text-xs flex items-center gap-1.5 animate-wiggle">
+              <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 5c-4 0-7 3-7 7 0 4 3 7 7 7s7-3 7-7c0-4-3-7-7-7z"></path><path d="M7 7L5 3l4 2"></path><path d="M17 7l2-4-4 2"></path><circle cx="9.5" cy="12" r="1" fill="currentColor"></circle><circle cx="14.5" cy="12" r="1" fill="currentColor"></circle><path d="M12 14v1.5"></path></svg>
+              <span>Cat Friendly!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WARM BOUTIQUE WAITLIST STATUS BANNER ==================== -->
+  <section class="w-full py-8 bg-surface-container-low/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div class="relative bg-gradient-to-r from-primary via-primary-container to-secondary rounded-4xl p-8 lg:p-10 shadow-xl text-white overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-6">
+        <!-- Decorative Floating Sparkles -->
+        <div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-white/10 blur-xl pointer-events-none"></div>
+
+        <div class="space-y-3 max-w-2xl text-center lg:text-left relative z-10">
+          <div class="inline-flex items-center gap-2 bg-secondary-container text-on-secondary-container px-3.5 py-1 rounded-full font-black text-xs uppercase tracking-wider shadow-sm">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path></svg>
+            <span>Important Booking Notice</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight">
+            Currently, we are not taking new clients.
+          </h2>
+          <p class="text-sm sm:text-base text-primary-fixed font-medium leading-relaxed">
+            To be added to our priority waitlist and get first notice when appointment slots open up, simply fill out the form below!
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center gap-3 w-full lg:w-auto relative z-10">
+          <a class="w-full sm:w-auto text-center px-7 py-3.5 rounded-full bg-secondary-container text-on-secondary-container font-black text-sm shadow-lg hover:scale-105 hover:bg-white transition-all flex items-center justify-center gap-2" href="#waitlist-section">
+            <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+            <span>Fill Waitlist Form</span>
+          </a>
+          <a class="w-full sm:w-auto text-center px-6 py-3.5 rounded-full bg-white/20 backdrop-blur-md text-white font-extrabold text-sm hover:bg-white/30 transition-all flex items-center justify-center gap-2" href="tel:7016901572">
+            <span class="material-symbols-outlined text-base">call</span>
+            <span>701-690-1572</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WARM CARE PILLARS ==================== -->
+  <section class="w-full py-16 lg:py-20 bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+        <div class="inline-flex items-center gap-1.5 px-4 py-1 rounded-full bg-warm-rose-light text-warm-rose font-extrabold text-xs tracking-wider uppercase">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2l2.4 7.2L21.6 12l-7.2 2.4L12 21.6l-2.4-7.2L2.4 12l7.2-2.4L12 2z"></path></svg>
+          <span>Pure Love &amp; Gentle Care</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-on-surface tracking-tight">
+          Why Pets &amp; Parents Love Our Spa Sanctuary
+        </h2>
+        <p class="text-base text-on-surface-variant font-medium">
+          Every bath, scissor cut, and paw cuddle is handled with infinite patience and warmth.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Pillar 1 -->
+        <div class="bg-surface-container-lowest rounded-3xl p-7 border-2 border-primary-fixed shadow-sm badge-pop flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute -top-10 -right-10 w-28 h-28 rounded-full bg-primary-fixed/40 group-hover:scale-150 transition-transform duration-500"></div>
+          <div class="relative space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-primary-fixed text-primary flex items-center justify-center shadow-sm">
+              <svg class="w-7 h-7 fill-none stroke-current" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1z"></path><path d="M6 12V5a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v2"></path><circle cx="17" cy="8" r="1.5"></circle><circle cx="14" cy="6" r="1"></circle></svg>
+            </div>
+            <h3 class="text-xl font-black text-on-surface">Calm Hydro-Baths</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Warm water massage with organic, hypoallergenic shampoos that soothe itching skin and leave fur silky soft.</p>
+          </div>
+          <div class="pt-6 relative font-black text-xs text-primary flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+            <span>Gentle Suds &amp; Dry</span>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="bg-surface-container-lowest rounded-3xl p-7 border-2 border-secondary-fixed shadow-sm badge-pop flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute -top-10 -right-10 w-28 h-28 rounded-full bg-secondary-fixed/50 group-hover:scale-150 transition-transform duration-500"></div>
+          <div class="relative space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-secondary-fixed text-secondary flex items-center justify-center shadow-sm">
+              <svg class="w-7 h-7 fill-none stroke-current" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line></svg>
+            </div>
+            <h3 class="text-xl font-black text-on-surface">Custom Styling</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">From full breed trims to cute teddy bear cuts and summer sanitary shaves tailored to your pet's lifestyle.</p>
+          </div>
+          <div class="pt-6 relative font-black text-xs text-secondary flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+            <span>Scissor Finishes</span>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="bg-surface-container-lowest rounded-3xl p-7 border-2 border-tertiary-fixed shadow-sm badge-pop flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute -top-10 -right-10 w-28 h-28 rounded-full bg-tertiary-fixed/40 group-hover:scale-150 transition-transform duration-500"></div>
+          <div class="relative space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-tertiary-fixed text-tertiary flex items-center justify-center shadow-sm">
+              <svg class="w-7 h-7 fill-none stroke-current" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 5c-4 0-7 3-7 7 0 4 3 7 7 7s7-3 7-7c0-4-3-7-7-7z"></path><path d="M7 7L5 3l4 2"></path><path d="M17 7l2-4-4 2"></path><circle cx="9.5" cy="12" r="1" fill="currentColor"></circle><circle cx="14.5" cy="12" r="1" fill="currentColor"></circle><path d="M12 14v1.5"></path></svg>
+            </div>
+            <h3 class="text-xl font-black text-on-surface">Cat Whispering</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Quiet, low-vibration clippers and serene feline sessions for lion cuts, dematting, or relaxing comb-outs.</p>
+          </div>
+          <div class="pt-6 relative font-black text-xs text-tertiary flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+            <span>Purr-fect Comfort</span>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="bg-surface-container-lowest rounded-3xl p-7 border-2 border-warm-rose-light shadow-sm badge-pop flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute -top-10 -right-10 w-28 h-28 rounded-full bg-warm-rose-light group-hover:scale-150 transition-transform duration-500"></div>
+          <div class="relative space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-warm-rose-light text-warm-rose flex items-center justify-center shadow-sm">
+              <svg class="w-7 h-7 fill-none stroke-current" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path><circle cx="12" cy="10" r="2" fill="currentColor"></circle></svg>
+            </div>
+            <h3 class="text-xl font-black text-on-surface">Loving Experience</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Lifelong animal owner dedicated to giving your companion a fun, trusting, and relaxed spa visit every single time.</p>
+          </div>
+          <div class="pt-6 relative font-black text-xs text-warm-rose flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+            <span>Zero-Stress Guarantee</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES & PRICING (FILTERABLE BOUNCY MENU) ==================== -->
+  <section class="w-full py-16 lg:py-20 bg-surface-container-low relative" id="services-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+        <div class="space-y-2">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary-fixed text-primary font-black text-xs uppercase tracking-wider">
+            <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1z"></path><path d="M6 12V6a2 2 0 0 1 2-2h1"></path><circle cx="17" cy="7" r="1.5"></circle></svg>
+            <span>Service Information</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-on-surface tracking-tight">
+            Spa Packages &amp; À La Carte Rates
+          </h2>
+          <p class="text-base text-on-surface-variant font-medium max-w-xl">
+            Complete pampering for canine pals and feline royalty alike. Choose a menu below:
+          </p>
+        </div>
+
+        <!-- Interactive Filter Buttons -->
+        <div class="flex flex-wrap items-center gap-2 bg-surface-container-lowest p-2 rounded-full border border-surface-container shadow-sm" id="service-filter-bar">
+          <button class="filter-btn px-5 py-2.5 rounded-full font-black text-xs md:text-sm bg-gradient-to-r from-primary to-primary-container text-white shadow-md transition-all scale-105 inline-flex items-center gap-1.5" data-filter="all" type="button">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><circle cx="7" cy="8.5" r="2"></circle><circle cx="17" cy="8.5" r="2"></circle><circle cx="12" cy="6" r="2"></circle><path d="M12 11c-2.8 0-5 2.2-5 5 0 1.5 1.5 2.5 5 2.5s5-1 5-2.5c0-2.8-2.2-5-5-5z"></path></svg>
+            <span>All Services</span>
+          </button>
+          <button class="filter-btn px-5 py-2.5 rounded-full font-bold text-xs md:text-sm text-on-surface-variant hover:text-primary transition-all inline-flex items-center gap-1.5" data-filter="dog" type="button">
+            <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.5 1 1.661-.675 4-3.937 4-5.828z"></path><path d="M14 5.172C14 3.782 15.577 2.679 17.5 3c2.823.47-4.113 6.006 4 7-.08.703-1.725 1.722-3.5 1-1.661-.675-4-3.937-4-5.828z"></path><path d="M7 14c0 3 2.5 5 5 5s5-2 5-5-2-4-5-4-5 1-5 4z"></path></svg>
+            <span>Dog Packages</span>
+          </button>
+          <button class="filter-btn px-5 py-2.5 rounded-full font-bold text-xs md:text-sm text-on-surface-variant hover:text-primary transition-all inline-flex items-center gap-1.5" data-filter="cat" type="button">
+            <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 5c-4 0-7 3-7 7 0 4 3 7 7 7s7-3 7-7c0-4-3-7-7-7z"></path><path d="M7 7L5 3l4 2"></path><path d="M17 7l2-4-4 2"></path><circle cx="9.5" cy="12" r="1" fill="currentColor"></circle><circle cx="14.5" cy="12" r="1" fill="currentColor"></circle></svg>
+            <span>Cat Packages</span>
+          </button>
+          <button class="filter-btn px-5 py-2.5 rounded-full font-bold text-xs md:text-sm text-on-surface-variant hover:text-primary transition-all inline-flex items-center gap-1.5" data-filter="alacarte" type="button">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l2.4 7.2L21.6 12l-7.2 2.4L12 21.6l-2.4-7.2L2.4 12l7.2-2.4L12 2z"></path></svg>
+            <span>À La Carte</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 13 Service Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="services-grid">
+
+        <!-- 1. Dog Bath/Brush Package - Basic -->
+        <div class="service-card bg-surface-container-lowest rounded-3xl p-7 border-2 border-surface-container hover:border-primary shadow-sm hover:shadow-xl transition-all duration-300 badge-pop flex flex-col justify-between" data-category="dog">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-black text-xs">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><circle cx="7" cy="8.5" r="2"></circle><circle cx="17" cy="8.5" r="2"></circle><circle cx="12" cy="6" r="2"></circle><path d="M12 11c-2.8 0-5 2.2-5 5 0 1.5 1.5 2.5 5 2.5s5-1 5-2.5c0-2.8-2.2-5-5-5z"></path></svg>
+                <span>Canine Basic</span>
+              </span>
+              <span class="flex items-center gap-1 text-on-surface-variant font-bold text-xs bg-surface-container px-2.5 py-1 rounded-full">
+                <span class="material-symbols-outlined text-sm">schedule</span> 1 hr
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-on-surface">Dog Bath/Brush Grooming Package-Basic</h3>
+              <p class="text-sm text-on-surface-variant mt-2">Relaxing warm bath, coat conditioning, gentle blow dry, and brush out to leave fur fresh and radiant.</p>
+            </div>
+            <ul class="space-y-1.5 text-xs font-semibold text-on-surface-variant">
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Gentle botanical bath</li>
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Warm air blow dry &amp; brush</li>
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Ear wipe &amp; fresh scent</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-surface-container-high flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant block">Rate</span>
+              <span class="text-lg font-black text-primary">Varies by breed</span>
+            </div>
+            <a class="px-5 py-2.5 rounded-full bg-primary text-white font-black text-xs hover:bg-primary-container hover:scale-105 transition-all shadow-md" href="#waitlist-section">Request to Book</a>
+          </div>
+        </div>
+
+        <!-- 2. Dog Bath/Brush Grooming Package-Deluxe -->
+        <div class="service-card relative bg-surface-container-lowest rounded-3xl p-7 border-2 border-secondary-container hover:border-secondary shadow-md hover:shadow-xl transition-all duration-300 badge-pop flex flex-col justify-between" data-category="dog">
+          <div class="absolute -top-3.5 right-6 bg-secondary-container text-on-secondary-container px-3.5 py-1 rounded-full text-xs font-black shadow-md flex items-center gap-1.5">
+            <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M12 2l2.4 7.2L21.6 12l-7.2 2.4L12 21.6l-2.4-7.2L2.4 12l7.2-2.4L12 2z"></path></svg>
+            <span>Most Popular</span>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-secondary font-black text-xs">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2l2.4 7.2L21.6 12l-7.2 2.4L12 21.6l-2.4-7.2L2.4 12l7.2-2.4L12 2z"></path></svg>
+                <span>Canine Deluxe</span>
+              </span>
+              <span class="flex items-center gap-1 text-on-surface-variant font-bold text-xs bg-surface-container px-2.5 py-1 rounded-full">
+                <span class="material-symbols-outlined text-sm">schedule</span> 1 hr 30 min
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-on-surface">Dog Bath/Brush Grooming Package-Deluxe</h3>
+              <p class="text-sm text-on-surface-variant mt-2">Upgraded hydro-massage bath with extra moisture treatment, paw pad tidy, nail care, and ear checkup.</p>
+            </div>
+            <ul class="space-y-1.5 text-xs font-semibold text-on-surface-variant">
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Deep conditioning mask</li>
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Full nail trim &amp; filing</li>
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Sanitary &amp; paw pad tidy</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-surface-container-high flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant block">Rate</span>
+              <span class="text-lg font-black text-secondary">Varies by breed</span>
+            </div>
+            <a class="px-5 py-2.5 rounded-full bg-secondary-container text-on-secondary-container font-black text-xs hover:bg-secondary hover:text-white hover:scale-105 transition-all shadow-md" href="#waitlist-section">Request to Book</a>
+          </div>
+        </div>
+
+        <!-- 3. Dog Haircut Grooming Package -->
+        <div class="service-card bg-surface-container-lowest rounded-3xl p-7 border-2 border-surface-container hover:border-primary shadow-sm hover:shadow-xl transition-all duration-300 badge-pop flex flex-col justify-between" data-category="dog">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-black text-xs">
+                <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line></svg>
+                <span>Full Haircut</span>
+              </span>
+              <span class="flex items-center gap-1 text-on-surface-variant font-bold text-xs bg-surface-container px-2.5 py-1 rounded-full">
+                <span class="material-symbols-outlined text-sm">schedule</span> 1 hr 30 min
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-on-surface">Dog Haircut Grooming Package</h3>
+              <p class="text-sm text-on-surface-variant mt-2">Complete full-body breed or puppy clip, scissor-styled face, head, and feet, paired with our deluxe bath.</p>
+            </div>
+            <ul class="space-y-1.5 text-xs font-semibold text-on-surface-variant">
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Breed cut or personalized trim</li>
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Scissor-finished face &amp; paws</li>
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Bath, dry &amp; nail grooming</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-surface-container-high flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant block">Rate</span>
+              <span class="text-lg font-black text-primary">Varies by breed</span>
+            </div>
+            <a class="px-5 py-2.5 rounded-full bg-primary text-white font-black text-xs hover:bg-primary-container hover:scale-105 transition-all shadow-md" href="#waitlist-section">Request to Book</a>
+          </div>
+        </div>
+
+        <!-- 4. De-shedding Grooming Package -->
+        <div class="service-card bg-surface-container-lowest rounded-3xl p-7 border-2 border-emerald-100 hover:border-tertiary shadow-sm hover:shadow-xl transition-all duration-300 badge-pop flex flex-col justify-between" data-category="dog">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary font-black text-xs">
+                <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+                <span>De-shedding</span>
+              </span>
+              <span class="flex items-center gap-1 text-on-surface-variant font-bold text-xs bg-surface-container px-2.5 py-1 rounded-full">
+                <span class="material-symbols-outlined text-sm">schedule</span> 2 hr
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-on-surface">De-shedding Grooming Package</h3>
+              <p class="text-sm text-on-surface-variant mt-2">Undercoat release treatment for double-coated breeds. Drastically frees loose fur and helps keep your home fur-free!</p>
+            </div>
+            <ul class="space-y-1.5 text-xs font-semibold text-on-surface-variant">
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Specialized de-shed soak</li>
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> High velocity fur blowout</li>
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Thorough undercoat rake out</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-surface-container-high flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant block">Rate</span>
+              <span class="text-lg font-black text-tertiary">Varies by breed</span>
+            </div>
+            <a class="px-5 py-2.5 rounded-full bg-tertiary text-white font-black text-xs hover:bg-tertiary/90 hover:scale-105 transition-all shadow-md" href="#waitlist-section">Request to Book</a>
+          </div>
+        </div>
+
+        <!-- 5. Cat Haircut Package with Bath -->
+        <div class="service-card bg-surface-container-lowest rounded-3xl p-7 border-2 border-rose-100 hover:border-warm-rose shadow-sm hover:shadow-xl transition-all duration-300 badge-pop flex flex-col justify-between" data-category="cat">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-warm-rose-light text-warm-rose font-black text-xs">
+                <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 5c-4 0-7 3-7 7 0 4 3 7 7 7s7-3 7-7c0-4-3-7-7-7z"></path><path d="M7 7L5 3l4 2"></path><path d="M17 7l2-4-4 2"></path></svg>
+                <span>Feline Full Spa</span>
+              </span>
+              <span class="flex items-center gap-1 text-on-surface-variant font-bold text-xs bg-surface-container px-2.5 py-1 rounded-full">
+                <span class="material-symbols-outlined text-sm">schedule</span> 2 hr
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-on-surface">Cat Haircut Package with Bath</h3>
+              <p class="text-sm text-on-surface-variant mt-2">Lion cut, comb cut, or hygiene trim paired with a calm, warm water feline bath and gentle hand fluff dry.</p>
+            </div>
+            <ul class="space-y-1.5 text-xs font-semibold text-on-surface-variant">
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Low noise feline clippers</li>
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Soothing cat-safe bath</li>
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Nail trim included</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-surface-container-high flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant block">Rate</span>
+              <span class="text-lg font-black text-warm-rose">Price varies</span>
+            </div>
+            <a class="px-5 py-2.5 rounded-full bg-warm-rose text-white font-black text-xs hover:bg-warm-rose/90 hover:scale-105 transition-all shadow-md" href="#waitlist-section">Request to Book</a>
+          </div>
+        </div>
+
+        <!-- 6. Cat Haircut Package without Bath -->
+        <div class="service-card bg-surface-container-lowest rounded-3xl p-7 border-2 border-rose-100 hover:border-warm-rose shadow-sm hover:shadow-xl transition-all duration-300 badge-pop flex flex-col justify-between" data-category="cat">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-warm-rose-light text-warm-rose font-black text-xs">
+                <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line></svg>
+                <span>Feline Cut Only</span>
+              </span>
+              <span class="flex items-center gap-1 text-on-surface-variant font-bold text-xs bg-surface-container px-2.5 py-1 rounded-full">
+                <span class="material-symbols-outlined text-sm">schedule</span> 1 hr
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-on-surface">Cat Haircut Package without Bath</h3>
+              <p class="text-sm text-on-surface-variant mt-2">Perfect for water-shy cats. Mat removal, sanitary clip, lion trim, and claw manicure with zero bath anxiety.</p>
+            </div>
+            <ul class="space-y-1.5 text-xs font-semibold text-on-surface-variant">
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Zero water contact</li>
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Gentle matting relief</li>
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Cat claw manicure</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-surface-container-high flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant block">Rate</span>
+              <span class="text-lg font-black text-warm-rose">Price varies</span>
+            </div>
+            <a class="px-5 py-2.5 rounded-full bg-warm-rose text-white font-black text-xs hover:bg-warm-rose/90 hover:scale-105 transition-all shadow-md" href="#waitlist-section">Request to Book</a>
+          </div>
+        </div>
+
+        <!-- 7. Cat Bath & Brush Package -->
+        <div class="service-card bg-surface-container-lowest rounded-3xl p-7 border-2 border-emerald-100 hover:border-tertiary shadow-sm hover:shadow-xl transition-all duration-300 badge-pop flex flex-col justify-between" data-category="cat">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary font-black text-xs">
+                <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1z"></path><path d="M6 12V6a2 2 0 0 1 2-2h1"></path></svg>
+                <span>Feline Bath</span>
+              </span>
+              <span class="flex items-center gap-1 text-on-surface-variant font-bold text-xs bg-surface-container px-2.5 py-1 rounded-full">
+                <span class="material-symbols-outlined text-sm">schedule</span> 1 hr 30 min
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-on-surface">Cat Bath &amp; Brush Package</h3>
+              <p class="text-sm text-on-surface-variant mt-2">Delicate wash with hypoallergenic cat cleansers, low-noise blow out, thorough comb out, and claw clip.</p>
+            </div>
+            <ul class="space-y-1.5 text-xs font-semibold text-on-surface-variant">
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Degreasing coat bath</li>
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Shedding brush out</li>
+              <li class="flex items-center gap-2"><span class="text-tertiary">✔</span> Nail trimming included</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-surface-container-high flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant block">Rate</span>
+              <span class="text-lg font-black text-tertiary">Price varies</span>
+            </div>
+            <a class="px-5 py-2.5 rounded-full bg-tertiary text-white font-black text-xs hover:bg-tertiary/90 hover:scale-105 transition-all shadow-md" href="#waitlist-section">Request to Book</a>
+          </div>
+        </div>
+
+        <!-- 8. Nail Trim Al A Carte -->
+        <div class="service-card bg-surface-container-lowest rounded-3xl p-7 border-2 border-surface-container hover:border-secondary shadow-sm hover:shadow-xl transition-all duration-300 badge-pop flex flex-col justify-between" data-category="alacarte">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-secondary font-black text-xs">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><circle cx="7" cy="8.5" r="2"></circle><circle cx="17" cy="8.5" r="2"></circle><circle cx="12" cy="6" r="2"></circle><path d="M12 11c-2.8 0-5 2.2-5 5 0 1.5 1.5 2.5 5 2.5s5-1 5-2.5c0-2.8-2.2-5-5-5z"></path></svg>
+                <span>Paw Care</span>
+              </span>
+              <span class="flex items-center gap-1 text-on-surface-variant font-bold text-xs bg-surface-container px-2.5 py-1 rounded-full">
+                <span class="material-symbols-outlined text-sm">schedule</span> 15 min
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-on-surface">Nail Trim Al A Carte</h3>
+              <p class="text-sm text-on-surface-variant mt-2">Quick, gentle claw clipping for dogs or cats to ensure happy walking and healthy paw posture.</p>
+            </div>
+          </div>
+          <div class="pt-6 mt-6 border-t border-surface-container-high flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant block">10 US dollars</span>
+              <span class="text-2xl font-black text-primary">$10</span>
+            </div>
+            <a class="px-5 py-2.5 rounded-full bg-surface-container text-primary font-black text-xs hover:bg-primary hover:text-white hover:scale-105 transition-all shadow-sm" href="#waitlist-section">Book Now</a>
+          </div>
+        </div>
+
+        <!-- 9. Nail Grinding Al A Carte -->
+        <div class="service-card bg-surface-container-lowest rounded-3xl p-7 border-2 border-surface-container hover:border-secondary shadow-sm hover:shadow-xl transition-all duration-300 badge-pop flex flex-col justify-between" data-category="alacarte">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-secondary font-black text-xs">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2l2.4 7.2L21.6 12l-7.2 2.4L12 21.6l-2.4-7.2L2.4 12l7.2-2.4L12 2z"></path></svg>
+                <span>Silky Smooth</span>
+              </span>
+              <span class="flex items-center gap-1 text-on-surface-variant font-bold text-xs bg-surface-container px-2.5 py-1 rounded-full">
+                <span class="material-symbols-outlined text-sm">schedule</span> 15 min
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-on-surface">Nail Grinding Al A Carte</h3>
+              <p class="text-sm text-on-surface-variant mt-2">Rotary dremel filing for super smooth, rounded edges that won't scratch floors or sensitive skin.</p>
+            </div>
+          </div>
+          <div class="pt-6 mt-6 border-t border-surface-container-high flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant block">15 US dollars</span>
+              <span class="text-2xl font-black text-primary">$15</span>
+            </div>
+            <a class="px-5 py-2.5 rounded-full bg-surface-container text-primary font-black text-xs hover:bg-primary hover:text-white hover:scale-105 transition-all shadow-sm" href="#waitlist-section">Book Now</a>
+          </div>
+        </div>
+
+        <!-- 10. Flea and Tick Bath or Dip Al Carte -->
+        <div class="service-card bg-surface-container-lowest rounded-3xl p-7 border-2 border-amber-200 hover:border-amber-700 shadow-sm hover:shadow-xl transition-all duration-300 badge-pop flex flex-col justify-between" data-category="alacarte">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-800 font-black text-xs">
+                <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span>Medicated</span>
+              </span>
+              <span class="flex items-center gap-1 text-on-surface-variant font-bold text-xs bg-surface-container px-2.5 py-1 rounded-full">
+                <span class="material-symbols-outlined text-sm">schedule</span> 1 hr
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-on-surface">Flea and Tick Bath or Dip Al Carte</h3>
+              <p class="text-sm text-on-surface-variant mt-2">Targeted soothing wash to eradicate pests while cooling irritated, itchy skin and restoring comfort.</p>
+            </div>
+          </div>
+          <div class="pt-6 mt-6 border-t border-surface-container-high flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant block">Starting Fee</span>
+              <span class="text-2xl font-black text-primary">$15 and up</span>
+            </div>
+            <a class="px-5 py-2.5 rounded-full bg-surface-container text-primary font-black text-xs hover:bg-primary hover:text-white hover:scale-105 transition-all shadow-sm" href="#waitlist-section">Book Now</a>
+          </div>
+        </div>
+
+        <!-- 11. Ear Cleaning Al A Carte -->
+        <div class="service-card bg-surface-container-lowest rounded-3xl p-7 border-2 border-surface-container hover:border-secondary shadow-sm hover:shadow-xl transition-all duration-300 badge-pop flex flex-col justify-between" data-category="alacarte">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-secondary font-black text-xs">
+                <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg>
+                <span>Hygiene</span>
+              </span>
+              <span class="flex items-center gap-1 text-on-surface-variant font-bold text-xs bg-surface-container px-2.5 py-1 rounded-full">
+                <span class="material-symbols-outlined text-sm">schedule</span> 15 min
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-on-surface">Ear Cleaning Al A Carte</h3>
+              <p class="text-sm text-on-surface-variant mt-2">Soothing ear cleanser to gently wipe away wax and dirt, preventing irritation and ear odor.</p>
+            </div>
+          </div>
+          <div class="pt-6 mt-6 border-t border-surface-container-high flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant block">Starting Fee</span>
+              <span class="text-2xl font-black text-primary">$10 and up</span>
+            </div>
+            <a class="px-5 py-2.5 rounded-full bg-surface-container text-primary font-black text-xs hover:bg-primary hover:text-white hover:scale-105 transition-all shadow-sm" href="#waitlist-section">Book Now</a>
+          </div>
+        </div>
+
+        <!-- 12. Sanitary Trim (only) Al A Carte -->
+        <div class="service-card bg-surface-container-lowest rounded-3xl p-7 border-2 border-surface-container hover:border-primary shadow-sm hover:shadow-xl transition-all duration-300 badge-pop flex flex-col justify-between" data-category="alacarte">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-black text-xs">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2l2.4 7.2L21.6 12l-7.2 2.4L12 21.6l-2.4-7.2L2.4 12l7.2-2.4L12 2z"></path></svg>
+                <span>Fresh Tidy</span>
+              </span>
+              <span class="flex items-center gap-1 text-on-surface-variant font-bold text-xs bg-surface-container px-2.5 py-1 rounded-full">
+                <span class="material-symbols-outlined text-sm">schedule</span> 15 min
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-on-surface">Sanitary Trim (only) Al A Carte</h3>
+              <p class="text-sm text-on-surface-variant mt-2">Targeted clipping around belly, paws, and private areas to maintain hygiene between full appointments.</p>
+            </div>
+          </div>
+          <div class="pt-6 mt-6 border-t border-surface-container-high flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant block">10 US dollars</span>
+              <span class="text-2xl font-black text-primary">$10</span>
+            </div>
+            <a class="px-5 py-2.5 rounded-full bg-surface-container text-primary font-black text-xs hover:bg-primary hover:text-white hover:scale-105 transition-all shadow-sm" href="#waitlist-section">Book Now</a>
+          </div>
+        </div>
+
+        <!-- 13. Extra Bath (NO BLUE! NATURAL BOTANICAL SAGE) -->
+        <div class="service-card bg-surface-container-lowest rounded-3xl p-7 border-2 border-emerald-100 hover:border-botanical-sage shadow-sm hover:shadow-xl transition-all duration-300 badge-pop flex flex-col justify-between" data-category="alacarte">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-botanical-sage-light text-botanical-sage font-black text-xs">
+                <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1z"></path><path d="M6 12V6a2 2 0 0 1 2-2h1"></path><circle cx="17" cy="7" r="1.5"></circle></svg>
+                <span>Deep Soak Add-On</span>
+              </span>
+              <span class="flex items-center gap-1 text-on-surface-variant font-bold text-xs bg-surface-container px-2.5 py-1 rounded-full">
+                <span class="material-symbols-outlined text-sm">schedule</span> 30 min
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-on-surface">Extra Bath</h3>
+              <p class="text-sm text-on-surface-variant mt-2">Secondary deep cleansing wash or specialty therapeutic soak for extra muddy, oily, or heavily coated pets.</p>
+            </div>
+          </div>
+          <div class="pt-6 mt-6 border-t border-surface-container-high flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant block">By Pet Size</span>
+              <span class="text-2xl font-black text-primary">$10+by size</span>
+            </div>
+            <a class="px-5 py-2.5 rounded-full bg-surface-container text-primary font-black text-xs hover:bg-primary hover:text-white hover:scale-105 transition-all shadow-sm" href="#waitlist-section">Request to Book</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== POLAROID PHOTO GALLERY ==================== -->
+  <section class="w-full py-16 lg:py-20 bg-surface relative" id="gallery-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div class="space-y-2">
+          <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-warm-rose-light text-warm-rose font-black text-xs uppercase tracking-wider">
+            <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            <span>Photo Gallery</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-on-surface tracking-tight">
+            Happy Tails &amp; Whisker Wonders
+          </h2>
+          <p class="text-base text-on-surface-variant font-medium">
+            Snapshots of our happy, pampered, and fresh clients enjoying their salon visits!
+          </p>
+        </div>
+        <div class="inline-flex items-center gap-2 bg-surface-container px-4 py-2 rounded-full text-xs font-black text-primary shadow-sm">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><circle cx="7" cy="8.5" r="2"></circle><circle cx="17" cy="8.5" r="2"></circle><circle cx="12" cy="6" r="2"></circle><path d="M12 11c-2.8 0-5 2.2-5 5 0 1.5 1.5 2.5 5 2.5s5-1 5-2.5c0-2.8-2.2-5-5-5z"></path></svg>
+          <span>Real Dickinson Furry Friends</span>
+        </div>
+      </div>
+
+      <!-- Polaroid Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+        <!-- Polaroid 1 -->
+        <div class="group bg-white p-3 pb-4 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-rotate-2 hover:scale-105 border-2 border-surface-container cursor-pointer">
+          <div class="aspect-square rounded-2xl overflow-hidden bg-surface-container mb-2 relative">
+            <img alt="Groomed papillon dog with fluffy ears" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZZ0gZ2lIFfJ7VLc6MtZLQd9IH45twmTi3SVz5_rtzUOoFNP4f01qfKPv9sc5bRuNlFTKOoneysYZqB3zDxRyu0Ldnb0wgweKoOj99wFHrPgLo-mh05CcH0kATTYN8HXCnD6BusM7sj3IoxQv0YKXAIUPMORMp05kDnipf5HfajvN83f_pC4cqdGsd6t15ql0QYEJ_Uoz4xq2L9rl8Bj2iWJ5FObQyQvO-x6eTuTjHAA-krp_GuhdR"
+                 onerror="this.onerror=null; this.src='assets/images/pet-ollie.jpg';">
+            <span class="absolute top-2 right-2 bg-white/90 rounded-full p-1.5 shadow-sm text-primary flex items-center justify-center">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><circle cx="7" cy="8.5" r="2"></circle><circle cx="17" cy="8.5" r="2"></circle><circle cx="12" cy="6" r="2"></circle><path d="M12 11c-2.8 0-5 2.2-5 5 0 1.5 1.5 2.5 5 2.5s5-1 5-2.5c0-2.8-2.2-5-5-5z"></path></svg>
+            </span>
+          </div>
+          <div class="text-center">
+            <span class="text-xs font-black text-on-surface block">Fluffy Ears</span>
+            <span class="text-[10px] text-primary font-bold">Bath &amp; Brush</span>
+          </div>
+        </div>
+
+        <!-- Polaroid 2 -->
+        <div class="group bg-white p-3 pb-4 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:rotate-3 hover:scale-105 border-2 border-surface-container cursor-pointer">
+          <div class="aspect-square rounded-2xl overflow-hidden bg-surface-container mb-2 relative">
+            <img alt="Bulldog having skin pampered" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-KYG7BwgnihD0Ch15XTFv0RhM0RLz8Ik-Hv4EQBlbYVpGI6bff7Nk9EYYAAhI96sZN1Zmgc_-ilG9Iu1y6fUZF8bONIbMhwFk7nFOCy_3cQ4hq3I_2AWEgLArrNgD5SmaULobjRECX7BnJ6LsDGfO1KWrixD3Xngeq5SfBQKGYMGHxDZHWOvvzWrKzghwP6GTr6vZ3R0HkLD8N8ONUnjLDwByRHOgZ76PQoDlrW3cl0aGHtUycDnE"
+                 onerror="this.onerror=null; this.src='assets/images/pet-cooper.jpg';">
+            <span class="absolute top-2 right-2 bg-white/90 rounded-full p-1.5 shadow-sm text-secondary flex items-center justify-center">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2l2.4 7.2L21.6 12l-7.2 2.4L12 21.6l-2.4-7.2L2.4 12l7.2-2.4L12 2z"></path></svg>
+            </span>
+          </div>
+          <div class="text-center">
+            <span class="text-xs font-black text-on-surface block">Scratch &amp; Spa</span>
+            <span class="text-[10px] text-secondary font-bold">Deluxe Soak</span>
+          </div>
+        </div>
+
+        <!-- Polaroid 3 -->
+        <div class="group bg-white p-3 pb-4 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-rotate-3 hover:scale-105 border-2 border-surface-container cursor-pointer">
+          <div class="aspect-square rounded-2xl overflow-hidden bg-surface-container mb-2 relative">
+            <img alt="Smiling happy corgi outdoor walk" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoU9vLWar7lIPKGAZHzkY2Ia4eD6bne_eGiWHZKzRmHwjfGEfM3J-0wr8UBp-rddk2aZGBn9fbHQGZLDe8C_aX_rUAsHZ6uexEDg9uFEA0lCR_WyqE3vBppeLAqoUr3HQghr2_ukRkuste51a334VFoUli9gHqsm8TL9-ataoGv-NO4YSz695k1y8oFi-6N75O8IAZbhXMqDAIEXigsjxnHaOA2xQNnHKntFjPvcMubhkBxtiwDbuF"
+                 onerror="this.onerror=null; this.src='assets/images/pet-marco.jpg';">
+            <span class="absolute top-2 right-2 bg-white/90 rounded-full p-1.5 shadow-sm text-tertiary flex items-center justify-center">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+            </span>
+          </div>
+          <div class="text-center">
+            <span class="text-xs font-black text-on-surface block">Pure Joy</span>
+            <span class="text-[10px] text-tertiary font-bold">Nail &amp; Paw Trim</span>
+          </div>
+        </div>
+
+        <!-- Polaroid 4 -->
+        <div class="group bg-white p-3 pb-4 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:rotate-2 hover:scale-105 border-2 border-surface-container cursor-pointer">
+          <div class="aspect-square rounded-2xl overflow-hidden bg-surface-container mb-2 relative">
+            <img alt="Fluffy white cat reaching out playful paw" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfC1UypzjwiGdrOYByOCbqI7vXiAgNMGBiur8nkl1uulznLf6u-LA7vLo6Rh42Zewcw7txIa4v4YuwVRhYQi7qjgJ7yeNBsJ4yd_Ypr28YKavnmCMzP7wWsCls3xQ_eFyDCxYPjf9Us0JZgtfnp2BA-PC3ZIgWoCS50ukNco6aWlVDQiE9eItiiglwlAVO1y-VPuOAPNB87COrwmuiA7x_1BB8ZgWxysM4YoozN0_ZX_Yyax-gzlrB"
+                 onerror="this.onerror=null; this.src='assets/images/spa-cat-relax.jpg';">
+            <span class="absolute top-2 right-2 bg-white/90 rounded-full p-1.5 shadow-sm text-warm-rose flex items-center justify-center">
+              <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 5c-4 0-7 3-7 7 0 4 3 7 7 7s7-3 7-7c0-4-3-7-7-7z"></path><path d="M7 7L5 3l4 2"></path><path d="M17 7l2-4-4 2"></path></svg>
+            </span>
+          </div>
+          <div class="text-center">
+            <span class="text-xs font-black text-on-surface block">High Five!</span>
+            <span class="text-[10px] text-warm-rose font-bold">Cat Spa Day</span>
+          </div>
+        </div>
+
+        <!-- Polaroid 5 -->
+        <div class="group bg-white p-3 pb-4 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-rotate-2 hover:scale-105 border-2 border-surface-container cursor-pointer">
+          <div class="aspect-square rounded-2xl overflow-hidden bg-surface-container mb-2 relative">
+            <img alt="Husky lying in pile of de-shed undercoat fur" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwxjxTOSIxszleMAnVV6U57Ia11LvLHET3VlE6goL66hkQezGjB-AgMqsla8QnM8QFBYgtMYhxUKzgEdttOmTxFw1UUbX1goDeOWGL8ET_uAO2YU7EmZtWagJu5a7zyGTTlSIBkW6732couPrutpuaaPwyYn1Xdweq1NKAJSouJZ8n9PtlZR0-feAxW7s9GaWPUIucpXylZzC-OaOzK1jtaVAiMCMF6fKVFflR6SMD9xUnT8lr1i9c"
+                 onerror="this.onerror=null; this.src='assets/images/pet-husky.jpg';">
+            <span class="absolute top-2 right-2 bg-white/90 rounded-full p-1.5 shadow-sm text-primary flex items-center justify-center">
+              <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+            </span>
+          </div>
+          <div class="text-center">
+            <span class="text-xs font-black text-on-surface block">Fur Mountain</span>
+            <span class="text-[10px] text-primary font-bold">De-shed Blowout</span>
+          </div>
+        </div>
+
+        <!-- Polaroid 6 -->
+        <div class="group bg-white p-3 pb-4 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:rotate-3 hover:scale-105 border-2 border-surface-container cursor-pointer">
+          <div class="aspect-square rounded-2xl overflow-hidden bg-surface-container mb-2 relative">
+            <img alt="Small cute white dog on grooming table getting haircut" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHBzZT2oqSXAHSUgF9tMsvDSY5g_V-oHts6LiXmQUAwIYK0OKN8It_EYHB0jvEJOJPwuzlFtDzbqvOISdynGHTFdw2K6N0b14laWHf-Duc8ulrVu-WXsUFmGX5Yy-IcWSRHAfZhE4pgccHjEf8AWdsrSApSTBDb2-1Ak2q1pBW_ZP7bC37Vziavb7TVG5jnqZ9leFvlgcSRQOh2GFr793v4c1VXNGLfsk0DCnhllIG4niWOphNBVtF"
+                 onerror="this.onerror=null; this.src='assets/images/pet-dazy.jpg';">
+            <span class="absolute top-2 right-2 bg-white/90 rounded-full p-1.5 shadow-sm text-secondary flex items-center justify-center">
+              <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line></svg>
+            </span>
+          </div>
+          <div class="text-center">
+            <span class="text-xs font-black text-on-surface block">Teddy Contour</span>
+            <span class="text-[10px] text-secondary font-bold">Custom Haircut</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Extra Row with Additional Cuties: Feline & Herbal Baths -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+        <div class="bg-surface-container-low rounded-3xl p-5 flex flex-col sm:flex-row items-center gap-5 border-2 border-surface-container hover:scale-[1.01] transition-transform">
+          <img alt="Calm grey cat with fresh clean clip on cozy towel" class="w-32 h-32 rounded-2xl object-cover shadow-md shrink-0 border-2 border-white" 
+               src="https://lh3.googleusercontent.com/aida-public/AB6AXuClYNbGbXrCvNykN1PeTnVyV-JTlGON3Gpg0Tp0ejbizx-rKhPSX5GEhGzOPM2nAua0vT-H7SacRMPO2-m-79RHw2DmjPg52G__3vXIVRP7MOCxkjcJgfrxkXELYzuWOiqyG7nK2dok1QWV-0o1oM97saMQelM0Awe49h3xQpqY6JDIDcLySCUFDg-Gl0x8jAVL8U2LKhUIhntply_zHkvDjhNrC0VqyOp2QiVHWxvnSWo1n3YeF7a8"
+               onerror="this.onerror=null; this.src='assets/images/cat-spa.jpg';">
+          <div class="space-y-1 text-center sm:text-left">
+            <span class="inline-flex items-center gap-1.5 text-[11px] font-black text-tertiary bg-tertiary-fixed px-2.5 py-0.5 rounded-full">
+              <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 5c-4 0-7 3-7 7 0 4 3 7 7 7s7-3 7-7c0-4-3-7-7-7z"></path><path d="M7 7L5 3l4 2"></path><path d="M17 7l2-4-4 2"></path></svg>
+              <span>Gentle Dematting</span>
+            </span>
+            <h4 class="text-lg font-black text-on-surface">Sweet Feline Spa Time</h4>
+            <p class="text-xs text-on-surface-variant font-medium">Patience and soft whispers make even the most sensitive kitties feel safe and cozy during their haircuts.</p>
+          </div>
+        </div>
+
+        <div class="bg-surface-container-low rounded-3xl p-5 flex flex-col sm:flex-row items-center gap-5 border-2 border-surface-container hover:scale-[1.01] transition-transform">
+          <img alt="Two cute puppies bathed in vintage tub with bubbles" class="w-32 h-32 rounded-2xl object-cover shadow-md shrink-0 border-2 border-white" 
+               src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2Km1OmQl85q-kGtDyLrEqE70OeIDhlyyHV8XtUiBOuLO244kqZFiIchnWPwxTVeguvupuOgQuSLUYtjcXxqYKWSR4Bpfo35ljXMWJoRYKoHs14PQ5b0rB5K_cq1Y4wx_Dp0eS1A1mIgZ3-id2n75f1Qg1-8wiSJZpN4huSZTargp81TehXEQvXy-Y1eGX-HZ1hiwxQx5N7ILQ_DaRv44mKHkenV-ys1S5hK-yjUwdMz9gJX0Qje7q"
+               onerror="this.onerror=null; this.src='assets/images/spa-bubble-dog.jpg';">
+          <div class="space-y-1 text-center sm:text-left">
+            <span class="inline-flex items-center gap-1.5 text-[11px] font-black text-primary bg-primary-fixed px-2.5 py-0.5 rounded-full">
+              <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1z"></path><path d="M6 12V6a2 2 0 0 1 2-2h1"></path><circle cx="17" cy="7" r="1.5"></circle></svg>
+              <span>Bubble Suds</span>
+            </span>
+            <h4 class="text-lg font-black text-on-surface">Warm Herbal Baths</h4>
+            <p class="text-xs text-on-surface-variant font-medium">Warm water rinses, tearless face shampoo, and fluffy warm towel wraps make bath time the highlight of their day!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WAITLIST APPLICATION FORM ==================== -->
+  <section class="w-full py-16 lg:py-20 bg-surface-container-low relative" id="waitlist-section">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Form Header -->
+      <div class="text-center space-y-3 mb-10">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-fixed text-secondary font-black text-xs uppercase tracking-wider shadow-sm">
+          <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M9 12h6m-6 4h6"></path></svg>
+          <span>Priority Client Portal</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-on-surface tracking-tight">
+          Join Our Client Waitlist
+        </h2>
+        <p class="text-base text-on-surface-variant font-medium">
+          Currently, we are not taking new clients. To be added to the waitlist fill out the form below. Please take a moment to fill out the form.
+        </p>
+      </div>
+
+      <!-- Form Card -->
+      <div class="bg-white rounded-4xl p-8 sm:p-12 shadow-2xl border-4 border-surface-container relative overflow-hidden">
+        <form class="space-y-6" id="waitlist-form" onsubmit="event.preventDefault(); document.getElementById('form-success-box').classList.remove('hidden'); this.reset();">
+          <!-- First Name & Last Name -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div class="space-y-1.5">
+              <label class="block text-xs font-black uppercase tracking-wider text-on-surface" for="first-name">First Name *</label>
+              <input class="w-full px-4 py-3.5 rounded-2xl bg-surface-container-low border-2 border-transparent focus:border-primary focus:bg-white text-on-surface font-semibold text-sm outline-none transition-all shadow-inner" id="first-name" placeholder="Jane" required="" type="text">
+            </div>
+            <div class="space-y-1.5">
+              <label class="block text-xs font-black uppercase tracking-wider text-on-surface" for="last-name">Last Name *</label>
+              <input class="w-full px-4 py-3.5 rounded-2xl bg-surface-container-low border-2 border-transparent focus:border-primary focus:bg-white text-on-surface font-semibold text-sm outline-none transition-all shadow-inner" id="last-name" placeholder="Doe" required="" type="text">
+            </div>
+          </div>
+
+          <!-- Email & Subject Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div class="space-y-1.5">
+              <label class="block text-xs font-black uppercase tracking-wider text-on-surface" for="email">Email *</label>
+              <input class="w-full px-4 py-3.5 rounded-2xl bg-surface-container-low border-2 border-transparent focus:border-primary focus:bg-white text-on-surface font-semibold text-sm outline-none transition-all shadow-inner" id="email" placeholder="jane@example.com" required="" type="email">
+            </div>
+            <div class="space-y-1.5">
+              <label class="block text-xs font-black uppercase tracking-wider text-on-surface" for="subject">Subject *</label>
+              <input class="w-full px-4 py-3.5 rounded-2xl bg-surface-container-low border-2 border-transparent focus:border-primary focus:bg-white text-on-surface font-semibold text-sm outline-none transition-all shadow-inner" id="subject" placeholder="e.g. Waitlist for Oliver (Golden Doodle)" required="" type="text">
+            </div>
+          </div>
+
+          <!-- Desired Service Selection -->
+          <div class="space-y-1.5">
+            <label class="block text-xs font-black uppercase tracking-wider text-on-surface" for="service-pref">Service Interested In</label>
+            <select class="w-full px-4 py-3.5 rounded-2xl bg-surface-container-low border-2 border-transparent focus:border-primary focus:bg-white text-on-surface font-semibold text-sm outline-none transition-all shadow-inner" id="service-pref">
+              <option value="Dog Haircut Grooming Package">Dog Haircut Grooming Package (1 hr 30 min)</option>
+              <option value="Dog Bath/Brush Grooming Package-Basic">Dog Bath/Brush Grooming Package-Basic (1 hr)</option>
+              <option value="Dog Bath/Brush Grooming Package-Deluxe">Dog Bath/Brush Grooming Package-Deluxe (1 hr 30 min)</option>
+              <option value="De-shedding Grooming Package">De-shedding Grooming Package (2 hr)</option>
+              <option value="Cat Haircut Package with Bath">Cat Haircut Package with Bath (2 hr)</option>
+              <option value="Cat Haircut Package without Bath">Cat Haircut Package without Bath (1 hr)</option>
+              <option value="Cat Bath &amp; Brush Package">Cat Bath &amp; Brush Package (1 hr 30 min)</option>
+              <option value="Nail Trim or Grinding Al A Carte">Nail Trim / Nail Grinding Al A Carte ($10 - $15)</option>
+              <option value="Other / Multiple Pets">Other Service / Multiple Pets</option>
+            </select>
+          </div>
+
+          <!-- Message Area -->
+          <div class="space-y-1.5">
+            <label class="block text-xs font-black uppercase tracking-wider text-on-surface" for="message">
+              Leave us a message. Please include a phone number. *
+            </label>
+            <textarea class="w-full px-4 py-3.5 rounded-2xl bg-surface-container-low border-2 border-transparent focus:border-primary focus:bg-white text-on-surface font-semibold text-sm outline-none transition-all shadow-inner" id="message" placeholder="Hi! My phone number is 701-XXX-XXXX. Oliver is a 2-year old mini doodle who needs a full haircut..." required="" rows="4"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-2">
+            <button class="w-full py-4 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-black text-base shadow-xl shadow-primary/20 hover:scale-[1.02] hover:shadow-2xl transition-all flex items-center justify-center gap-2" type="submit">
+              <svg class="w-5 h-5 fill-none stroke-white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              <span>Submit Waitlist Request</span>
+            </button>
+          </div>
+
+          <!-- Thanks for submitting! Box -->
+          <div class="hidden mt-4 p-5 rounded-3xl bg-tertiary-fixed text-tertiary border-2 border-tertiary/20 flex items-center gap-3" id="form-success-box">
+            <div class="w-10 h-10 rounded-full bg-tertiary text-white flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 fill-none stroke-current" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div>
+              <strong class="font-black text-base block">Thanks for submitting!</strong>
+              <span class="text-xs font-semibold">We have received your details and will be in touch as soon as grooming slots open up!</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT, LOCATION & HOURS ==================== -->
+  <section class="w-full py-16 lg:py-20 bg-surface relative" id="contact-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Contact Details -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="space-y-3">
+            <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-secondary-fixed text-secondary font-black text-xs uppercase tracking-wider">
+              <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>Get in Touch</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black text-on-surface tracking-tight">Contact Me</h2>
+            <p class="text-base text-on-surface-variant font-medium leading-relaxed">
+              Please get in touch if I seem like the right Pet Groomer for you and your pet. I’m looking forward to hearing from you.
+            </p>
+          </div>
+
+          <div class="space-y-4 pt-2">
+            <!-- Address Card -->
+            <div class="p-5 rounded-3xl bg-white border-2 border-surface-container shadow-sm flex items-center gap-4 badge-pop">
+              <div class="w-12 h-12 rounded-2xl bg-primary-fixed text-primary flex items-center justify-center">
+                <svg class="w-6 h-6 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <span class="text-xs font-black uppercase text-primary tracking-wider block">Spa Location</span>
+                <div class="text-base font-black text-on-surface">1171 East Villard Street</div>
+                <div class="text-xs font-bold text-on-surface-variant">Dickinson, ND 58601</div>
+              </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="p-5 rounded-3xl bg-white border-2 border-surface-container shadow-sm flex items-center gap-4 badge-pop">
+              <div class="w-12 h-12 rounded-2xl bg-secondary-fixed text-secondary flex items-center justify-center">
+                <svg class="w-6 h-6 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <span class="text-xs font-black uppercase text-secondary tracking-wider block">Direct Phone</span>
+                <a class="text-base font-black text-on-surface hover:text-primary transition-colors" href="tel:7016901572">701-690-1572</a>
+                <div class="text-xs font-semibold text-on-surface-variant italic">(leave a message as we maybe busy with a client)</div>
+              </div>
+            </div>
+
+            <!-- Email Card -->
+            <div class="p-5 rounded-3xl bg-white border-2 border-surface-container shadow-sm flex items-center gap-4 badge-pop">
+              <div class="w-12 h-12 rounded-2xl bg-tertiary-fixed text-tertiary flex items-center justify-center">
+                <svg class="w-6 h-6 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <span class="text-xs font-black uppercase text-tertiary tracking-wider block">Email Contact</span>
+                <a class="text-base font-black text-on-surface hover:text-primary transition-colors" href="mailto:groomer@betwixtthepaws.com">groomer@betwixtthepaws.com</a>
+                <div class="text-xs font-semibold text-on-surface-variant">Questions, inquiries &amp; vaccination records</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Card: Exact Official Logo & Hours -->
+        <div class="lg:col-span-6">
+          <div class="bg-white rounded-4xl p-6 sm:p-8 border-4 border-surface-container shadow-2xl space-y-6">
+            <!-- Exact Official Logo Container -->
+            <div class="bg-surface-container-low rounded-3xl p-5 flex items-center justify-center border-2 border-white shadow-inner">
+              <img alt="Betwixt The Paws Grooming LLC Logo" class="h-16 w-auto object-contain hover:scale-105 transition-transform" 
+                   src="assets/images/logo-exact.png">
+            </div>
+
+            <!-- Hours Schedule -->
+            <div class="space-y-3">
+              <div class="flex items-center justify-between pb-1 border-b border-surface-container">
+                <span class="text-xs font-black uppercase tracking-wider text-primary">Hours and Schedule</span>
+                <span class="text-xs font-bold text-on-surface-variant">Dickinson, ND</span>
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <div class="p-3.5 rounded-2xl bg-surface-container-low border border-surface-container">
+                  <span class="text-xs font-bold text-on-surface-variant block">Monday – Thursday</span>
+                  <span class="text-sm font-black text-on-surface">8:00 AM – 5:00 PM</span>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-surface-container-low border border-surface-container">
+                  <span class="text-xs font-bold text-on-surface-variant block">Friday</span>
+                  <span class="text-sm font-black text-on-surface">8:00 AM – 4:00 PM</span>
+                </div>
+                <div class="col-span-2 p-3 rounded-2xl bg-secondary-fixed/70 border border-secondary-fixed flex items-center justify-between">
+                  <span class="text-xs font-black text-secondary">Saturday &amp; Sunday</span>
+                  <span class="text-xs font-extrabold text-secondary">Closed for Rest &amp; Cuddles</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Facebook Connection (Earthy Charcoal - No Blue) -->
+            <div class="pt-2">
+              <a class="w-full py-3.5 rounded-full bg-stone-800 hover:bg-stone-900 text-white font-black text-xs shadow-md transition-all flex items-center justify-center gap-2" href="https://www.facebook.com/betwixtthepaws" rel="noopener noreferrer" target="_blank">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+                <span>Connect on Facebook @betwixtthepaws</span>
+                <span class="material-symbols-outlined text-sm">open_in_new</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== FOOTER WITH EXACT LOGO ==================== -->
+<footer class="w-full bg-white border-t-2 border-surface-container py-12 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-surface-container">
+      
+      <!-- Exact Logo in Footer -->
+      <div class="flex items-center gap-4">
+        <img src="assets/images/logo-exact.png" alt="Betwixt The Paws Grooming LLC" class="h-12 w-auto object-contain">
+        <div>
+          <span class="text-xs font-semibold text-secondary italic block">"The Quality Care Your Pet Deserves"</span>
+          <span class="text-[11px] text-on-surface-variant font-medium">Certified Master Dog &amp; Cat Care • Dickinson, ND</span>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="flex flex-wrap items-center justify-center gap-6 text-xs font-black text-on-surface-variant">
+        <a class="hover:text-primary transition-colors" href="index.html">Home</a>
+        <a class="hover:text-primary transition-colors" href="#services-section">Our Services</a>
+        <a class="hover:text-primary transition-colors" href="#waitlist-section">Waitlist Form</a>
+        <a class="hover:text-primary transition-colors" href="#gallery-section">Photo Gallery</a>
+        <a class="hover:text-primary transition-colors" href="#contact-section">Hours and Contact Us</a>
+        <a class="hover:text-primary transition-colors" href="about.html">About Robin</a>
+        <a class="hover:text-primary transition-colors" href="forms.html">Forms &amp; Waivers</a>
+        <a class="hover:text-primary transition-colors" href="https://www.facebook.com/betwixtthepaws" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+    </div>
+
+    <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-semibold text-on-surface-variant">
+      <div>
+        ©2026 Betwixt the Paws Grooming LLC. Proudly created with love in Dickinson, ND.
+      </div>
+      <div class="flex items-center gap-4">
+        <a class="hover:underline" href="privacy.html">Privacy Policy</a>
+        <span>•</span>
+        <a class="hover:underline" href="privacy.html#sms">SMS Privacy</a>
+        <span>•</span>
+        <a class="text-secondary font-black hover:underline" href="#waitlist-section">Join Waitlist</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== INTERACTIVITY SCRIPTS ==================== -->
+<script>
+  // Mobile drawer toggle
+  const mobileBtn = document.getElementById('mobileMenuBtn');
+  const mobileDropdown = document.getElementById('mobileMenuDropdown');
+  if (mobileBtn && mobileDropdown) {
+    mobileBtn.addEventListener('click', () => {
+      mobileDropdown.classList.toggle('hidden');
+    });
+  }
+
+  // Filter interactivity for services
+  (function initServices() {
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.service-card');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        // Reset all buttons
+        buttons.forEach(b => {
+          b.classList.remove('bg-gradient-to-r', 'from-primary', 'to-primary-container', 'text-white', 'shadow-md', 'scale-105');
+          b.classList.add('text-on-surface-variant');
+        });
+
+        // Highlight clicked button
+        btn.classList.add('bg-gradient-to-r', 'from-primary', 'to-primary-container', 'text-white', 'shadow-md', 'scale-105');
+        btn.classList.remove('text-on-surface-variant');
+
+        // Filter card visibility
+        cards.forEach(card => {
+          const cat = card.getAttribute('data-category');
+          if (filter === 'all' || cat === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
